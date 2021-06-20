@@ -1,0 +1,42 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "fk:electrified_tree_feature",
+            "places_feature": "fk:electrified_tree"
+        },
+        "conditions": {
+            "placement_pass": "surface_pass",
+            "minecraft:biome_filter": {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "electric"
+            }
+        },
+        "distribution": {
+            "iterations": 1,
+            "scatter_chance": 1,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    "q.heightmap(v.worldx, v.worldz) + 0",
+                    "q.heightmap(v.worldx, v.worldz) + 1 + 0"
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}

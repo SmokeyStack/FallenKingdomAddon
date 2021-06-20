@@ -1,0 +1,11 @@
+{
+    "interactive_sounds": {
+        "events": {
+            "record.pigstep": {
+                "pitch": 1.0,
+                "sound": "record.pigstep_remix",
+                "volume": 1.0
+            }
+        }
+    }
+}

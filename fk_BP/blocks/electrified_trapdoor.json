@@ -1,0 +1,269 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "fk:electrified_trapdoor",
+            "properties": {
+                "fk:state": [
+                    "lower",
+                    "upper",
+                    "lower_open",
+                    "upper_open"
+                ],
+                "fk:direction": [
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('fk:direction') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('fk:direction') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('fk:direction') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('fk:direction') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        270,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('fk:state') == 'lower'",
+                "components": {
+                    "minecraft:geometry": "geometry.trapdoor_lower",
+                    "minecraft:on_interact": {
+                        "event": "lower_open"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            3,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            3,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('fk:state') == 'upper'",
+                "components": {
+                    "minecraft:geometry": "geometry.trapdoor",
+                    "minecraft:on_interact": {
+                        "event": "upper_open"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            14,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            14,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('fk:state') == 'lower_open'",
+                "components": {
+                    "minecraft:geometry": "geometry.trapdoor_lower_open",
+                    "minecraft:block_light_absorption": 0,
+                    "minecraft:on_interact": {
+                        "event": "lower"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('fk:state') == 'upper_open'",
+                "components": {
+                    "minecraft:geometry": "geometry.trapdoor_open",
+                    "minecraft:block_light_absorption": 0,
+                    "minecraft:on_interact": {
+                        "event": "upper"
+                    },
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            -8,
+                            -16
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "electrified_trapdoor",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:loot": "loot_tables/blocks/sieve.json",
+            "minecraft:destroy_time": 1,
+            "minecraft:block_light_absorption": 0,
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            }
+        },
+        "events": {
+            "lower_open": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "fk:state": "'lower_open'"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "playsound random.door_open @a[r=5] ~ ~ ~ 0.4 1.0"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "upper_open": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "fk:state": "'upper_open'"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "playsound random.door_open @a[r=5] ~ ~ ~ 0.4 1.0"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "lower": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "fk:state": "'lower'"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "playsound random.door_close @a[r=5] ~ ~ ~ 0.4 1.0"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "upper": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "fk:state": "'upper'"
+                        }
+                    },
+                    {
+                        "run_command": {
+                            "command": [
+                                "playsound random.door_close @a[r=5] ~ ~ ~ 0.4 1.0"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "placement_state": {
+                "sequence": [
+                    {
+                        "set_block_property": {
+                            "fk:direction": "(q.cardinal_facing_2d)"
+                        }
+                    },
+                    {
+                        "condition": "q.target_x_rotation <=0",
+                        "trigger": {
+                            "event": "upper"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

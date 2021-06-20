@@ -1,0 +1,24 @@
+{
+	"format_version": "1.8.0",
+	"geometry.skelemite": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 2,
+		"visible_bounds_height": 2.5,
+		"visible_bounds_offset": [0, 0.75, 0],
+		"bones": [
+			{
+				"name": "unknown_bone",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-3, 2, -2], "size": [5, 2, 7], "uv": [0, 0]},
+					{"origin": [-5, 4, -10], "size": [9, 6, 10], "uv": [0, 0]},
+					{"origin": [1, 0, -3], "size": [2, 3, 2], "uv": [0, 0]},
+					{"origin": [-4, 0, -3], "size": [2, 3, 2], "uv": [0, 0]},
+					{"origin": [1, 0, 4], "size": [2, 3, 2], "uv": [0, 0]},
+					{"origin": [-4, 0, 4], "size": [2, 3, 2], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

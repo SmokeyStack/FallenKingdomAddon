@@ -1,0 +1,39 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Fallen Kingdom",
+        "description": "Made By SmokeyStack",
+        "uuid": "f8e21024-d640-492f-b7f7-c2b4eef9f979",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            16,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "data",
+            "uuid": "125ddb05-42d1-43c8-9b76-840a1ce9ac95",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "f2fc35a1-2d55-4eca-9e11-e7fca37ea579",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.grass": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "check": "q.is_alive"
+                        },
+                        {
+                            "spread": "q.is_alive && q.any_tag('grass')"
+                        }
+                    ]
+                },
+                "check": {
+                    "on_entry": [
+                        "/execute @s ~~~ detect ~~~ air 0 tag @s add grass"
+                    ]
+                },
+                "spread": {
+                    "on_entry": [
+                        "/scoreboard objectives add grass dummy grass",
+                        "/scoreboard players random @s grass 0 3",
+                        "/execute @s[scores={grass=0}] ~~~ fill ~-1~-1~ ~-1~-1~ fk:electrified_grass 0 replace dirt",
+                        "/execute @s[scores={grass=1}] ~~~ fill ~1~-1~ ~1~-1~ fk:electrified_grass 0 replace dirt",
+                        "/execute @s[scores={grass=2}] ~~~ fill ~~-1~-1 ~~-1~-1 fk:electrified_grass 0 replace dirt",
+                        "/execute @s[scores={grass=3}] ~~~ fill ~~-1~1 ~~-1~1 fk:electrified_grass 0 replace dirt"
+                    ]
+                }
+            }
+        }
+    }
+}

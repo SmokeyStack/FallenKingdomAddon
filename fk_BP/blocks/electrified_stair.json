@@ -1,0 +1,165 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "fk:electrified_stair",
+            "register_to_creative_menu": true,
+            "properties": {
+                "fk:cardinal": [
+                    2,
+                    3,
+                    4,
+                    5
+                ],
+                "fk:hitbox": [
+                    "lower",
+                    "upper"
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_property('fk:cardinal') == 2",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('fk:cardinal') == 3",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        180,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('fk:cardinal') == 4",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        90,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('fk:cardinal') == 5",
+                "components": {
+                    "minecraft:rotation": [
+                        0,
+                        270,
+                        0
+                    ]
+                }
+            },
+            {
+                "condition": "q.block_property('fk:hitbox') == 'upper'",
+                "components": {
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_property('fk:hitbox') == 'lower'",
+                "components": {
+                    "minecraft:entity_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "electrified_stair"
+                }
+            },
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:geometry": "geometry.stair",
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 3,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#7DF9FF",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:on_player_placing": {
+                "event": "fk:rotate",
+                "target": "self"
+            },
+            "minecraft:on_step_on": {
+                "event": "fk:hit",
+                "target": "self"
+            },
+            "minecraft:on_step_off":{
+                "event": "fk:lower",
+                "target": "self"
+            }
+        },
+        "events": {
+            "fk:rotate": {
+                "set_block_property": {
+                    "fk:cardinal": "(q.cardinal_facing_2d)"
+                }
+            },
+            "fk:hit": {
+                "set_block_property": {
+                    "fk:hitbox": "'upper'"
+                }
+            },
+            "fk:lower":{
+                "set_block_property": {
+                    "fk:hitbox": "'lower'"
+                }
+            }
+        }
+    }
+}

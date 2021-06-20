@@ -1,0 +1,45 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "fk:rod_launcher",
+            "category": "equipment"
+        },
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "equipment"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:icon": {
+                "texture": "rod_launcher"
+            },
+            "minecraft:display_name": {
+                "value": "Rod Launcher"
+            },
+            "minecraft:hand_equipped": true,
+            "minecraft:on_use": {
+                "on_use": {
+                    "condition": "query.get_equipped_item_name('off_hand')=='rod'",
+                    "event": "minecraft:shoot"
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "woodenbow",
+                "duration": 0.5
+            }
+        },
+        "events": {
+            "minecraft:shoot": {
+                "shoot": {
+                    "projectile": "fk:rod",
+                    "launch_power": 1
+                },
+                "run_command": {
+                    "command": [
+                        "clear @s fk:rod 0 1"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "fk:rod",
+            "runtime_identifier": "minecraft:arrow",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "stop": "controller.animation.rod"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "stop": "query.is_on_ground"
+                    }
+                ]
+            }
+        },
+        "component_groups": {
+            "entity:despawn": {
+                "minecraft:despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:timer": {
+                "time": [
+                    15.0,
+                    15.0
+                ],
+                "looping": false,
+                "time_down_event": {
+                    "event": "entity:despawn",
+                    "target": "self"
+                }
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "zombie",
+                    "undead",
+                    "monster",
+                    "mob"
+                ]
+            },
+            "minecraft:break_blocks": {
+                "breakable_blocks": [
+                    "glass",
+                    "glass_pane",
+                    "stained_glass",
+                    "stained_glass_pane",
+                    "standing_sign",
+                    "vine",
+                    "wall_banner",
+                    "wall_sign",
+                    "web",
+                    "wheat"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.1,
+                "height": 0.1
+            },
+            "minecraft:physics": {},
+            "minecraft:projectile": {
+                "on_hit": {
+                    "impact_damage": {
+                        "damage": [
+                            8,
+                            12
+                        ],
+                        "knockback": true,
+                        "semi_random_diff_damage": true,
+                        "destroy_on_hit": true,
+                        "max_critical_damage": 10,
+                        "min_critical_damage": 9,
+                        "power_multiplier": 0.97
+                    },
+                    "stick_in_ground": {
+                        "shake_time": 0.35
+                    },
+                    "arrow_effect": {}
+                },
+                "hit_sound": "bow.hit",
+                "power": 5.0,
+                "gravity": 0.05,
+                "uncertainty_base": 1,
+                "uncertainty_multiplier": 0,
+                "anchor": 1,
+                "should_bounce": true,
+                "offset": [
+                    0,
+                    -0.1,
+                    0
+                ]
+            }
+        },
+        "events": {
+            "entity:despawn": {
+                "add": {
+                    "component_groups": [
+                        "entity:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "fk:electrified_stair_recipe"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#",
+            "##",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "fk:electrified_plank"
+            }
+        },
+        "result": {
+            "item": "fk:electrified_stair",
+            "count": 4
+        }
+    }
+}

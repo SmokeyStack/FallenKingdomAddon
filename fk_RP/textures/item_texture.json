@@ -1,0 +1,42 @@
+{
+	"resource_pack_name": "FallenKingdom",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"copper_fragment": {
+			"textures": "textures/items/copper_fragment"
+		},
+		"pigstep_remix": {
+			"textures": "textures/items/pigstep_remix"
+		},
+		"sieve": {
+			"textures": "textures/items/sieve"
+		},
+		"silk": {
+			"textures": "textures/items/silk"
+		},
+		"mesh": {
+			"textures": "textures/items/mesh"
+		},
+		"trader_talisman": {
+			"textures": [
+				"textures/items/trader_talisman",
+				"textures/items/trader_talisman1",
+				"textures/items/trader_talisman2",
+				"textures/items/trader_talisman3",
+				"textures/items/trader_talisman4",
+				"textures/items/trader_talisman5",
+				"textures/items/trader_talisman6",
+				"textures/items/trader_talisman7",
+				"textures/items/trader_talisman8",
+				"textures/items/trader_talisman9",
+				"textures/items/trader_talisman10"
+			]
+		},
+		"rod_launcher": {
+			"textures": "textures/items/test"
+		},
+		"skelesword": {
+			"textures": "textures/items/skelesword"
+		}
+	}
+}

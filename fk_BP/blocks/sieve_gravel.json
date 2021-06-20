@@ -1,0 +1,120 @@
+{
+   "format_version": "1.16.100",
+   "minecraft:block": {
+      "description": {
+         "identifier": "fk:sieve_gravel",
+         "register_to_creative_menu": false,
+         "properties": {
+            "fk:sieve_stage": [
+               0,
+               1,
+               2,
+               3
+            ]
+         }
+      },
+      "permutations": [
+         {
+            "condition": "query.block_property('fk:sieve_stage') == 1",
+            "components": {
+               "minecraft:material_instances": {
+                  "*": {
+                     "texture": "sieve_gravel1",
+                     "render_method": "alpha_test"
+                  }
+               },
+               "minecraft:geometry": "geometry.sieve1",
+               "minecraft:on_interact": {
+                  "target": "other",
+                  "event": "fk:sift1"
+               }
+            }
+         },
+         {
+            "condition": "query.block_property('fk:sieve_stage') == 2",
+            "components": {
+               "minecraft:material_instances": {
+                  "*": {
+                     "texture": "sieve_gravel2",
+                     "render_method": "alpha_test"
+                  }
+               },
+               "minecraft:geometry": "geometry.sieve2",
+               "minecraft:on_interact": {
+                  "target": "other",
+                  "event": "fk:sift2"
+               }
+            }
+         },
+         {
+            "condition": "query.block_property('fk:sieve_stage') == 3",
+            "components": {
+               "minecraft:material_instances": {
+                  "*": {
+                     "texture": "sieve_gravel3",
+                     "render_method": "alpha_test"
+                  }
+               },
+               "minecraft:geometry": "geometry.sieve3",
+               "minecraft:on_interact": {
+                  "target": "other",
+                  "event": "fk:sift3"
+               }
+            }
+         }
+      ],
+      "components": {
+         "minecraft:material_instances": {
+            "*": {
+               "texture": "sieve_gravel",
+               "render_method": "alpha_test"
+            }
+         },
+         "minecraft:pick_collision": {
+            "origin": [
+               -8,
+               0,
+               -8
+            ],
+            "size": [
+               16,
+               16,
+               16
+            ]
+         },
+         "minecraft:geometry": "geometry.sieve",
+         "minecraft:loot": "loot_tables/blocks/sieve.json",
+         "minecraft:destroy_time": 1,
+         "minecraft:block_light_absorption": 0,
+         "minecraft:on_interact": {
+            "target": "other",
+            "event": "fk:sift"
+         }
+      },
+      "events": {
+         "fk:sift": {
+            "set_block_property": {
+               "fk:sieve_stage": 1
+            }
+         },
+         "fk:sift1": {
+            "set_block_property": {
+               "fk:sieve_stage": 2
+            }
+         },
+         "fk:sift2": {
+            "set_block_property": {
+               "fk:sieve_stage": 3
+            }
+         },
+         "fk:sift3": {
+            "set_block": {
+               "block_type": "fk:sieve_mesh"
+            },
+            "spawn_loot": {
+               "table": "loot_tables/blocks/sieve_gravel.json"
+            }
+         }
+      }
+   }
+}

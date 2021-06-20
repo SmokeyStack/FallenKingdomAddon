@@ -1,0 +1,7 @@
+[
+    {
+        "flipbook_texture": "textures/blocks/electrified_log_sides",
+        "atlas_tile": "electrified_log_sides",
+        "ticks_per_frame": 15
+    }
+]
