@@ -123,7 +123,6 @@
                     "texture": "electrified_stair"
                 }
             },
-            "minecraft:loot": "loot_tables/empty.json",
             "minecraft:geometry": "geometry.stair",
             "minecraft:destroy_time": 1,
             "minecraft:explosion_resistance": 3,

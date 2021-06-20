@@ -81,7 +81,6 @@
                     "texture": "electrified_slab"
                 }
             },
-            "minecraft:loot": "loot_tables/blocks/sieve.json",
             "minecraft:destroy_time": 1,
             "minecraft:block_light_absorption": 0,
             "minecraft:on_player_placing": {

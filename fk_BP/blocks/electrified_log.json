@@ -45,7 +45,6 @@
             }
         ],
         "components": {
-            "minecraft:loot": "loot_tables/blocks/electrified_log.json",
             "minecraft:destroy_time": 3,
             "minecraft:explosion_resistance": 3,
             "minecraft:friction": 0.6,
