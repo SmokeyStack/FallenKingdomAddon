@@ -16,7 +16,7 @@
                         "check": "q.is_alive"
                     },
                     {
-                        "spread": "q.is_alive && q.any_tag('grass')"
+                        "spread": "q.is_alive"
                     }
                 ]
             }
