@@ -6,7 +6,7 @@
             "register_to_creative_menu": true
         },
         "components": {
-            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:loot": "loot_tables/electrified_grass.json",
             "minecraft:destroy_time": 1,
             "minecraft:explosion_resistance": 3,
             "minecraft:friction": 0.6,
