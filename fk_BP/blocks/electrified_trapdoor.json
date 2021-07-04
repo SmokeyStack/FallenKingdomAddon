@@ -141,8 +141,20 @@
                         ],
                         "size": [
                             16,
-                            2,
-                            16
+                            16,
+                            2
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            2
                         ]
                     }
                 }
@@ -158,13 +170,25 @@
                     "minecraft:entity_collision": {
                         "origin": [
                             -8,
-                            -8,
-                            -16
+                            0,
+                            -8
                         ],
                         "size": [
                             16,
-                            2,
-                            16
+                            16,
+                            2
+                        ]
+                    },
+                    "minecraft:pick_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            2
                         ]
                     }
                 }
