@@ -14,6 +14,11 @@
                 "fk:hitbox": [
                     "lower",
                     "upper"
+                ],
+                "fk:corner_state": [
+                    0,
+                    1,
+                    2
                 ]
             }
         },
@@ -115,6 +120,12 @@
                         ]
                     }
                 }
+            },
+            {
+                "condition": "q.block_property('fk:corner_state') == 1",
+                "components": {
+                    "minecraft:geometry": "geometry.stair_corner"
+                }
             }
         ],
         "components": {
@@ -138,12 +149,21 @@
                 "event": "fk:hit",
                 "target": "self"
             },
-            "minecraft:on_step_off":{
+            "minecraft:on_step_off": {
                 "event": "fk:lower",
+                "target": "self"
+            },
+            "minecraft:on_interact": {
+                "event": "fk:corner",
                 "target": "self"
             }
         },
         "events": {
+            "fk:corner": {
+                "set_block_property": {
+                    "fk:corner_state": 1
+                }
+            },
             "fk:rotate": {
                 "set_block_property": {
                     "fk:cardinal": "(q.cardinal_facing_2d)"
@@ -154,7 +174,7 @@
                     "fk:hitbox": "'upper'"
                 }
             },
-            "fk:lower":{
+            "fk:lower": {
                 "set_block_property": {
                     "fk:hitbox": "'lower'"
                 }

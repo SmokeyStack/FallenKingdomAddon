@@ -11,7 +11,8 @@
                     0.0,
                     0.125
                 ],
-                "temperature": 0.8
+                "temperature": 0.8,
+                "blue_spores": true
             },
             "minecraft:overworld_height": {
                 "noise_type": "lowlands"
