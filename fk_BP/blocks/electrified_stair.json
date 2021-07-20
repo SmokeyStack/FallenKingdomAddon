@@ -16,9 +16,8 @@
                     "upper"
                 ],
                 "fk:corner_state": [
-                    0,
-                    1,
-                    2
+                    false,
+                    true
                 ]
             }
         },
@@ -30,7 +29,20 @@
                         0,
                         0,
                         0
-                    ]
+                    ],
+                    "minecraft:ticking": {
+                        "looping": false,
+                        "range": [
+                            0,
+                            0
+                        ],
+                        "on_tick": {
+                            "event": "fk:north",
+                            "target": "self",
+                            "condition": "query.block_property('fk:corner_state') == false"
+                        }
+                    },
+                    "tag:fk:stair_north": {}
                 }
             },
             {
@@ -40,7 +52,20 @@
                         0,
                         180,
                         0
-                    ]
+                    ],
+                    "minecraft:ticking": {
+                        "looping": false,
+                        "range": [
+                            0,
+                            0
+                        ],
+                        "on_tick": {
+                            "event": "fk:south",
+                            "target": "self",
+                            "condition": "query.block_property('fk:corner_state') == false"
+                        }
+                    },
+                    "tag:fk:stair_south": {}
                 }
             },
             {
@@ -50,7 +75,20 @@
                         0,
                         90,
                         0
-                    ]
+                    ],
+                    "minecraft:ticking": {
+                        "looping": false,
+                        "range": [
+                            0,
+                            0
+                        ],
+                        "on_tick": {
+                            "event": "fk:west",
+                            "target": "self",
+                            "condition": "query.block_property('fk:corner_state') == false"
+                        }
+                    },
+                    "tag:fk:stair_west": {}
                 }
             },
             {
@@ -60,7 +98,20 @@
                         0,
                         270,
                         0
-                    ]
+                    ],
+                    "minecraft:ticking": {
+                        "looping": false,
+                        "range": [
+                            0,
+                            0
+                        ],
+                        "on_tick": {
+                            "event": "fk:east",
+                            "target": "self",
+                            "condition": "query.block_property('fk:corner_state') == false"
+                        }
+                    },
+                    "tag:fk:stair_east": {}
                 }
             },
             {
@@ -122,7 +173,7 @@
                 }
             },
             {
-                "condition": "q.block_property('fk:corner_state') == 1",
+                "condition": "q.block_property('fk:corner_state') == true",
                 "components": {
                     "minecraft:geometry": "geometry.stair_corner"
                 }
@@ -152,16 +203,12 @@
             "minecraft:on_step_off": {
                 "event": "fk:lower",
                 "target": "self"
-            },
-            "minecraft:on_interact": {
-                "event": "fk:corner",
-                "target": "self"
             }
         },
         "events": {
             "fk:corner": {
                 "set_block_property": {
-                    "fk:corner_state": 1
+                    "fk:corner_state": true
                 }
             },
             "fk:rotate": {
@@ -177,6 +224,35 @@
             "fk:lower": {
                 "set_block_property": {
                     "fk:hitbox": "'lower'"
+                }
+            },
+            "fk:north": {
+                "run_command": {
+                    "command": [
+                        "summon fk:stair ~-1~~"
+                    ]
+                }
+            },
+            "fk:east": {
+                "run_command": {
+                    "command": [
+                        "summon fk:stair ~~~-1"
+                    ]
+                }
+            },
+            "fk:south": {
+                "run_command": {
+                    "command": [
+                        "summon fk:stair ~1~~",
+                        "summon fk:stair ~~~"
+                    ]
+                }
+            },
+            "fk:west": {
+                "run_command": {
+                    "command": [
+                        "summon fk:stair ~~~1"
+                    ]
                 }
             }
         }

@@ -1,0 +1,82 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "fk:stair",
+            "is_summonable": true,
+            "is_spawnable": true,
+            "is_experimental": false,
+            "animations": {
+                "west": "controller.animation.stair",
+                "north": "controller.animation.stair",
+                "east": "controller.animation.stair",
+                "south": "controller.animation.stair"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "west": "query.relative_block_has_any_tag(1,0,0,'fk:stair_north') && query.relative_block_has_any_tag(0,0,0,'fk:stair_west')"
+                    },
+                    {
+                        "north": "query.relative_block_has_any_tag(0,0,1,'fk:stair_east') && query.relative_block_has_any_tag(0,0,0,'fk:stair_north')"
+                    },
+                    {
+                        "east": "query.relative_block_has_any_tag(-1,0,0,'fk:stair_south') && query.relative_block_has_any_tag(0,0,0,'fk:stair_east')"
+                    },
+                    {
+                        "south": "query.relative_block_has_any_tag(0,0,-1,'fk:stair_west') && query.relative_block_has_any_tag(0,0,0,'fk:stair_south')"
+                    }
+                ]
+            }
+        },
+        "component_groups": {
+            "decay": {
+                "minecraft:instant_despawn": {}
+            }
+        },
+        "components": {
+            "minecraft:custom_hit_test": {
+                "hitboxes": [
+                    {
+                        "pivot": [
+                            0,
+                            100,
+                            0
+                        ],
+                        "width": 0,
+                        "height": 0
+                    }
+                ]
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "deals_damage": false
+                }
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:collision_box": {
+                "width": 0.0001,
+                "height": 0.0001
+            },
+            "minecraft:timer": {
+                "looping": false,
+                "time": 1,
+                "time_down_event": {
+                    "event": "decay"
+                }
+            }
+        },
+        "events": {
+            "decay": {
+                "add": {
+                    "component_groups": [
+                        "decay"
+                    ]
+                }
+            }
+        }
+    }
+}
