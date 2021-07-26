@@ -175,7 +175,12 @@
             {
                 "condition": "q.block_property('fk:corner_state') == true",
                 "components": {
-                    "minecraft:geometry": "geometry.stair_corner"
+                    "minecraft:geometry": "geometry.stair_corner",
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "electrified_stair_corner"
+                        }
+                    }
                 }
             }
         ],

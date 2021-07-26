@@ -52,6 +52,9 @@
         "electrified_stair": {
             "textures": "textures/blocks/electrified_stair"
         },
+        "electrified_stair_corner": {
+            "textures": "textures/blocks/electrified_stair_corner"
+        },
         "electrified_slab": {
             "textures": "textures/blocks/electrified_slab"
         }

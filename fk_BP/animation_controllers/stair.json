@@ -21,25 +21,21 @@
                 },
                 "west": {
                     "on_entry": [
-                        "/say west",
                         "/structure load electrified_west ~~~"
                     ]
                 },
                 "north": {
                     "on_entry": [
-                        "/say north",
                         "/structure load electrified_north ~~~"
                     ]
                 },
                 "east": {
                     "on_entry": [
-                        "/say east",
                         "/structure load electrified_east ~~~"
                     ]
                 },
                 "south": {
                     "on_entry": [
-                        "/say south",
                         "/structure load electrified_south ~~~"
                     ]
                 }
