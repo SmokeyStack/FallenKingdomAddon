@@ -2,7 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:item": {
         "description": {
-            "identifier": "fk:skelesword",
+            "identifier": "fk:legacy_skelesword",
             "category": "equipment"
         },
         "components": {
@@ -33,6 +33,24 @@
                         "repair_amount": 50
                     }
                 ]
+            },
+            "minecraft:render_offsets": {
+                "main_hand": {
+                    "first_person": {
+                        "position": [
+                            0,
+                            0,
+                            0
+                        ]
+                    },
+                    "third_person": {
+                        "position": [
+                            -0.25, //Left/right
+                            2, //Forward
+                            0.075 //Diagnol?
+                        ]
+                    }
+                }
             }
         }
     }

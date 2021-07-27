@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.skelesword",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "root_x",
+					"parent": "root",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "root_y",
+					"parent": "root_x",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "root_z",
+					"parent": "root_y",
+					"pivot": [0, 8, 0],
+					"cubes": [{"origin": [-1, 0, -16], "size": [1, 32, 32], "uv": [0, 0]}]
+				}
+			]
+		}
+	]
+}
