@@ -21,7 +21,7 @@
                 "sea_floor_depth": 7,
                 "sea_floor_material": "minecraft:gravel",
                 "foundation_material": "minecraft:stone",
-                "mid_material": "minecraft:dirt",
+                "mid_material": "fk:electrified_dirt",
                 "top_material": "fk:electrified_grass",
                 "sea_material": "minecraft:water"
             },
