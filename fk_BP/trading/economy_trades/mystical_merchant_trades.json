@@ -1448,7 +1448,7 @@
 							],
 							"gives": [
 								{
-									"item": "minecraft:flower_banner_patter",
+									"item": "minecraft:flower_banner_pattern",
 									"quantity": 1
 								}
 							]
