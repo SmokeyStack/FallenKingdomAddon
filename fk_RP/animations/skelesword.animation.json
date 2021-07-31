@@ -1,26 +1,20 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.skelesword.thirdperson_main_hand": {
-			"loop": true,
-			"bones": {
-				"root": {
-					"rotation": [45, 0, 0],
-					"position": [-5.5, 2, -2]
-				}
-			}
-		},
 		"animation.skelesword.firstperson_main_hand": {
 			"loop": true,
 			"bones": {
-				"root": {
-					"rotation": [-90, -60, 40],
-					"position": [4, 10, 4],
-					"scale": 1.5
-				},
-				"root_x": {
-					"position": [3, 6, 0],
-					"rotation": [-0.1, -0.1, -0.1]
+				"rightitem": {
+					"position": [
+						"c.is_first_person ? -5.5 : 0.5",
+						"c.is_first_person ? -3.0 : -2.5",
+						"c.is_first_person ? -3.0 : 1.0"
+					],
+					"rotation": [
+						"c.is_first_person ? 38.0 : 0.0",
+						"c.is_first_person ? -120.0 : 0.0",
+						"c.is_first_person ? -63.0 : 0.0"
+					]
 				}
 			}
 		}
