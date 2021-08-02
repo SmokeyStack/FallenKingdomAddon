@@ -7,7 +7,7 @@
           "default": "entity"
         },
         "textures": {
-          "default": "textures/entity/fallen_temp"
+          "default": "textures/entity/fallen_hero"
         },
         "geometry": {
           "default": "geometry.mystical_merchant"

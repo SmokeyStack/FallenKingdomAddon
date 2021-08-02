@@ -102,7 +102,7 @@
                 ]
             },
             "minecraft:equipment": {
-                "table": "loot_tables/entities/skeleguard_gear.json"
+                "table": "loot_tables/entities/fallen_hero_gear.json"
             },
             "minecraft:movement": {
                 "value": 0.25
