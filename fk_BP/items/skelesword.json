@@ -24,7 +24,7 @@
             },
             "minecraft:weapon": {},
             "minecraft:display_name": {
-                "value": "My Custom Sword"
+                "value": "SkeleSword"
             },
             "minecraft:repairable": {
                 "repair_items": [
