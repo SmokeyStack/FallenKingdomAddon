@@ -37,6 +37,9 @@
 		},
 		"skelesword": {
 			"textures": "textures/items/skelesword"
+		},
+		"deepstone_sword": {
+			"textures": "textures/items/deepstone_sword"
 		}
 	}
 }
