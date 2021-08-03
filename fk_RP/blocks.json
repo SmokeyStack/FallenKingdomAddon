@@ -68,5 +68,17 @@
   "fk:electrified_dirt": {
     "sound": "dirt",
     "textures": "electrified_grass_bottom"
+  },
+  "fk:skelestone": {
+    "sound": "stone",
+    "textures": "skelestone"
+  },
+  "fk:hard_skelestone": {
+    "sound": "stone",
+    "textures": "hard_skelestone"
+  },
+  "fk:skeleguard_spawn": {
+    "sound": "stone",
+    "textures": "hard_skelestone"
   }
 }

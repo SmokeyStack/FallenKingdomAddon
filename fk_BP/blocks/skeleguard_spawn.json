@@ -1,0 +1,44 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "fk:skeleguard_spawn",
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:destroy_time": 100,
+            "minecraft:explosion_resistance": 3,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#7DF9FF",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:on_player_destroyed": {
+                "event": "destroy",
+                "target": "self"
+            },
+            "minecraft:random_ticking": {
+                "on_tick": {
+                    "event": "spawn",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "destroy": {
+                "run_command": {
+                    "command": [
+                        "kill @e[type=item,r=1]"
+                    ]
+                }
+            },
+            "spawn": {
+                "run_command": {
+                    "command": [
+                        "summon fk:skeleguard ~~1~"
+                    ]
+                }
+            }
+        }
+    }
+}

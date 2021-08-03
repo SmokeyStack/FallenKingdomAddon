@@ -57,6 +57,12 @@
         },
         "electrified_slab": {
             "textures": "textures/blocks/electrified_slab"
+        },
+        "skelestone": {
+            "textures": "textures/blocks/skelestone"
+        },
+        "hard_skelestone": {
+            "textures": "textures/blocks/skele1"
         }
     }
 }
