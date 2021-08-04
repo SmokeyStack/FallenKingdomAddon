@@ -26,17 +26,6 @@
                 "sea_material": "minecraft:water"
             },
             "minecraft:overworld_generation_rules": {
-                "hills_transformation": [
-                    [
-                        "forest_hills",
-                        1
-                    ],
-                    [
-                        "forest",
-                        2
-                    ]
-                ],
-                "mutate_transformation": "sunflower_plains",
                 "generate_for_climates": [
                     [
                         "medium",

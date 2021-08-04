@@ -2,8 +2,8 @@
     "format_version": "1.13.0",
     "minecraft:feature_rules": {
         "description": {
-            "identifier": "fk:electrified_tree_feature",
-            "places_feature": "fk:electrified_tree"
+            "identifier": "fk:skelekeep_feature",
+            "places_feature": "fk:skelekeep"
         },
         "conditions": {
             "placement_pass": "surface_pass",
@@ -14,8 +14,8 @@
             }
         },
         "distribution": {
-            "iterations": 2,
-            "scatter_chance": 10,
+            "iterations": 1,
+            "scatter_chance": 1,
             "x": {
                 "distribution": "uniform",
                 "extent": [
