@@ -15,7 +15,8 @@
 					"fk:electrified_grass"
 				]
 			},
-			"unburied": {}
+			"unburied": {},
+			"grounded": {}
 		},
 		"adjustment_radius": 4
     }
