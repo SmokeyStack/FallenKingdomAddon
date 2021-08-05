@@ -63,6 +63,12 @@
         },
         "hard_skelestone": {
             "textures": "textures/blocks/skele1"
+        },
+        "deepstone": {
+            "textures": "textures/blocks/deepstone"
+        },
+        "grimslate": {
+            "textures": "textures/blocks/grimslate"
         }
     }
 }

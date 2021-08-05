@@ -80,5 +80,13 @@
   "fk:skeleguard_spawn": {
     "sound": "stone",
     "textures": "hard_skelestone"
+  },
+  "fk:deepstone": {
+    "sound": "stone",
+    "textures": "deepstone"
+  },
+  "fk:grimslate": {
+    "sound": "stone",
+    "textures": "grimslate"
   }
 }
