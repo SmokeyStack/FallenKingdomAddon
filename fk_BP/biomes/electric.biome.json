@@ -29,15 +29,15 @@
                 "generate_for_climates": [
                     [
                         "medium",
-                        3
+                        300
                     ],
                     [
                         "warm",
-                        1
+                        100
                     ],
                     [
                         "cold",
-                        1
+                        100
                     ]
                 ]
             },
