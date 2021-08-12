@@ -24,7 +24,6 @@
                16
             ]
          },
-         "minecraft:display_name": "sieve",
          "minecraft:geometry": "geometry.sieve",
          "minecraft:loot": "loot_tables/blocks/sieve.json",
          "minecraft:destroy_time": 1,

@@ -1,6 +1,16 @@
 entity.fk:mystical_merchant=Mystical Merchant
 item.spawn_egg.entity.fk:mystical_merchant.name=Mystical Merchant
-item.fk:pigstep_remix.desc=Pigstep Remix
 tile.sieve.name=Sieve
 tile.fk:electrified_grass.name=Electrified Grass
 tile.fk:electrified_leaves.name=Electrified Leaves
+tile.fk:deepstone.name=Deepstone
+tile.fk:electrified_dirt.name=Electrified Dirt
+tile.fk:electrified_log.name=Electrified Log
+tile.fk:electrified_plank.name=Electrified Plank
+tile.fk:electrified_sapling.name=Electrified Sapling
+tile.fk:electrified_slab.name=Electrified Slab
+tile.fk:electrified_stair.name=Electrified Stair
+tile.fk:electrified_trapdoor.name=Electrified Trapdoor
+tile.fk:grimslate.name=Grimslate
+tile.fk:hard_skelestone.name=Hard Skelestone
+tile.fk:skelestone.name=Skelestone
