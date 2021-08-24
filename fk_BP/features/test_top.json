@@ -2,10 +2,10 @@
     "format_version": "1.13.0",
     "minecraft:single_block_feature": {
         "description": {
-            "identifier": "fk:test"
+            "identifier": "fk:test_top"
         },
-        "places_block": "minecraft:bone_block",
-        "enforce_placement_rules": true,
+        "places_block": "minecraft:diamond_block",
+        "enforce_placement_rules": false,
         "enforce_survivability_rules": false,
         "may_replace": [
             "minecraft:air"

@@ -3,7 +3,7 @@
     "minecraft:feature_rules": {
       "description": {
         "identifier": "fk:test_feature",
-        "places_feature": "fk:test"
+        "places_feature": "fk:test_patch"
       },
       "conditions": {
         "placement_pass": "surface_pass",
@@ -17,7 +17,7 @@
       },
       "distribution": {
         "iterations": 1,
-        "scatter_chance": 2,
+        "scatter_chance": 10,
         "x": {
           "distribution": "uniform",
           "extent": [ 0, 16 ]

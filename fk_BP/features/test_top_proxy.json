@@ -1,0 +1,17 @@
+{
+    "format_version": "1.13.0",
+    
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "fk:test_top_proxy"
+        },
+        
+        "places_feature": "fk:test_top",
+        
+        "iterations": 1,
+        
+        "x": 0,
+        "z": 0,
+        "y": 1
+    }
+}
