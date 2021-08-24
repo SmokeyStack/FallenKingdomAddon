@@ -1,0 +1,36 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "fk:campsite_feature",
+            "places_feature": "fk:campsite_patch"
+        },
+        "conditions": {
+            "placement_pass": "surface_pass",
+            "minecraft:biome_filter": {
+                "test": "has_biome_tag",
+                "operator": "==",
+                "value": "overworld"
+            }
+        },
+        "distribution": {
+            "iterations": 1,
+            "scatter_chance": 100,
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            },
+            "y": "query.above_top_solid(v.worldx, v.worldz) - 0",
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    16
+                ]
+            }
+        }
+    }
+}
