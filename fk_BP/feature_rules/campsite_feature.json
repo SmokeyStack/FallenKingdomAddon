@@ -15,7 +15,10 @@
         },
         "distribution": {
             "iterations": 1,
-            "scatter_chance": 100,
+            "scatter_chance": {
+                "numerator": 1,
+                "denominator": 100
+            },
             "x": {
                 "distribution": "uniform",
                 "extent": [

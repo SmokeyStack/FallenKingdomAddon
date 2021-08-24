@@ -5,7 +5,7 @@
             "identifier": "fk:campsite"
         },
         "structure_name": "mystructure:campsite",
-        "facing_direction": "random",
+        "facing_direction": "south",
 		"constraints": {
 			"block_intersection": {
 				"block_allowlist": [

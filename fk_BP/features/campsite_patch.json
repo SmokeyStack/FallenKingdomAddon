@@ -8,7 +8,7 @@
 
 		"features": [
 			"fk:campsite",
-			"fk:dummy"
+			"fk:dummy_proxy"
 		],
 		"early_out": "first_failure"
 	}
