@@ -7,7 +7,7 @@
 		},
 
 		"features": [
-			"fk:test",
+			"fk:test_proxy",
 			"fk:test_top_proxy"
 		],
 		"early_out": "first_failure"

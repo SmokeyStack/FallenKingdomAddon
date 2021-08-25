@@ -1,0 +1,19 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "fk:test_proxy"
+        },
+        "places_feature": "fk:test",
+        "iterations": "t.height = math.random_integer(1, 5); return t.height;",
+        "x": 0,
+        "z": 0,
+        "y": {
+            "distribution": "fixed_grid",
+            "extent": [
+                0,
+                "t.height - 1"
+            ]
+        }
+    }
+}
