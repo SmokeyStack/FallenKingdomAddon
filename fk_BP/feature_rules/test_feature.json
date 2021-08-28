@@ -3,7 +3,7 @@
   "minecraft:feature_rules": {
     "description": {
       "identifier": "fk:test_feature",
-      "places_feature": "fk:test_patch"
+      "places_feature": "fk:test_scatter"
     },
     "conditions": {
       "placement_pass": "surface_pass",
@@ -11,7 +11,7 @@
         {
           "test": "has_biome_tag",
           "operator": "==",
-          "value": "electric"
+          "value": "overworld"
         }
       ]
     },

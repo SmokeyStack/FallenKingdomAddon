@@ -5,8 +5,14 @@
             "identifier": "fk:test_top_proxy"
         },
         "places_feature": "fk:test_top",
-        "iterations": 1,
-        "x": 1,
+        "iterations": "t.top_height = math.random_integer(2, 6); return t.top_height;",
+        "x": {
+            "distribution": "fixed_grid",
+            "extent": [
+                0,
+                "t.top_height + 1"
+            ]
+        },
         "z": 0,
         "y": "t.height"
     }

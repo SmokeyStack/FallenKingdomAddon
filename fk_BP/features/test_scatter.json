@@ -1,0 +1,20 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:scatter_feature": {
+        "description": {
+            "identifier": "fk:test_scatter"
+        },
+        "places_feature": "fk:test_patch",
+        "iterations": 7,
+        "x": 0,
+        "z": {
+            "distribution": "jittered_grid",
+            "extent": [
+                0,
+                14
+            ],
+            "step_size": 2
+        },
+        "y": 0
+    }
+}

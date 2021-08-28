@@ -8,7 +8,8 @@
 
 		"features": [
 			"fk:test_proxy",
-			"fk:test_top_proxy"
+			"fk:test_top_proxy",
+			"fk:test_air_proxy"
 		],
 		"early_out": "first_failure"
 	}

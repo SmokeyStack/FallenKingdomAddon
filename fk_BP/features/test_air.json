@@ -2,18 +2,13 @@
     "format_version": "1.13.0",
     "minecraft:single_block_feature": {
         "description": {
-            "identifier": "fk:test_top"
+            "identifier": "fk:test_air"
         },
-        "places_block": {
-            "name": "minecraft:bone_block",
-            "states": {
-                "pillar_axis": "x"
-            }
-        },
+        "places_block": "minecraft:air",
         "enforce_placement_rules": false,
         "enforce_survivability_rules": false,
         "may_replace": [
-            "minecraft:air"
+            "minecraft:bone_block"
         ]
     }
 }
