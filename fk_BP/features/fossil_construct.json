@@ -2,9 +2,9 @@
     "format_version": "1.13.0",
     "minecraft:scatter_feature": {
         "description": {
-            "identifier": "fk:test_scatter"
+            "identifier": "fk:fossil_construct"
         },
-        "places_feature": "fk:test_patch",
+        "places_feature": "fk:fossil_slice",
         "iterations": 7,
         "x": 0,
         "z": {

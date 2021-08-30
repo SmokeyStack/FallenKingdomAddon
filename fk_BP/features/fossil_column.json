@@ -2,7 +2,7 @@
     "format_version": "1.13.0",
     "minecraft:single_block_feature": {
         "description": {
-            "identifier": "fk:test"
+            "identifier": "fk:fossil_column"
         },
         "places_block": "minecraft:bone_block",
         "enforce_placement_rules": false,

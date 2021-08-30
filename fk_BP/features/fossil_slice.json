@@ -3,13 +3,13 @@
 
 	"minecraft:aggregate_feature": {
 		"description": {
-			"identifier": "fk:test_patch"
+			"identifier": "fk:fossil_slice"
 		},
 
 		"features": [
-			"fk:test_proxy",
-			"fk:test_top_proxy",
-			"fk:test_air_proxy"
+			"fk:fossil_column_proxy",
+			"fk:fossil_beam_proxy",
+			"fk:fossil_air_proxy"
 		],
 		"early_out": "first_failure"
 	}

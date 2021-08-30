@@ -2,9 +2,9 @@
     "format_version": "1.13.0",
     "minecraft:scatter_feature": {
         "description": {
-            "identifier": "fk:test_top_proxy"
+            "identifier": "fk:fossil_beam_proxy"
         },
-        "places_feature": "fk:test_top",
+        "places_feature": "fk:fossil_beam",
         "iterations": "t.top_height = math.random_integer(2, 6); return t.top_height;",
         "x": {
             "distribution": "fixed_grid",

@@ -2,9 +2,9 @@
     "format_version": "1.13.0",
     "minecraft:scatter_feature": {
         "description": {
-            "identifier": "fk:test_air_proxy"
+            "identifier": "fk:fossil_air_proxy"
         },
-        "places_feature": "fk:test_air",
+        "places_feature": "fk:fossil_air",
         "iterations": 1,
         "x": 0,
         "z": 0,
