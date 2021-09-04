@@ -3,7 +3,7 @@
     "minecraft:feature_rules": {
         "description": {
             "identifier": "fk:skelekeep_feature",
-            "places_feature": "fk:skelekeep"
+            "places_feature": "fk:skelekeep_random"
         },
         "conditions": {
             "placement_pass": "surface_pass",

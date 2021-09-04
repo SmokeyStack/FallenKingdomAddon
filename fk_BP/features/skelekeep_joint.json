@@ -2,9 +2,9 @@
     "format_version": "1.13.0",
     "minecraft:structure_template_feature": {
         "description": {
-            "identifier": "fk:skelekeep"
+            "identifier": "fk:skelekeep_joint"
         },
-        "structure_name": "mystructure:skelekeep",
+        "structure_name": "mystructure:skelekeep_joint",
         "facing_direction": "random",
 		"constraints": {
 			"block_intersection": {
@@ -15,9 +15,7 @@
 					"fk:electrified_grass",
 					"fk:electrified_log"
 				]
-			},
-			"unburied": {},
-			"grounded": {}
+			}
 		},
 		"adjustment_radius": 4
     }
