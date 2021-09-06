@@ -1,0 +1,41 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "fk:skelekeep",
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/empty.json",
+            "minecraft:destroy_time": 100,
+            "minecraft:explosion_resistance": 3,
+            "minecraft:friction": 0.6,
+            "minecraft:map_color": "#7DF9FF",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 0,
+            "minecraft:ticking": {
+                "looping": true,
+                "range": [
+                    1,
+                    1
+                ],
+                "on_tick": {
+                    "event": "spawn",
+                    "target": "self"
+                }
+            }
+        },
+        "events": {
+            "spawn": {
+                "run_command": {
+                    "command": [
+                        "structure load skelekeep_joint_1 ~16~~",
+                        "structure load skelekeep_joint_2 ~~~16",
+                        "structure load skelekeep_joint_3 ~16~~16",
+                        "setblock ~~~ air"
+                    ]
+                }
+            }
+        }
+    }
+}

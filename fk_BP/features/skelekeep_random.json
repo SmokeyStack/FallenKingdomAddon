@@ -6,7 +6,7 @@
         },
         "features":[
             ["fk:skelekeep", 3],
-            ["fk:skelekeep_joint", 2]
+            ["fk:skelekeep_joint_random", 2]
         ]
     }
 }

@@ -2,9 +2,9 @@
     "format_version": "1.13.0",
     "minecraft:structure_template_feature": {
         "description": {
-            "identifier": "fk:skelekeep_joint"
+            "identifier": "fk:skelekeep_joint_2"
         },
-        "structure_name": "mystructure:skelekeep_joint",
+        "structure_name": "mystructure:skelekeep_joint_2",
         "facing_direction": "south",
 		"constraints": {
 			"block_intersection": {

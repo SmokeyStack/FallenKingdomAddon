@@ -6,7 +6,7 @@
             "places_feature": "fk:campsite_patch"
         },
         "conditions": {
-            "placement_pass": "surface_pass",
+            "placement_pass": "before_surface_pass",
             "minecraft:biome_filter": {
                 "test": "has_biome_tag",
                 "operator": "==",
