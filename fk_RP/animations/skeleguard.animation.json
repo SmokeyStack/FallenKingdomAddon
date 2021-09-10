@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.skeleguard.move": {
+			"loop": true,
+			"bones": {
+				"rightleg": {
+					"rotation": ["variable.tcos0 * -1.4", 0, 0]
+				},
+				"leftleg": {
+					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				},
+                "rightarm": {
+					"rotation": ["variable.tcos0 * -1.4", 0, 0]
+				},
+				"leftarm": {
+					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				}
+			}
+		}
+	}
+}

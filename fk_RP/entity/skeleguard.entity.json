@@ -1,15 +1,10 @@
 {
-  "format_version": "1.8.0",
+  "format_version": "1.16.0",
   "minecraft:client_entity": {
     "description": {
       "identifier": "fk:skeleguard",
-      "min_engine_version": "1.8.0",
       "materials": {
-        "default": "npc",
-        "open": "npc",
-        "aa12": "npc",
-        "glint": "drowned",
-        "glint_hand": "charged_creeper"
+        "default": "entity"
       },
       "textures": {
         "default": "textures/entity/skeleguard"
@@ -17,58 +12,27 @@
       "geometry": {
         "default": "geometry.skeleguard"
       },
+      "animations": {
+        "walk": "animation.skeleguard.move"
+      },
       "scripts": {
         "pre_animation": [
-          "variable.bite_anim_duration = 1.67f;",
-          "variable.bite_neck_length = 1;",
-          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
-          "variable.tcos1 = -variable.tcos0;",
-          "variable.attack_body_rot_y = Math.sin(Math.sqrt(variable.attack_time) * 360.0) * 11.46;",
-          "variable.cos_attack_body_rot_y = Math.cos(variable.attack_body_rot_y);",
-          "variable.sin_attack_body_rot_y = Math.sin(variable.attack_body_rot_y);",
-          "variable.internal_swim_pos = Math.mod(query.modified_distance_moved, 26.0);",
-          "variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
-          "variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
-          "variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
-          "variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ],
+        "animate": [
+          {
+            "walk": "query.modified_move_speed"
+          }
         ]
       },
-      "animations": {
-        "mzombie_general": "animation.mzombie.general",
-        "mzombie_big_head": "animation.mzombie.big_head",
-        "mzombie_smash": "animation.mzombie.smash",
-        "mzombie_general_2": "animation.mzombie.general_2",
-        "look_at_target": "animation.mzombie.look_at_target",
-        "move": "animation.mzombie.move",
-        "move_smash": "animation.mzombie.move_smash",
-        "look_at_target_head": "animation.mzombie.look_at_target_head",
-        "roaring": "animation.mzombie.casting",
-        "stunned": "animation.mzombie.stunned_death",
-        "casting": "animation.mzombie.raise",
-        "attack_bare_hand": "animation.mzombie.attack_bare_hand"
-      },
-      "animation_controllers": [
-        {
-          "mzombie_baby_big_head": "controller.animation.mzombie.baby_big_head"
-        },
-        {
-          "general": "controller.animation.mzombie.general"
-        },
-        {
-          "move": "controller.animation.mzombie.move"
-        },
-        {
-          "zombie_attack_bare_hand": "controller.animation.mzombie.attack_bare_hand"
-        }
-      ],
       "render_controllers": [
         "controller.render.skeleton"
       ],
+      "enable_attachables": true,
       "spawn_egg": {
-        "texture": "spawn_egg",
-        "texture_index": 4
-      },
-      "enable_attachables": true
+        "base_color": "#949493",
+        "overlay_color": "#651818"
+      }
     }
   }
 }
