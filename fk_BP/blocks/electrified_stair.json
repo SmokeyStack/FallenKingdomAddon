@@ -16,8 +16,9 @@
                     "upper"
                 ],
                 "fk:corner_state": [
-                    false,
-                    true
+                    "normal",
+                    "base",
+                    "corner"
                 ]
             }
         },
@@ -31,15 +32,15 @@
                         0
                     ],
                     "minecraft:ticking": {
-                        "looping": false,
+                        "looping": true,
                         "range": [
                             0,
                             0
                         ],
                         "on_tick": {
-                            "event": "fk:north",
+                            "event": "fk:corner",
                             "target": "self",
-                            "condition": "query.block_property('fk:corner_state') == false"
+                            "condition": "query.block_neighbor_has_any_tag(0,0,1,'fk:stair_east') && query.block_neighbor_has_any_tag(0,0,0,'fk:stair_north')"
                         }
                     },
                     "tag:fk:stair_north": {}
@@ -54,15 +55,15 @@
                         0
                     ],
                     "minecraft:ticking": {
-                        "looping": false,
+                        "looping": true,
                         "range": [
                             0,
                             0
                         ],
                         "on_tick": {
-                            "event": "fk:south",
+                            "event": "fk:corner",
                             "target": "self",
-                            "condition": "query.block_property('fk:corner_state') == false"
+                            "condition": "query.block_neighbor_has_any_tag(0,0,-1,'fk:stair_west') && query.block_neighbor_has_any_tag(0,0,0,'fk:stair_south')"
                         }
                     },
                     "tag:fk:stair_south": {}
@@ -77,15 +78,15 @@
                         0
                     ],
                     "minecraft:ticking": {
-                        "looping": false,
+                        "looping": true,
                         "range": [
                             0,
                             0
                         ],
                         "on_tick": {
-                            "event": "fk:west",
+                            "event": "fk:corner",
                             "target": "self",
-                            "condition": "query.block_property('fk:corner_state') == false"
+                            "condition": "query.block_neighbor_has_any_tag(1,0,0,'fk:stair_north') && query.block_neighbor_has_any_tag(0,0,0,'fk:stair_west')"
                         }
                     },
                     "tag:fk:stair_west": {}
@@ -100,15 +101,15 @@
                         0
                     ],
                     "minecraft:ticking": {
-                        "looping": false,
+                        "looping": true,
                         "range": [
                             0,
                             0
                         ],
                         "on_tick": {
-                            "event": "fk:east",
+                            "event": "fk:corner",
                             "target": "self",
-                            "condition": "query.block_property('fk:corner_state') == false"
+                            "condition": "query.block_neighbor_has_any_tag(-1,0,0,'fk:stair_south') && query.block_neighbor_has_any_tag(0,0,0,'fk:stair_east')"
                         }
                     },
                     "tag:fk:stair_east": {}
@@ -171,17 +172,6 @@
                         ]
                     }
                 }
-            },
-            {
-                "condition": "q.block_property('fk:corner_state') == true",
-                "components": {
-                    "minecraft:geometry": "geometry.stair_corner",
-                    "minecraft:material_instances": {
-                        "*": {
-                            "texture": "electrified_stair_corner"
-                        }
-                    }
-                }
             }
         ],
         "components": {
@@ -197,6 +187,13 @@
             "minecraft:map_color": "#7DF9FF",
             "minecraft:block_light_absorption": 0,
             "minecraft:block_light_emission": 0,
+            "minecraft:part_visibility": {
+                "rules": {
+                    "normal": "query.block_property('fk:corner_state') == 'normal' || 'corner'",
+                    "base": "query.block_property('fk:corner_state') == 'base' || 'normal' || 'corner'",
+                    "corner": "query.block_property('fk:corner_state') == 'corner'"
+                }
+            },
             "minecraft:on_player_placing": {
                 "event": "fk:rotate",
                 "target": "self"
@@ -213,7 +210,7 @@
         "events": {
             "fk:corner": {
                 "set_block_property": {
-                    "fk:corner_state": true
+                    "fk:corner_state": "'corner'"
                 }
             },
             "fk:rotate": {
@@ -229,35 +226,6 @@
             "fk:lower": {
                 "set_block_property": {
                     "fk:hitbox": "'lower'"
-                }
-            },
-            "fk:north": {
-                "run_command": {
-                    "command": [
-                        "summon fk:stair ~-1~~"
-                    ]
-                }
-            },
-            "fk:east": {
-                "run_command": {
-                    "command": [
-                        "summon fk:stair ~~~-1"
-                    ]
-                }
-            },
-            "fk:south": {
-                "run_command": {
-                    "command": [
-                        "summon fk:stair ~1~~",
-                        "summon fk:stair ~~~"
-                    ]
-                }
-            },
-            "fk:west": {
-                "run_command": {
-                    "command": [
-                        "summon fk:stair ~~~1"
-                    ]
                 }
             }
         }

@@ -12,11 +12,25 @@
 			},
 			"bones": [
 				{
-					"name": "bone",
+					"name": "base",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{"origin": [-8, 0, -8], "size": [16, 8, 16], "uv": [0, 0]},
-						{"origin": [-8, 8, -8], "size": [16, 8, 8], "uv": [0, 24]}
+						{"origin": [0, 8, -8], "size": [8, 8, 8], "uv": [0, 40]}
+					]
+				},
+				{
+					"name": "normal",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 8, -8], "size": [8, 8, 8], "uv": [24, 32]}
+					]
+				},
+				{
+					"name": "corner",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-8, 8, 0], "size": [8, 8, 8], "uv": [0, 24]}
 					]
 				}
 			]
