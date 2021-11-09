@@ -8,7 +8,8 @@
         "components": {
             "minecraft:material_instances": {
                 "*": {
-                    "render_method": "alpha_test"
+                    "render_method": "alpha_test",
+                    "texture": "electrified_leaves"
                 }
             },
             "minecraft:loot": "loot_tables/empty.json",
@@ -18,6 +19,11 @@
             "minecraft:map_color": "#7DF9FF",
             "minecraft:block_light_absorption": 0,
             "minecraft:block_light_emission": 0.5,
+            "minecraft:unit_cube": {},
+            "minecraft:creative_category": {
+                "category": "nature",
+                "group": "itemGroup.name.leaves"
+            },
             "minecraft:on_player_destroyed": {
                 "event": "fk:shock"
             },

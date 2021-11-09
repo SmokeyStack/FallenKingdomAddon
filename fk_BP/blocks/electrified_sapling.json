@@ -80,6 +80,10 @@
                 "flame_odds": 1,
                 "burn_odds": 1
             },
+            "minecraft:creative_category": {
+                "category": "nature",
+                "group": "itemGroup.name.sapling"
+            },
             "minecraft:block_light_emission": 0.3,
             "minecraft:block_light_absorption": 0,
             "minecraft:on_interact": {

@@ -11,7 +11,11 @@
             "minecraft:friction": 0.6,
             "minecraft:map_color": "#7DF9FF",
             "minecraft:block_light_absorption": 0,
-            "minecraft:block_light_emission": 0
+            "minecraft:block_light_emission": 0,
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.planks"
+            }
         }
     }
 }

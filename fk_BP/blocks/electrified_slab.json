@@ -81,6 +81,10 @@
                     "texture": "electrified_slab"
                 }
             },
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
+            },
             "minecraft:destroy_time": 1,
             "minecraft:block_light_absorption": 0,
             "minecraft:on_player_placing": {

@@ -52,6 +52,10 @@
             "minecraft:block_light_absorption": 0,
             "minecraft:block_light_emission": 0.7,
             "minecraft:unit_cube": {},
+            "minecraft:creative_category": {
+                "category": "nature",
+                "group": "itemGroup.name.log"
+            },
             "minecraft:material_instances": {
                 "*": {
                     "texture": "electrified_log_sides",

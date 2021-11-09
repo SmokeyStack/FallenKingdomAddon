@@ -13,6 +13,10 @@
             "minecraft:map_color": "#7DF9FF",
             "minecraft:block_light_absorption": 0,
             "minecraft:block_light_emission": 0.5,
+            "minecraft:creative_category": {
+                "category": "nature",
+                "group": "itemGroup.name.nature"
+            },
             "minecraft:random_ticking": {
                 "on_tick": {
                     "event": "grow",
