@@ -13,9 +13,7 @@
                 "value": "Trader's Talisman"
             },
             "minecraft:max_stack_size": 64,
-            "minecraft:foil": false,
-            "minecraft:frame_count": 11,
-            "minecraft:animates_in_toolbar": true
+            "minecraft:foil": false
         }
     }
 }
