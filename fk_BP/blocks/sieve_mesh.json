@@ -1,39 +1,33 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:block": {
-       "description": {
-          "identifier": "fk:sieve_mesh",
-          "register_to_creative_menu": false
-       },
-       "components": {
-          "minecraft:material_instances": {
-             "*": {
-                "texture": "sieve_mesh",
-                "render_method": "alpha_test"
-             }
-          },
-          "minecraft:pick_collision": {
-              "origin":  [-8, 0, -8],
-              "size":    [16, 16, 16]
-          },
-          "minecraft:geometry": "geometry.sieve",
-          "minecraft:loot": "loot_tables/blocks/sieve.json",
-          "minecraft:destroy_time": 1,
-          "minecraft:block_light_absorption": 0,
-          "minecraft:on_interact": {
-             "target": "other",
-             "event": "fk:sift",
-             "condition": "query.get_equipped_item_name == 'gravel'"
-          }
-       },
-       "events": {
-          "fk:sift": {
-             "set_block": {
-                "block_type": "fk:sieve_gravel"
-             },
-             "decrement_stack": {
-             }
-          }
-       }
-    }
- }
+   "format_version": "1.16.100",
+   "minecraft:block": {
+      "description": {
+         "identifier": "fk:sieve_mesh",
+         "register_to_creative_menu": false
+      },
+      "components": {
+         "minecraft:material_instances": {
+            "*": {
+               "texture": "sieve_mesh",
+               "render_method": "alpha_test"
+            }
+         },
+         "minecraft:pick_collision": {
+            "origin": [
+               -8,
+               0,
+               -8
+            ],
+            "size": [
+               16,
+               16,
+               16
+            ]
+         },
+         "minecraft:geometry": "geometry.sieve",
+         "minecraft:loot": "loot_tables/blocks/sieve.json",
+         "minecraft:destroy_time": 1,
+         "minecraft:block_light_absorption": 0
+      }
+   }
+}
