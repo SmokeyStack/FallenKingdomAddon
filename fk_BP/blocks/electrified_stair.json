@@ -17,8 +17,8 @@
                 ],
                 "fk:corner_state": [
                     "normal",
-                    "base",
-                    "corner"
+                    "sw_corner",
+                    "se_corner"
                 ]
             }
         },
@@ -34,13 +34,12 @@
                     "minecraft:ticking": {
                         "looping": true,
                         "range": [
-                            0,
-                            0
+                            0.5,
+                            0.5
                         ],
                         "on_tick": {
-                            "event": "fk:corner",
-                            "target": "self",
-                            "condition": "query.block_neighbor_has_any_tag(0,0,1,'fk:stair_east') && query.block_neighbor_has_any_tag(0,0,0,'fk:stair_north')"
+                            "event": "fk:north",
+                            "target": "self"
                         }
                     },
                     "tag:fk:stair_north": {}
@@ -57,13 +56,12 @@
                     "minecraft:ticking": {
                         "looping": true,
                         "range": [
-                            0,
-                            0
+                            0.5,
+                            0.5
                         ],
                         "on_tick": {
-                            "event": "fk:corner",
-                            "target": "self",
-                            "condition": "query.block_neighbor_has_any_tag(0,0,-1,'fk:stair_west') && query.block_neighbor_has_any_tag(0,0,0,'fk:stair_south')"
+                            "event": "fk:south",
+                            "target": "self"
                         }
                     },
                     "tag:fk:stair_south": {}
@@ -80,13 +78,12 @@
                     "minecraft:ticking": {
                         "looping": true,
                         "range": [
-                            0,
-                            0
+                            0.5,
+                            0.5
                         ],
                         "on_tick": {
-                            "event": "fk:corner",
-                            "target": "self",
-                            "condition": "query.block_neighbor_has_any_tag(1,0,0,'fk:stair_north') && query.block_neighbor_has_any_tag(0,0,0,'fk:stair_west')"
+                            "event": "fk:west",
+                            "target": "self"
                         }
                     },
                     "tag:fk:stair_west": {}
@@ -103,50 +100,15 @@
                     "minecraft:ticking": {
                         "looping": true,
                         "range": [
-                            0,
-                            0
+                            0.5,
+                            0.5
                         ],
                         "on_tick": {
-                            "event": "fk:corner",
-                            "target": "self",
-                            "condition": "query.block_neighbor_has_any_tag(-1,0,0,'fk:stair_south') && query.block_neighbor_has_any_tag(0,0,0,'fk:stair_east')"
+                            "event": "fk:east",
+                            "target": "self"
                         }
                     },
                     "tag:fk:stair_east": {}
-                }
-            },
-            {
-                "condition": "q.block_property('fk:corner_state') == 'corner' && q.block_property('fk:cardinal') == 3",
-                "components": {
-                    "minecraft:ticking": {
-                        "looping": true,
-                        "range": [
-                            0,
-                            0
-                        ],
-                        "on_tick": {
-                            "event": "fk:normal",
-                            "target": "self",
-                            "condition": "!query.block_neighbor_has_any_tag(0,0,-1,'fk:stair_west')"
-                        }
-                    }
-                }
-            },
-            {
-                "condition": "q.block_property('fk:corner_state') == 'corner' && q.block_property('fk:cardinal') == 2",
-                "components": {
-                    "minecraft:ticking": {
-                        "looping": true,
-                        "range": [
-                            0,
-                            0
-                        ],
-                        "on_tick": {
-                            "event": "fk:normal",
-                            "target": "self",
-                            "condition": "!query.block_neighbor_has_any_tag(0,0,1,'fk:stair_east')"
-                        }
-                    }
                 }
             },
             {
@@ -227,9 +189,10 @@
             "minecraft:block_light_emission": 0,
             "minecraft:part_visibility": {
                 "rules": {
-                    "normal": "query.block_property('fk:corner_state') == 'normal' || 'corner'",
-                    "base": "query.block_property('fk:corner_state') == 'base' || 'normal' || 'corner'",
-                    "corner": "query.block_property('fk:corner_state') == 'corner'"
+                    "northwest": "q.block_property('fk:corner_state') == 'normal' || 'nw'",
+                    "northeast": "q.block_property('fk:corner_state') == 'normal' || 'ne'",
+                    "southwest": "q.block_property('fk:corner_state') == 'sw_corner'",
+                    "southeast": "q.block_property('fk:corner_state') == 'se_corner'"
                 }
             },
             "minecraft:on_player_placing": {
@@ -246,16 +209,6 @@
             }
         },
         "events": {
-            "fk:corner": {
-                "set_block_property": {
-                    "fk:corner_state": "'corner'"
-                }
-            },
-            "fk:normal": {
-                "set_block_property": {
-                    "fk:corner_state": "'normal'"
-                }
-            },
             "fk:rotate": {
                 "set_block_property": {
                     "fk:cardinal": "(q.cardinal_facing_2d)"
@@ -270,6 +223,94 @@
                 "set_block_property": {
                     "fk:hitbox": "'lower'"
                 }
+            },
+            "fk:north": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,0,1,'fk:stair_east')",
+                        "set_block_property": {
+                            "fk:corner_state": "'se_corner'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,0,1,'fk:stair_west')",
+                        "set_block_property": {
+                            "fk:corner_state": "'sw_corner'"
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_any_tag(0,0,1,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
+                        "set_block_property": {
+                            "fk:corner_state": "'normal'"
+                        }
+                    }
+                ]
+            },
+            "fk:east": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_north')",
+                        "set_block_property": {
+                            "fk:corner_state": "'sw_corner'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_south')",
+                        "set_block_property": {
+                            "fk:corner_state": "'se_corner'"
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
+                        "set_block_property": {
+                            "fk:corner_state": "'normal'"
+                        }
+                    }
+                ]
+            },
+            "fk:south": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_east')",
+                        "set_block_property": {
+                            "fk:corner_state": "'sw_corner'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_west')",
+                        "set_block_property": {
+                            "fk:corner_state": "'se_corner'"
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
+                        "set_block_property": {
+                            "fk:corner_state": "'normal'"
+                        }
+                    }
+                ]
+            },
+            "fk:west": {
+                "sequence": [
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(1,0,0,'fk:stair_north')",
+                        "set_block_property": {
+                            "fk:corner_state": "'se_corner'"
+                        }
+                    },
+                    {
+                        "condition": "q.block_neighbor_has_any_tag(1,0,0,'fk:stair_south')",
+                        "set_block_property": {
+                            "fk:corner_state": "'sw_corner'"
+                        }
+                    },
+                    {
+                        "condition": "!q.block_neighbor_has_any_tag(1,0,0,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
+                        "set_block_property": {
+                            "fk:corner_state": "'normal'"
+                        }
+                    }
+                ]
             }
         }
     }
