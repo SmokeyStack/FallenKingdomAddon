@@ -33,7 +33,7 @@
 			]
 		},
 		"rod_launcher": {
-			"textures": "textures/items/test"
+			"textures": "textures/items/rod_launcher"
 		},
 		"skelesword": {
 			"textures": "textures/items/skelesword"

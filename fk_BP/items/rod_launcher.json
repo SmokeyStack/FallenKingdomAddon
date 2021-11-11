@@ -16,7 +16,6 @@
             "minecraft:display_name": {
                 "value": "Rod Launcher"
             },
-            "minecraft:hand_equipped": true,
             "minecraft:on_use": {
                 "on_use": {
                     "condition": "query.get_equipped_item_name('off_hand')=='rod'",
