@@ -1,0 +1,37 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "fk:electrified_horse",
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            "textures": {
+                "default": "textures/entity/electrified_horse"
+            },
+            "geometry": {
+                "default": "geometry.electrified_horse"
+            },
+            "animations": {
+                "walk": "animation.mystical_merchant.walk",
+                "look_at_target": "animation.humanoid.look_at_target.default.v1.0"
+            },
+            "scripts": {
+                "animate": [
+                    {
+                        "walk": "query.modified_move_speed"
+                    },
+                    "look_at_target"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.electrified_horse"
+            ],
+            "enable_attachables": false,
+            "spawn_egg": {
+                "base_color": "#949493",
+                "overlay_color": "#651818"
+            }
+        }
+    }
+}
