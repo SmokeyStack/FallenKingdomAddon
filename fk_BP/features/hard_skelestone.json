@@ -1,0 +1,14 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:single_block_feature": {
+        "description": {
+            "identifier": "fk:hard_skelestone"
+        },
+        "places_block": "fk:hard_skelestone",
+        "may_replace": [
+            "minecraft:deepslate"
+        ],
+        "enforce_placement_rules": false,
+        "enforce_survivability_rules": false
+    }
+}
