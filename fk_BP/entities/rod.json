@@ -5,7 +5,7 @@
             "identifier": "fk:rod",
             "runtime_identifier": "minecraft:arrow",
             "is_spawnable": false,
-            "is_summonable": true,
+            "is_summonable": false,
             "is_experimental": false,
             "animations": {
                 "stop": "controller.animation.rod"
@@ -21,37 +21,6 @@
         "component_groups": {
             "entity:despawn": {
                 "minecraft:despawn": {}
-            },
-            "fk:fallen_hero_arrow": {
-                "minecraft:projectile": {
-                    "on_hit": {
-                        "impact_damage": {
-                            "damage": [
-                                10,
-                                12
-                            ],
-                            "knockback": true,
-                            "semi_random_diff_damage": false,
-                            "destroy_on_hit": true
-                        },
-                        "stick_in_ground": {
-                            "shake_time": 0.35
-                        },
-                        "arrow_effect": {}
-                    },
-                    "hit_sound": "bow.hit",
-                    "power": 3.2,
-                    "gravity": 0.05,
-                    "uncertainty_base": 1,
-                    "uncertainty_multiplier": 0,
-                    "anchor": 1,
-                    "should_bounce": true,
-                    "offset": [
-                        0,
-                        -0.1,
-                        0
-                    ]
-                }
             },
             "fk:skelegun_arrow": {
                 "minecraft:projectile": {
@@ -88,13 +57,25 @@
         "components": {
             "minecraft:timer": {
                 "time": [
-                    15.0,
-                    15.0
+                    1.5,
+                    1.5
                 ],
                 "looping": false,
                 "time_down_event": {
                     "event": "entity:despawn",
                     "target": "self"
+                }
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "on_damage": {
+                        "filters": {
+                            "test": "has_damage",
+                            "value": "fire"
+                        },
+                        "event": "minecraft:stop_drop_roll",
+                        "target": "self"
+                    }
                 }
             },
             "minecraft:break_blocks": {
@@ -181,18 +162,6 @@
             },
             "minecraft:entity_spawned": {
                 "sequence": [
-                    {
-                        "filters": {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "fallen_hero"
-                        },
-                        "add": {
-                            "component_groups": [
-                                "fk:fallen_hero_arrow"
-                            ]
-                        }
-                    },
                     {
                         "filters": {
                             "test": "is_family",
