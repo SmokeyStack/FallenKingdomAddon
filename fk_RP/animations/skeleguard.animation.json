@@ -4,17 +4,65 @@
 		"animation.skeleguard.move": {
 			"loop": true,
 			"bones": {
-				"rightleg": {
-					"rotation": ["variable.tcos0 * -1.4", 0, 0]
+				"body": {
+					"rotation": [
+						"(math.cos(query.life_time * -360.0) * 9.0) * 0.75",
+						"(2.0 + math.cos((0 * 2 + query.life_time * 20.0) * 14.32)) * 0.75",
+						"(math.sin(query.life_time * -360.0) * 9.0) * 0.75"
+					]
 				},
-				"leftleg": {
-					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				"right_leg": {
+					"rotation": [
+						"variable.tcos0 * 1.2",
+						0,
+						0
+					]
 				},
-                "rightarm": {
-					"rotation": ["variable.tcos0 * -1.4", 0, 0]
+				"left_leg": {
+					"rotation": [
+						"variable.tcos0 * -1.2",
+						0,
+						0
+					]
 				},
-				"leftarm": {
-					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				"right_arm": {
+					"rotation": [
+						"variable.tcos0 * -1.2",
+						0,
+						0
+					]
+				},
+				"left_arm": {
+					"rotation": [
+						"variable.tcos0 * 1.2",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.skeleguard.attack": {
+			"loop": true,
+			"bones": {
+				"right_arm": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.1": {
+							"post": [-11.87707, 12.65884, 46.17791],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [-135, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.75": {
+							"post": [-44.00703, -10.54529, -10.72858],
+							"lerp_mode": "catmullrom"
+						}
+					}
 				}
 			}
 		}

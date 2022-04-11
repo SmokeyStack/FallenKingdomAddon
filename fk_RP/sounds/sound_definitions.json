@@ -11,6 +11,17 @@
                     "volume": 0.50
                 }
             ]
+        },
+        "dig.electrified_grass": {
+            "category": "block",
+            "sounds": [
+                "sounds/electrified_grass/electrified_grass",
+                "sounds/electrified_grass/electrified_grass2",
+                "sounds/electrified_grass/electrified_grass3",
+                "sounds/electrified_grass/electrified_grass4",
+                "sounds/electrified_grass/electrified_grass5",
+                "sounds/electrified_grass/electrified_grass6"
+            ]
         }
     }
 }

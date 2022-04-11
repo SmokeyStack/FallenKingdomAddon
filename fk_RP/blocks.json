@@ -1,91 +1,91 @@
 {
-  "format_version": [
-    1,
-    0,
-    0
-  ],
-  "fk:sieve": {
-    "textures": "sieve",
-    "sound": "stone"
-  },
-  "fk:sieve_mesh": {
-    "textures": "sieve_mesh",
-    "sound": "stone"
-  },
-  "fk:sieve_gravel": {
-    "textures": "sieve_gravel",
-    "sound": "stone"
-  },
-  "fk:sieve_gravel1": {
-    "textures": "sieve_gravel1",
-    "sound": "stone"
-  },
-  "fk:sieve_gravel2": {
-    "textures": "sieve_gravel2",
-    "sound": "stone"
-  },
-  "fk:sieve_gravel3": {
-    "textures": "sieve_gravel3",
-    "sound": "stone"
-  },
-  "fk:electrified_log": {
-    "sound": "stem"
-  },
-  "fk:electrified_leaves": {
-    "sound": "leaves2"
-  },
-  "fk:electrified_plank": {
-    "sound": "stem",
-    "textures": "electrified_plank"
-  },
-  "fk:electrified_stair": {
-    "sound": "stem"
-  },
-  "fk:elecrtified_sapling": {
-    "textures": "electrified_sapling",
-    "sound": "grass"
-  },
-  "fk:electrified_grass": {
-    "sound": "sound",
-    "textures": {
-      "down": "electrified_grass_bottom",
-      "east": "electrified_dirt_side",
-      "north": "electrified_dirt_side",
-      "south": "electrified_dirt_side",
-      "up": "electrified_dirt_top",
-      "west": "electrified_dirt_side"
+    "format_version": [
+        1,
+        0,
+        0
+    ],
+    "fk:sieve": {
+        "textures": "sieve",
+        "sound": "stone"
+    },
+    "fk:sieve_mesh": {
+        "textures": "sieve_mesh",
+        "sound": "stone"
+    },
+    "fk:sieve_gravel": {
+        "textures": "sieve_gravel",
+        "sound": "stone"
+    },
+    "fk:sieve_gravel1": {
+        "textures": "sieve_gravel1",
+        "sound": "stone"
+    },
+    "fk:sieve_gravel2": {
+        "textures": "sieve_gravel2",
+        "sound": "stone"
+    },
+    "fk:sieve_gravel3": {
+        "textures": "sieve_gravel3",
+        "sound": "stone"
+    },
+    "fk:electrified_log": {
+        "sound": "stem"
+    },
+    "fk:electrified_leaves": {
+        "sound": "leaves2"
+    },
+    "fk:electrified_plank": {
+        "sound": "stem",
+        "textures": "electrified_plank"
+    },
+    "fk:electrified_stair": {
+        "sound": "stem"
+    },
+    "fk:elecrtified_sapling": {
+        "textures": "electrified_sapling",
+        "sound": "grass"
+    },
+    "fk:electrified_grass": {
+        "sound": "electrified_grass",
+        "textures": {
+            "down": "electrified_grass_bottom",
+            "east": "electrified_dirt_side",
+            "north": "electrified_dirt_side",
+            "south": "electrified_dirt_side",
+            "up": "electrified_dirt_top",
+            "west": "electrified_dirt_side"
+        }
+    },
+    "fk:electrified_trapdoor": {
+        "textures": "electrified_trapdoor",
+        "sound": "wood"
+    },
+    "fk:electrified_slab": {
+        "textures": "electrified_slab",
+        "sound": "wood"
+    },
+    "fk:electrified_dirt": {
+        "sound": "nether_wart",
+        "textures": "electrified_grass_bottom"
+    },
+    "fk:skelestone": {
+        "sound": "stone",
+        "textures": "skelestone"
+    },
+    "fk:hard_skelestone": {
+        "sound": "stone",
+        "textures": "hard_skelestone"
+    },
+    "fk:skeleguard_spawn": {
+        "sound": "stone",
+        "textures": "hard_skelestone"
+    },
+    "fk:deepstone": {
+        "sound": "stone",
+        "textures": "deepstone"
+    },
+    "fk:grimslate": {
+        "sound": "stone",
+        "textures": "grimslate"
     }
-  },
-  "fk:electrified_trapdoor": {
-    "textures": "electrified_trapdoor",
-    "sound": "wood"
-  },
-  "fk:electrified_slab": {
-    "textures": "electrified_slab",
-    "sound": "wood"
-  },
-  "fk:electrified_dirt": {
-    "sound": "dirt",
-    "textures": "electrified_grass_bottom"
-  },
-  "fk:skelestone": {
-    "sound": "stone",
-    "textures": "skelestone"
-  },
-  "fk:hard_skelestone": {
-    "sound": "stone",
-    "textures": "hard_skelestone"
-  },
-  "fk:skeleguard_spawn": {
-    "sound": "stone",
-    "textures": "hard_skelestone"
-  },
-  "fk:deepstone": {
-    "sound": "stone",
-    "textures": "deepstone"
-  },
-  "fk:grimslate": {
-    "sound": "stone",
-    "textures": "grimslate"
-  }
 }

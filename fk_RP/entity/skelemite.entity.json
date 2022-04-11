@@ -1,38 +1,40 @@
 {
-  "format_version": "1.16.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "fk:skelemite",
-      "materials": {
-        "default": "entity"
-      },
-      "textures": {
-        "default": "textures/entity/skelemite"
-      },
-      "geometry": {
-        "default": "geometry.skelemite"
-      },
-      "animations": {
-        "walk": "animation.skelemite.move"
-      },
-      "scripts": {
-        "pre_animation": [
-          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
-        ],
-        "animate": [
-          {
-            "walk": "query.modified_move_speed"
-          }
-        ]
-      },
-      "render_controllers": [
-        "controller.render.skeleton"
-      ],
-      "enable_attachables": false,
-      "spawn_egg": {
-        "base_color": "#949493",
-        "overlay_color": "#651818"
-      }
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "fk:skelemite",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/skelemite"
+            },
+            "geometry": {
+                "default": "geometry.skelemite"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ],
+                "animate": [
+                    "move"
+                ]
+            },
+            "animations": {
+                "move": "controller.animation.skelemite.move",
+                "walk": "animation.skelemite.move"
+            },
+            "render_controllers": [
+                "controller.render.skeleton"
+            ],
+            "particle_effects": {
+                "spark": "fk:electrified_spark"
+            },
+            "enable_attachables": false,
+            "spawn_egg": {
+                "base_color": "#949493",
+                "overlay_color": "#651818"
+            }
+        }
     }
-  }
 }

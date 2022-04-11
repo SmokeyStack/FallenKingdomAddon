@@ -1,38 +1,42 @@
 {
-  "format_version": "1.16.0",
-  "minecraft:client_entity": {
-    "description": {
-      "identifier": "fk:skeleguard",
-      "materials": {
-        "default": "entity"
-      },
-      "textures": {
-        "default": "textures/entity/skeleguard"
-      },
-      "geometry": {
-        "default": "geometry.skeleguard"
-      },
-      "animations": {
-        "walk": "animation.skeleguard.move"
-      },
-      "scripts": {
-        "pre_animation": [
-          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
-        ],
-        "animate": [
-          {
-            "walk": "query.modified_move_speed"
-          }
-        ]
-      },
-      "render_controllers": [
-        "controller.render.skeleton"
-      ],
-      "enable_attachables": true,
-      "spawn_egg": {
-        "base_color": "#949493",
-        "overlay_color": "#651818"
-      }
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "fk:skeleguard",
+            "materials": {
+                "default": "entity"
+            },
+            "textures": {
+                "default": "textures/entity/skeleguard"
+            },
+            "geometry": {
+                "default": "geometry.skeleguard"
+            },
+            "animations": {
+                "walk": "animation.skeleguard.move",
+                "attack": "animation.skeleguard.attack"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "animation_controllers": [
+                {
+                    "walk": "controller.animation.skeleguard.move"
+                },
+                {
+                    "attack": "controller.animation.skeleguard.attack"
+                }
+            ],
+            "render_controllers": [
+                "controller.render.skeleton"
+            ],
+            "enable_attachables": true,
+            "spawn_egg": {
+                "base_color": "#949493",
+                "overlay_color": "#651818"
+            }
+        }
     }
-  }
 }
