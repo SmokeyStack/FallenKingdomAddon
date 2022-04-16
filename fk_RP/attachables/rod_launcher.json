@@ -5,7 +5,7 @@
             "identifier": "fk:rod_launcher",
             "materials": {
                 "default": "entity_alphatest",
-                "enchanted": "entity_alphatest"
+                "enchanted": "entity_alphatest_glint"
             },
             "textures": {
                 "default": "textures/items/rod_launcher",
@@ -14,19 +14,13 @@
             "geometry": {
                 "default": "geometry.rod_launcher"
             },
-            "scripts": {
-                "pre_animation": [
-                    "v.main_hand = c.item_slot == 'main_hand';"
-                ],
-                "animate": [
-                    {
-                        "firstperson_main_hand": "v.main_hand && c.is_first_person"
-                    }
-                ]
-            },
             "animations": {
-                "firstperson_main_hand": "animation.skelegun.thirdperson_main_hand",
-                "firstperson_head": "animation.disable"
+                "wield": "animation.skelegun.thirdperson_main_hand"
+            },
+            "scripts": {
+                "animate": [
+                    "wield"
+                ]
             },
             "render_controllers": [
                 "controller.render.item_default"
