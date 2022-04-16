@@ -1,0 +1,21 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.fallen_hero_death": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "dead": "!query.is_alive"
+                        }
+                    ]
+                },
+                "dead": {
+                    "on_entry": [
+                        "/function fallen_hero_death"
+                    ]
+                }
+            }
+        }
+    }
+}
