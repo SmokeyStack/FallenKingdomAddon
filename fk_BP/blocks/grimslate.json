@@ -9,8 +9,7 @@
             "minecraft:destroy_time": 1,
             "minecraft:explosion_resistance": 3,
             "minecraft:friction": 0.6,
-            "minecraft:map_color": "#7DF9FF",
-            "minecraft:block_light_absorption": 15,
+            "minecraft:map_color": "#4F4E4F",
             "minecraft:block_light_emission": 0,
             "minecraft:creative_category": {
                 "category": "nature",

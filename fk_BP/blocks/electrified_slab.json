@@ -15,7 +15,7 @@
                 "condition": "q.block_property('fk:state') == 'lower'",
                 "components": {
                     "minecraft:geometry": "geometry.slab",
-                    "minecraft:entity_collision": {
+                    "minecraft:block_collision": {
                         "origin": [
                             -8,
                             0,
@@ -27,7 +27,7 @@
                             16
                         ]
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:aim_collision": {
                         "origin": [
                             -8,
                             0,
@@ -48,7 +48,7 @@
                     "minecraft:on_interact": {
                         "event": "upper_open"
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:block_collision": {
                         "origin": [
                             -8,
                             8,
@@ -60,7 +60,7 @@
                             16
                         ]
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:aim_collision": {
                         "origin": [
                             -8,
                             8,
@@ -81,12 +81,13 @@
                     "texture": "electrified_slab"
                 }
             },
+            "minecraft:map_color": "#39FAFF",
             "minecraft:creative_category": {
                 "category": "construction",
                 "group": "itemGroup.name.slab"
             },
             "minecraft:destroy_time": 1,
-            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_filter": 0,
             "minecraft:on_player_placing": {
                 "event": "placement_state"
             }

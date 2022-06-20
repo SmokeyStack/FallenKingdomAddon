@@ -48,8 +48,7 @@
             "minecraft:destroy_time": 3,
             "minecraft:explosion_resistance": 3,
             "minecraft:friction": 0.6,
-            "minecraft:map_color": "#7DF9FF",
-            "minecraft:block_light_absorption": 0,
+            "minecraft:map_color": "#2DBAA2",
             "minecraft:block_light_emission": 0.7,
             "minecraft:unit_cube": {},
             "minecraft:creative_category": {
@@ -69,19 +68,9 @@
             },
             "minecraft:on_player_placing": {
                 "event": "fk:dir"
-            },
-            "minecraft:on_player_destroyed": {
-                "event": "fk:shock"
             }
         },
         "events": {
-            "fk:shock": {
-                "run_command": {
-                    "command": [
-                        "effect @p instant_damage 1"
-                    ]
-                }
-            },
             "fk:dir": {
                 "set_block_property": {
                     "fk:cardinal": "math.floor(q.block_face / 2.0)"

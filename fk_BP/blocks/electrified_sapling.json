@@ -3,7 +3,7 @@
     "minecraft:block": {
         "description": {
             "identifier": "fk:electrified_sapling",
-            "register_to_creative_menu": true,
+            "register_to_creative_menu": false,
             "properties": {
                 "fk:growth_stage": [
                     0,
@@ -56,11 +56,14 @@
         "components": {
             "minecraft:material_instances": {
                 "*": {
+                    "ambient_occlusion": false,
+                    "face_dimming": true,
                     "texture": "electrified_sapling",
                     "render_method": "alpha_test"
                 }
             },
-            "minecraft:pick_collision": {
+            "minecraft:map_color": "#35696C",
+            "minecraft:aim_collision": {
                 "origin": [
                     -3.5,
                     0,
@@ -74,18 +77,14 @@
             },
             "minecraft:geometry": "geometry.sapling",
             "minecraft:destroy_time": 0.01,
-            "minecraft:entity_collision": false,
+            "minecraft:block_collision": false,
             "minecraft:friction": 0.1,
             "minecraft:flammable": {
                 "flame_odds": 1,
                 "burn_odds": 1
             },
-            "minecraft:creative_category": {
-                "category": "nature",
-                "group": "itemGroup.name.sapling"
-            },
             "minecraft:block_light_emission": 0.3,
-            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_filter": 0,
             "minecraft:on_interact": {
                 "target": "other",
                 "event": "fk:forced_grow",
@@ -103,7 +102,8 @@
                             "up"
                         ],
                         "block_filter": [
-                            "fk:electrified_grass"
+                            "fk:electrified_grass",
+                            "fk:electrified_dirt"
                         ]
                     }
                 ]

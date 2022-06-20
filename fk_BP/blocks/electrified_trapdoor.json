@@ -66,7 +66,7 @@
                     "minecraft:on_interact": {
                         "event": "lower_open"
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:block_collision": {
                         "origin": [
                             -8,
                             0,
@@ -78,7 +78,7 @@
                             16
                         ]
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:aim_collision": {
                         "origin": [
                             -8,
                             0,
@@ -99,7 +99,7 @@
                     "minecraft:on_interact": {
                         "event": "upper_open"
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:block_collision": {
                         "origin": [
                             -8,
                             14,
@@ -111,7 +111,7 @@
                             16
                         ]
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:aim_collision": {
                         "origin": [
                             -8,
                             14,
@@ -129,11 +129,11 @@
                 "condition": "q.block_property('fk:state') == 'lower_open'",
                 "components": {
                     "minecraft:geometry": "geometry.trapdoor_lower_open",
-                    "minecraft:block_light_absorption": 0,
+                    "minecraft:block_light_filter": 0,
                     "minecraft:on_interact": {
                         "event": "lower"
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:block_collision": {
                         "origin": [
                             -8,
                             0,
@@ -145,7 +145,7 @@
                             2
                         ]
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:aim_collision": {
                         "origin": [
                             -8,
                             0,
@@ -163,11 +163,11 @@
                 "condition": "q.block_property('fk:state') == 'upper_open'",
                 "components": {
                     "minecraft:geometry": "geometry.trapdoor_open",
-                    "minecraft:block_light_absorption": 0,
+                    "minecraft:block_light_filter": 0,
                     "minecraft:on_interact": {
                         "event": "upper"
                     },
-                    "minecraft:entity_collision": {
+                    "minecraft:block_collision": {
                         "origin": [
                             -8,
                             0,
@@ -179,7 +179,7 @@
                             2
                         ]
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:aim_collision": {
                         "origin": [
                             -8,
                             0,
@@ -197,16 +197,18 @@
         "components": {
             "minecraft:material_instances": {
                 "*": {
+                    "ambient_occlusion": false,
                     "texture": "electrified_trapdoor",
                     "render_method": "alpha_test"
                 }
             },
+            "minecraft:map_color": "#39FAFF",
             "minecraft:creative_category": {
                 "category": "construction",
                 "group": "itemGroup.name.trapdoor"
             },
             "minecraft:destroy_time": 1,
-            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_filter": 0,
             "minecraft:on_player_placing": {
                 "event": "placement_state"
             }

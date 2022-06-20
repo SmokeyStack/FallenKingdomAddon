@@ -114,7 +114,7 @@
             {
                 "condition": "q.block_property('fk:hitbox') == 'upper'",
                 "components": {
-                    "minecraft:entity_collision": {
+                    "minecraft:block_collision": {
                         "origin": [
                             -8,
                             0,
@@ -126,7 +126,7 @@
                             16
                         ]
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:aim_collision": {
                         "origin": [
                             -8,
                             0,
@@ -143,7 +143,7 @@
             {
                 "condition": "q.block_property('fk:hitbox') == 'lower'",
                 "components": {
-                    "minecraft:entity_collision": {
+                    "minecraft:block_collision": {
                         "origin": [
                             -8,
                             0,
@@ -155,7 +155,7 @@
                             16
                         ]
                     },
-                    "minecraft:pick_collision": {
+                    "minecraft:aim_collision": {
                         "origin": [
                             -8,
                             0,
@@ -173,7 +173,7 @@
         "components": {
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "electrified_stair"
+                    "texture": "electrified_plank"
                 }
             },
             "minecraft:creative_category": {
@@ -184,8 +184,8 @@
             "minecraft:destroy_time": 1,
             "minecraft:explosion_resistance": 3,
             "minecraft:friction": 0.6,
-            "minecraft:map_color": "#7DF9FF",
-            "minecraft:block_light_absorption": 0,
+            "minecraft:map_color": "#39FAFF",
+            "minecraft:block_light_filter": 0,
             "minecraft:block_light_emission": 0,
             "minecraft:part_visibility": {
                 "rules": {
