@@ -1,0 +1,21 @@
+{
+	"name": "Fallen Kingdom",
+	"author": "SmokeyStack",
+	"packs": {
+		"behaviorPack": "./packs/fk_BP",
+		"resourcePack": "./packs/fk_RP"
+	},
+	"regolith": {
+		"profiles": {
+			"default": {
+				"filters": [],
+				"export": {
+					"target": "development",
+					"readOnly": false
+				}
+			}
+		},
+		"filterDefinitions": {},
+		"dataPath": "./packs/data"
+	}
+}
