@@ -1,0 +1,89 @@
+{
+	"format_version": "1.10.0",
+	"geometry.flaming_deer": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 2.5,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0.5, 0],
+		"bones": [
+			{
+				"name": "Body",
+				"pivot": [0, 13, 9],
+				"cubes": [
+					{"origin": [-5, 11, -11], "size": [10, 10, 22], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "LegBL",
+				"parent": "Body",
+				"pivot": [3, 11, 9],
+				"cubes": [
+					{"origin": [1, 0, 7], "size": [4, 11, 4], "uv": [48, 43]}
+				]
+			},
+			{
+				"name": "LegBR",
+				"parent": "Body",
+				"pivot": [-3, 11, 9],
+				"cubes": [
+					{"origin": [-5, 0, 7], "size": [4, 11, 4], "uv": [32, 47]}
+				]
+			},
+			{
+				"name": "LegFL",
+				"parent": "Body",
+				"pivot": [3, 11, -9],
+				"cubes": [
+					{"origin": [1, 0, -11], "size": [4, 11, 4], "uv": [42, 0]}
+				]
+			},
+			{
+				"name": "LegFR",
+				"parent": "Body",
+				"pivot": [-3, 11, -9],
+				"cubes": [
+					{"origin": [-5, 0, -11], "size": [4, 11, 4], "uv": [36, 32]}
+				]
+			},
+			{
+				"name": "Neck",
+				"parent": "Body",
+				"pivot": [0, 17, -8],
+				"rotation": [30, 0, 0],
+				"cubes": [
+					{"origin": [-2, 16, -11], "size": [4, 12, 7], "uv": [0, 0]}
+				],
+				"locators": {
+					"lead": [0, 17, -8]
+				}
+			},
+			{
+				"name": "Head",
+				"parent": "Neck",
+				"pivot": [0, 28, -11],
+				"cubes": [
+					{"origin": [-3, 28, -16], "size": [6, 5, 12], "uv": [0, 32]}
+				]
+			},
+			{
+				"name": "EarL",
+				"parent": "Head",
+				"pivot": [0, 17, -8],
+				"rotation": [0, 0, 5],
+				"cubes": [
+					{"origin": [-0.5, 32, -5.01], "size": [2, 3, 1], "uv": [15, 0]}
+				]
+			},
+			{
+				"name": "EarR",
+				"parent": "Head",
+				"pivot": [0, 17, -8],
+				"rotation": [0, 0, -5],
+				"cubes": [
+					{"origin": [-1.5, 32, -5.01], "size": [2, 3, 1], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

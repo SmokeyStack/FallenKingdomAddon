@@ -1,0 +1,54 @@
+{
+	"format_version" : "1.8.0",
+	"animations" : {
+		"animation.flaming_deer.look_at_target" : {
+			"loop" : true,
+			"bones" : {
+				"neck" : {
+					"relative_to" : {
+						"rotation" : "entity"
+					},
+					"rotation" : [ "math.clamp(query.target_x_rotation, -40, 40)", "math.clamp(query.target_y_rotation, -45, 25)", 0 ]
+				}
+			}
+		},
+		"animation.flaming_deer.walk" : {
+			"loop" : true,
+			"bones": {
+				"LegBR" : {
+					"rotation" : [ "variable.tcos_right_side * 0.5", 0.0, 0.0 ]
+				},
+				"LegBL" : {
+					"rotation" : [ "variable.tcos_left_side * 0.5", 0.0, 0.0 ]
+				},
+				"LegFR" : {
+					"rotation" : [ "-variable.tcos_right_side * 0.5", 0.0, 0.0 ]
+				},
+				"LegFL" : {
+					"rotation" : [ "-variable.tcos_left_side * 0.5", 0.0, 0.0 ]
+				}
+			}
+		},
+		"animation.flaming_deer.attack": {
+			"loop": true,
+			"bones": {
+				"neck": {
+					"rotation": {
+						"0.0": {
+							"post": [-1, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.25": {
+							"post": [50, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"10.0": {
+							"post": [50, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "fk:flaming_deer",
+            "materials": {
+                "default": "goat"
+            },
+            "textures": {
+                "default": "textures/entity/flaming_deer"
+            },
+            "geometry": {
+                "default": "geometry.flaming_deer"
+            },
+            "spawn_egg": {
+                "base_color": "#c0ac90",
+                "overlay_color": "#857261"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.tcos_right_side = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.tcos_left_side = -variable.tcos_right_side;",
+                    "variable.attack_head_rot =  Math.sin(q.life_time*180) * -37.3;"
+                ],
+                "animate": [
+                    "walk",
+                    "look_at_target",
+                    {
+                        "attack": "query.is_ram_attacking"
+                    }
+                ]
+            },
+            "animations": {
+                "walk": "animation.flaming_deer.walk",
+                "look_at_target": "animation.flaming_deer.look_at_target",
+                "attack": "animation.flaming_deer.attack"
+            },
+            "render_controllers": [
+                "controller.render.goat"
+            ]
+        }
+    }
+}
