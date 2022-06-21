@@ -1,6 +1,5 @@
 entity.fk:mystical_merchant=Mystical Merchant
 item.spawn_egg.entity.fk:mystical_merchant.name=Mystical Merchant
-tile.sieve.name=Sieve
 tile.fk:electrified_grass.name=Electrified Grass
 tile.fk:electrified_leaves.name=Electrified Leaves
 tile.fk:deepstone.name=Deepstone
