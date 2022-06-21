@@ -8,15 +8,6 @@
 		"pigstep_remix": {
 			"textures": "textures/items/pigstep_remix"
 		},
-		"sieve": {
-			"textures": "textures/items/sieve"
-		},
-		"silk": {
-			"textures": "textures/items/silk"
-		},
-		"mesh": {
-			"textures": "textures/items/mesh"
-		},
 		"trader_talisman": {
 			"textures": [
 				"textures/items/trader_talisman",

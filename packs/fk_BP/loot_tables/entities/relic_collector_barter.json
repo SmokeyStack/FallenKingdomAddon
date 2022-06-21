@@ -3,42 +3,42 @@
 		{
 			"rolls": 1,
 			"entries": [
-                {
+				{
 					"type": "item",
 					"name": "minecraft:appleenchanted",
 					"weight": 5
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:beacon",
 					"weight": 6
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:conduit",
 					"weight": 6
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:creeper_banner_pattern",
 					"weight": 7
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:dragon_breath",
 					"weight": 7
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:elytra",
 					"weight": 7
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:end_crystal",
 					"weight": 6
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:experience_bottle",
 					"weight": 7
@@ -144,23 +144,23 @@
 							"destination": "village"
 						}
 					]
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:glowingobsidian",
-					"weight": 2 
-                },
-                {
+					"weight": 2
+				},
+				{
 					"type": "item",
 					"name": "minecraft:golden_apple",
 					"weight": 6
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:heart_of_the_sea",
 					"weight": 7
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:info_update",
 					"weight": 1
@@ -169,23 +169,23 @@
 					"type": "item",
 					"name": "minecraft:info_update2",
 					"weight": 1
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:mojang_banner_pattern",
 					"weight": 5
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:music_disc_pigstep",
 					"weight": 5
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:nether_star",
 					"weight": 7
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:netherreactor",
 					"weight": 2,
@@ -226,8 +226,8 @@
 							}
 						}
 					]
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:reserved6",
 					"weight": 4
@@ -245,13 +245,13 @@
 							}
 						}
 					]
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:skull_banner_pattern",
 					"weight": 7
-                },
-                {
+				},
+				{
 					"type": "item",
 					"name": "minecraft:stonecutter",
 					"weight": 3

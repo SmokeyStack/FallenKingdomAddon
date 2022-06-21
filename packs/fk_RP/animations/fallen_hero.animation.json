@@ -1,50 +1,50 @@
 {
-    "format_version": "1.8.0",
-    "animations": {
-        "animation.fallen_hero.look_at_target": {
-            "loop": true,
-            "bones": {
-                "head": {
-                    "rotation": [
-                        "query.target_x_rotation",
-                        "query.target_y_rotation",
-                        0.0
-                    ]
-                }
-            }
-        },
-        "animation.fallen_hero.move": {
-            "loop": true,
-            "bones": {
-                "leftarm": {
-                    "rotation": [
-                        "variable.tcos0",
-                        0.0,
-                        0.0
-                    ]
-                },
-                "leftleg": {
-                    "rotation": [
-                        "variable.tcos0 * -1.4",
-                        0.0,
-                        0.0
-                    ]
-                },
-                "rightarm": {
-                    "rotation": [
-                        "-variable.tcos0",
-                        0.0,
-                        0.0
-                    ]
-                },
-                "rightleg": {
-                    "rotation": [
-                        "variable.tcos0 * 1.4",
-                        0.0,
-                        0.0
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fallen_hero.look_at_target": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [
+						"query.target_x_rotation",
+						"query.target_y_rotation",
+						0.0
+					]
+				}
+			}
+		},
+		"animation.fallen_hero.move": {
+			"loop": true,
+			"bones": {
+				"leftarm": {
+					"rotation": [
+						"variable.tcos0",
+						0.0,
+						0.0
+					]
+				},
+				"leftleg": {
+					"rotation": [
+						"variable.tcos0 * -1.4",
+						0.0,
+						0.0
+					]
+				},
+				"rightarm": {
+					"rotation": [
+						"-variable.tcos0",
+						0.0,
+						0.0
+					]
+				},
+				"rightleg": {
+					"rotation": [
+						"variable.tcos0 * 1.4",
+						0.0,
+						0.0
+					]
+				}
+			}
+		}
+	}
 }

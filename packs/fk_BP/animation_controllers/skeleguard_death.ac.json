@@ -1,7 +1,7 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.fallen_hero_death": {
+		"controller.animation.skeleguard_death": {
 			"states": {
 				"default": {
 					"transitions": [
@@ -12,7 +12,9 @@
 				},
 				"dead": {
 					"on_entry": [
-						"/function fallen_hero_death"
+						"/summon fk:skelemite",
+						"/summon fk:skelemite",
+						"/summon fk:skelemite"
 					]
 				}
 			}

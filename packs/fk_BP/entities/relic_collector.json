@@ -1,57 +1,57 @@
 {
-    "format_version": "1.16.0",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "fk:relic_collector",
-            "is_spawnable": true,
-            "is_summonable": true,
-            "is_experimental": false
-        },
-        "component_groups": {},
-        "components": {
-            "minecraft:admire_item": {
-                "duration": 8,
-                "cooldown_after_being_attacked": 20
-            },
-            "minecraft:annotation.open_door": {},
-            "minecraft:barter": {
-                "barter_table": "loot_tables/entities/relic_collector_barter.json",
-                "cooldown_after_being_attacked": 10
-            },
-            "minecraft:breathable": {
-                "breathes_air": true,
-                "breathes_lava": true,
-                "breathes_solids": true,
-                "breathes_water": true
-            },
-            "minecraft:behavior.admire_item": {
-                "priority": 2,
-                "admire_item_sound": "admire",
-                "sound_interval": {
-                    "range_min": 2.0,
-                    "range_max": 5.0
-                },
-                "on_admire_item_start": {
-                    "event": "admire_item_started_event",
-                    "target": "self"
-                },
-                "on_admire_item_stop": {
-                    "event": "admire_item_stopped_event",
-                    "target": "self"
-                }
-            },
-            "minecraft:behavior.avoid_block": {
-                "priority": 9,
-                "tick_interval": 5,
-                "search_range": 8,
-                "search_height": 4,
-                "sprint_speed_modifier": 1.1,
-                "target_selection_method": "nearest",
-                "target_blocks": [
-                    "minecraft:netherite_block"
-                ]
-            },
-            "minecraft:behavior.avoid_mob_type": {
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fk:relic_collector",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {},
+		"components": {
+			"minecraft:admire_item": {
+				"duration": 8,
+				"cooldown_after_being_attacked": 20
+			},
+			"minecraft:annotation.open_door": {},
+			"minecraft:barter": {
+				"barter_table": "loot_tables/entities/relic_collector_barter.json",
+				"cooldown_after_being_attacked": 10
+			},
+			"minecraft:breathable": {
+				"breathes_air": true,
+				"breathes_lava": true,
+				"breathes_solids": true,
+				"breathes_water": true
+			},
+			"minecraft:behavior.admire_item": {
+				"priority": 2,
+				"admire_item_sound": "admire",
+				"sound_interval": {
+					"range_min": 2.0,
+					"range_max": 5.0
+				},
+				"on_admire_item_start": {
+					"event": "admire_item_started_event",
+					"target": "self"
+				},
+				"on_admire_item_stop": {
+					"event": "admire_item_stopped_event",
+					"target": "self"
+				}
+			},
+			"minecraft:behavior.avoid_block": {
+				"priority": 9,
+				"tick_interval": 5,
+				"search_range": 8,
+				"search_height": 4,
+				"sprint_speed_modifier": 1.1,
+				"target_selection_method": "nearest",
+				"target_blocks": [
+					"minecraft:netherite_block"
+				]
+			},
+			"minecraft:behavior.avoid_mob_type": {
 				"priority": 4,
 				"entity_types": [
 					{
@@ -66,108 +66,108 @@
 					}
 				]
 			},
-            "minecraft:behavior.barter": {
-                "priority": 10
-            },
-            "minecraft:behavior.look_at_player": {
-                "priority": 7,
-                "look_distance": 8
-            },
-            "minecraft:behavior.pickup_items": {
-                "priority": 6,
-                "max_dist": 10,
-                "goal_radius": 2,
-                "speed_multiplier": 0.8,
-                "pickup_based_on_chance": false,
-                "can_pickup_any_item": false,
-                "cooldown_after_being_attacked": 20.0
-            },
-            "minecraft:behavior.random_look_around": {
-                "priority": 8
-            },
-            "minecraft:behavior.random_stroll": {
-                "priority": 6,
-                "speed_multiplier": 1
-            },
-            "minecraft:can_climb": {},
-            "minecraft:collision_box": {
-                "height": 1.9,
-                "width": 0.6
-            },
-            "minecraft:conditional_bandwidth_optimization": {},
-            "minecraft:despawn": {
-                "despawn_from_distance": {}
-            },
-            "minecraft:fire_immune": true,
-            "minecraft:grows_crop": {
-                "chance": 1,
-                "charges": 10
-            },
-            "minecraft:health": {
-                "value": 50,
-                "max": 50
-            },
-            "minecraft:interact": {
-                "interactions": [
-                    {
-                        "on_interact": {
-                            "filters": {
-                                "all_of": [
-                                    {
-                                        "test": "has_equipment",
-                                        "subject": "other",
-                                        "domain": "hand",
-                                        "value": "fk:trader_talisman"
-                                    },
-                                    {
-                                        "test": "is_family",
-                                        "subject": "other",
-                                        "value": "player"
-                                    }
-                                ]
-                            }
-                        },
-                        "barter": true,
-                        "admire": true,
-                        "use_item": true,
-                        "cooldown_after_being_attacked": 20,
-                        "interact_text": "action.interact.barter"
-                    }
-                ]
-            },
-            "minecraft:jump.static": {},
-            "minecraft:movement.basic": {},
-            "minecraft:movement": {
+			"minecraft:behavior.barter": {
+				"priority": 10
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 7,
+				"look_distance": 8
+			},
+			"minecraft:behavior.pickup_items": {
+				"priority": 6,
+				"max_dist": 10,
+				"goal_radius": 2,
+				"speed_multiplier": 0.8,
+				"pickup_based_on_chance": false,
+				"can_pickup_any_item": false,
+				"cooldown_after_being_attacked": 20.0
+			},
+			"minecraft:behavior.random_look_around": {
+				"priority": 8
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 6,
+				"speed_multiplier": 1
+			},
+			"minecraft:can_climb": {},
+			"minecraft:collision_box": {
+				"height": 1.9,
+				"width": 0.6
+			},
+			"minecraft:conditional_bandwidth_optimization": {},
+			"minecraft:despawn": {
+				"despawn_from_distance": {}
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:grows_crop": {
+				"chance": 1,
+				"charges": 10
+			},
+			"minecraft:health": {
+				"value": 50,
+				"max": 50
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "has_equipment",
+										"subject": "other",
+										"domain": "hand",
+										"value": "fk:trader_talisman"
+									},
+									{
+										"test": "is_family",
+										"subject": "other",
+										"value": "player"
+									}
+								]
+							}
+						},
+						"barter": true,
+						"admire": true,
+						"use_item": true,
+						"cooldown_after_being_attacked": 20,
+						"interact_text": "action.interact.barter"
+					}
+				]
+			},
+			"minecraft:jump.static": {},
+			"minecraft:movement.basic": {},
+			"minecraft:movement": {
 				"value": 0.25
 			},
-            "minecraft:nameable": {},
-            "minecraft:navigation.walk": {
+			"minecraft:nameable": {},
+			"minecraft:navigation.walk": {
 				"is_amphibious": true,
 				"avoid_sun": true,
 				"avoid_water": true,
 				"can_pass_doors": true,
 				"can_open_doors": true
 			},
-            "minecraft:physics": {},
-            "minecraft:pushable": {
-                "is_pushable": true,
-                "is_pushable_by_piston": true
-            },
-            "minecraft:shareables": {
-                "items": [
-                    {
-                        "item": "fk:trader_talisman",
-                        "priority": 1,
-                        "pickup_limit": 1,
-                        "admire": true,
-                        "barter": true
-                    }
-                ]
-            },
-            "minecraft:behavior.open_door": {
-                "priority": 6,
-                "close_door_after": true
-            }
-        }
-    }
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:shareables": {
+				"items": [
+					{
+						"item": "fk:trader_talisman",
+						"priority": 1,
+						"pickup_limit": 1,
+						"admire": true,
+						"barter": true
+					}
+				]
+			},
+			"minecraft:behavior.open_door": {
+				"priority": 6,
+				"close_door_after": true
+			}
+		}
+	}
 }

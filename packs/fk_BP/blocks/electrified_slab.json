@@ -1,124 +1,124 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:block": {
-        "description": {
-            "identifier": "fk:electrified_slab",
-            "properties": {
-                "fk:state": [
-                    "lower",
-                    "upper"
-                ]
-            }
-        },
-        "permutations": [
-            {
-                "condition": "q.block_property('fk:state') == 'lower'",
-                "components": {
-                    "minecraft:geometry": "geometry.slab",
-                    "minecraft:block_collision": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    },
-                    "minecraft:aim_collision": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_property('fk:state') == 'upper'",
-                "components": {
-                    "minecraft:geometry": "geometry.slab_upper",
-                    "minecraft:on_interact": {
-                        "event": "upper_open"
-                    },
-                    "minecraft:block_collision": {
-                        "origin": [
-                            -8,
-                            8,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    },
-                    "minecraft:aim_collision": {
-                        "origin": [
-                            -8,
-                            8,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    }
-                }
-            }
-        ],
-        "components": {
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "electrified_slab"
-                }
-            },
-            "minecraft:map_color": "#39FAFF",
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.name.slab"
-            },
-            "minecraft:destroy_time": 1,
-            "minecraft:block_light_filter": 0,
-            "minecraft:on_player_placing": {
-                "event": "placement_state"
-            }
-        },
-        "events": {
-            "lower": {
-                "set_block_property": {
-                    "fk:state": "'lower'"
-                }
-            },
-            "upper": {
-                "set_block_property": {
-                    "fk:state": "'upper'"
-                }
-            },
-            "placement_state": {
-                "sequence": [
-                    {
-                        "condition": "q.target_x_rotation <=0",
-                        "trigger": {
-                            "event": "upper"
-                        }
-                    },
-                    {
-                        "condition": "q.target_x_rotation >0",
-                        "trigger": {
-                            "event": "lower"
-                        }
-                    }
-                ]
-            }
-        }
-    }
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fk:electrified_slab",
+			"properties": {
+				"fk:state": [
+					"lower",
+					"upper"
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('fk:state') == 'lower'",
+				"components": {
+					"minecraft:geometry": "geometry.slab",
+					"minecraft:block_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fk:state') == 'upper'",
+				"components": {
+					"minecraft:geometry": "geometry.slab_upper",
+					"minecraft:on_interact": {
+						"event": "upper_open"
+					},
+					"minecraft:block_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-8,
+							8,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.slab"
+			},
+			"minecraft:block_light_filter": 0,
+			"minecraft:destroy_time": 1,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "electrified_slab"
+				}
+			},
+			"minecraft:map_color": "#39FAFF",
+			"minecraft:on_player_placing": {
+				"event": "placement_state"
+			}
+		},
+		"events": {
+			"lower": {
+				"set_block_property": {
+					"fk:state": "'lower'"
+				}
+			},
+			"upper": {
+				"set_block_property": {
+					"fk:state": "'upper'"
+				}
+			},
+			"placement_state": {
+				"sequence": [
+					{
+						"condition": "q.target_x_rotation <=0",
+						"trigger": {
+							"event": "upper"
+						}
+					},
+					{
+						"condition": "q.target_x_rotation >0",
+						"trigger": {
+							"event": "lower"
+						}
+					}
+				]
+			}
+		}
+	}
 }

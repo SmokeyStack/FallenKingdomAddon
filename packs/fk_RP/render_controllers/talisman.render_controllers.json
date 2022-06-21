@@ -1,33 +1,33 @@
 {
-  "format_version": "1.16.0",
-  "render_controllers": {
-    "controller.render.talisman": {
-      "arrays": {
-        "textures": {
-          "Array.top": [
-            "Texture.default",
-            "Texture.frame_1",
-            "Texture.frame_2",
-            "Texture.frame_3",
-            "Texture.frame_4",
-            "Texture.frame_5",
-            "Texture.frame_6",
-            "Texture.frame_7",
-            "Texture.frame_8",
-            "Texture.frame_9",
-            "Texture.frame_10"
-          ]
-        }
-      },
-      "geometry": "Geometry.default",
-      "materials": [
-        {
-          "*": "Material.default"
-        }
-      ],
-      "textures": [
-        "Array.top[math.mod(math.floor(query.life_time*4), 11)]"
-      ]
-    }
-  }
+	"format_version": "1.16.0",
+	"render_controllers": {
+		"controller.render.talisman": {
+			"arrays": {
+				"textures": {
+					"Array.top": [
+						"Texture.default",
+						"Texture.frame_1",
+						"Texture.frame_2",
+						"Texture.frame_3",
+						"Texture.frame_4",
+						"Texture.frame_5",
+						"Texture.frame_6",
+						"Texture.frame_7",
+						"Texture.frame_8",
+						"Texture.frame_9",
+						"Texture.frame_10"
+					]
+				}
+			},
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Array.top[math.mod(math.floor(query.life_time*4), 11)]"
+			]
+		}
+	}
 }

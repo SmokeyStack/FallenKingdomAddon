@@ -1,32 +1,32 @@
 {
-    "format_version": "1.10.0",
-    "minecraft:client_entity": {
-        "description": {
-            "identifier": "fk:fallen_hero_spell",
-            "materials": {
-                "default": "shulker_bullet"
-            },
-            "textures": {
-                "default": "textures/entity/shulker/spark"
-            },
-            "geometry": {
-                "default": "geometry.fallen_hero_spell"
-            },
-            "scripts": {
-                "animate": [
-                    "move"
-                ]
-            },
-            "animations": {
-                "move": "controller.animation.fallen_hero_spell.move",
-                "move_2": "animation.fallen_hero_spell.move"
-            },
-            "render_controllers": [
-                "controller.render.shulker_bullet"
-            ],
-            "particle_effects": {
-                "trail": "fk:fallen_hero_spell"
-            }
-        }
-    }
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fk:fallen_hero_spell",
+			"materials": {
+				"default": "shulker_bullet"
+			},
+			"textures": {
+				"default": "textures/entity/shulker/spark"
+			},
+			"geometry": {
+				"default": "geometry.fallen_hero_spell"
+			},
+			"scripts": {
+				"animate": [
+					"move"
+				]
+			},
+			"animations": {
+				"move": "controller.animation.fallen_hero_spell.move",
+				"move_2": "animation.fallen_hero_spell.move"
+			},
+			"render_controllers": [
+				"controller.render.shulker_bullet"
+			],
+			"particle_effects": {
+				"trail": "fk:fallen_hero_spell"
+			}
+		}
+	}
 }

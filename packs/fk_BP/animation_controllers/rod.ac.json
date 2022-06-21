@@ -1,18 +1,18 @@
 {
 	"format_version": "1.10.0",
 	"animation_controllers": {
-		"controller.animation.fallen_hero_death": {
+		"controller.animation.rod": {
 			"states": {
 				"default": {
 					"transitions": [
 						{
-							"dead": "!query.is_alive"
+							"stop": "query.is_on_ground"
 						}
 					]
 				},
-				"dead": {
+				"stop": {
 					"on_entry": [
-						"/function fallen_hero_death"
+						"/summon lightning_bolt"
 					]
 				}
 			}

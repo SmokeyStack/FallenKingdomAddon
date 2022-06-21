@@ -1,37 +1,37 @@
 {
-    "format_version": "1.16.0",
-    "minecraft:client_entity": {
-      "description": {
-        "identifier": "fk:relic_collector",
-        "materials": {
-          "default": "entity"
-        },
-        "textures": {
-          "default": "textures/entity/relic_collector"
-        },
-        "geometry": {
-          "default": "geometry.mystical_merchant"
-        },
-        "animations": {
-          "walk": "animation.mystical_merchant.walk",
-          "look_at_target": "animation.humanoid.look_at_target.default.v1.0"
-        },
-        "scripts": {
-          "animate": [
-            {
-              "walk": "query.modified_move_speed"
-            },
-            "look_at_target"
-          ]
-        },
-        "render_controllers": [
-          "controller.render.mystical_merchant"
-        ],
-        "enable_attachables": false,
-        "spawn_egg": {
-          "base_color": "#949493",
-          "overlay_color": "#651818"
-        }
-      }
-    }
-  }
+	"format_version": "1.16.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "fk:relic_collector",
+			"materials": {
+				"default": "entity"
+			},
+			"textures": {
+				"default": "textures/entity/relic_collector"
+			},
+			"geometry": {
+				"default": "geometry.mystical_merchant"
+			},
+			"animations": {
+				"walk": "animation.mystical_merchant.walk",
+				"look_at_target": "animation.humanoid.look_at_target.default.v1.0"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"walk": "query.modified_move_speed"
+					},
+					"look_at_target"
+				]
+			},
+			"render_controllers": [
+				"controller.render.mystical_merchant"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"base_color": "#949493",
+				"overlay_color": "#651818"
+			}
+		}
+	}
+}

@@ -1,317 +1,316 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:block": {
-        "description": {
-            "identifier": "fk:electrified_stair",
-            "register_to_creative_menu": true,
-            "properties": {
-                "fk:cardinal": [
-                    2,
-                    3,
-                    4,
-                    5
-                ],
-                "fk:hitbox": [
-                    "lower",
-                    "upper"
-                ],
-                "fk:corner_state": [
-                    "normal",
-                    "sw_corner",
-                    "se_corner"
-                ]
-            }
-        },
-        "permutations": [
-            {
-                "condition": "q.block_property('fk:cardinal') == 2",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "minecraft:ticking": {
-                        "looping": true,
-                        "range": [
-                            0.5,
-                            0.5
-                        ],
-                        "on_tick": {
-                            "event": "fk:north",
-                            "target": "self"
-                        }
-                    },
-                    "tag:fk:stair_north": {}
-                }
-            },
-            {
-                "condition": "q.block_property('fk:cardinal') == 3",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        180,
-                        0
-                    ],
-                    "minecraft:ticking": {
-                        "looping": true,
-                        "range": [
-                            0.5,
-                            0.5
-                        ],
-                        "on_tick": {
-                            "event": "fk:south",
-                            "target": "self"
-                        }
-                    },
-                    "tag:fk:stair_south": {}
-                }
-            },
-            {
-                "condition": "q.block_property('fk:cardinal') == 4",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        90,
-                        0
-                    ],
-                    "minecraft:ticking": {
-                        "looping": true,
-                        "range": [
-                            0.5,
-                            0.5
-                        ],
-                        "on_tick": {
-                            "event": "fk:west",
-                            "target": "self"
-                        }
-                    },
-                    "tag:fk:stair_west": {}
-                }
-            },
-            {
-                "condition": "q.block_property('fk:cardinal') == 5",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        270,
-                        0
-                    ],
-                    "minecraft:ticking": {
-                        "looping": true,
-                        "range": [
-                            0.5,
-                            0.5
-                        ],
-                        "on_tick": {
-                            "event": "fk:east",
-                            "target": "self"
-                        }
-                    },
-                    "tag:fk:stair_east": {}
-                }
-            },
-            {
-                "condition": "q.block_property('fk:hitbox') == 'upper'",
-                "components": {
-                    "minecraft:block_collision": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            16,
-                            16
-                        ]
-                    },
-                    "minecraft:aim_collision": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            16,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_property('fk:hitbox') == 'lower'",
-                "components": {
-                    "minecraft:block_collision": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    },
-                    "minecraft:aim_collision": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    }
-                }
-            }
-        ],
-        "components": {
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "electrified_plank"
-                }
-            },
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.name.stairs"
-            },
-            "minecraft:geometry": "geometry.stair",
-            "minecraft:destroy_time": 1,
-            "minecraft:explosion_resistance": 3,
-            "minecraft:friction": 0.6,
-            "minecraft:map_color": "#39FAFF",
-            "minecraft:block_light_filter": 0,
-            "minecraft:block_light_emission": 0,
-            "minecraft:part_visibility": {
-                "rules": {
-                    "northwest": "q.block_property('fk:corner_state') == 'normal' || 'nw'",
-                    "northeast": "q.block_property('fk:corner_state') == 'normal' || 'ne'",
-                    "southwest": "q.block_property('fk:corner_state') == 'sw_corner'",
-                    "southeast": "q.block_property('fk:corner_state') == 'se_corner'"
-                }
-            },
-            "minecraft:on_player_placing": {
-                "event": "fk:rotate",
-                "target": "self"
-            },
-            "minecraft:on_step_on": {
-                "event": "fk:hit",
-                "target": "self"
-            },
-            "minecraft:on_step_off": {
-                "event": "fk:lower",
-                "target": "self"
-            }
-        },
-        "events": {
-            "fk:rotate": {
-                "set_block_property": {
-                    "fk:cardinal": "(q.cardinal_facing_2d)"
-                }
-            },
-            "fk:hit": {
-                "set_block_property": {
-                    "fk:hitbox": "'upper'"
-                }
-            },
-            "fk:lower": {
-                "set_block_property": {
-                    "fk:hitbox": "'lower'"
-                }
-            },
-            "fk:north": {
-                "sequence": [
-                    {
-                        "condition": "q.block_neighbor_has_any_tag(0,0,1,'fk:stair_east')",
-                        "set_block_property": {
-                            "fk:corner_state": "'se_corner'"
-                        }
-                    },
-                    {
-                        "condition": "q.block_neighbor_has_any_tag(0,0,1,'fk:stair_west')",
-                        "set_block_property": {
-                            "fk:corner_state": "'sw_corner'"
-                        }
-                    },
-                    {
-                        "condition": "!q.block_neighbor_has_any_tag(0,0,1,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
-                        "set_block_property": {
-                            "fk:corner_state": "'normal'"
-                        }
-                    }
-                ]
-            },
-            "fk:east": {
-                "sequence": [
-                    {
-                        "condition": "q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_north')",
-                        "set_block_property": {
-                            "fk:corner_state": "'sw_corner'"
-                        }
-                    },
-                    {
-                        "condition": "q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_south')",
-                        "set_block_property": {
-                            "fk:corner_state": "'se_corner'"
-                        }
-                    },
-                    {
-                        "condition": "!q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
-                        "set_block_property": {
-                            "fk:corner_state": "'normal'"
-                        }
-                    }
-                ]
-            },
-            "fk:south": {
-                "sequence": [
-                    {
-                        "condition": "q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_east')",
-                        "set_block_property": {
-                            "fk:corner_state": "'sw_corner'"
-                        }
-                    },
-                    {
-                        "condition": "q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_west')",
-                        "set_block_property": {
-                            "fk:corner_state": "'se_corner'"
-                        }
-                    },
-                    {
-                        "condition": "!q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
-                        "set_block_property": {
-                            "fk:corner_state": "'normal'"
-                        }
-                    }
-                ]
-            },
-            "fk:west": {
-                "sequence": [
-                    {
-                        "condition": "q.block_neighbor_has_any_tag(1,0,0,'fk:stair_north')",
-                        "set_block_property": {
-                            "fk:corner_state": "'se_corner'"
-                        }
-                    },
-                    {
-                        "condition": "q.block_neighbor_has_any_tag(1,0,0,'fk:stair_south')",
-                        "set_block_property": {
-                            "fk:corner_state": "'sw_corner'"
-                        }
-                    },
-                    {
-                        "condition": "!q.block_neighbor_has_any_tag(1,0,0,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
-                        "set_block_property": {
-                            "fk:corner_state": "'normal'"
-                        }
-                    }
-                ]
-            }
-        }
-    }
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fk:electrified_stair",
+			"register_to_creative_menu": true,
+			"properties": {
+				"fk:cardinal": [
+					2,
+					3,
+					4,
+					5
+				],
+				"fk:hitbox": [
+					"lower",
+					"upper"
+				],
+				"fk:corner_state": [
+					"normal",
+					"sw_corner",
+					"se_corner"
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('fk:cardinal') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					],
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.5,
+							0.5
+						],
+						"on_tick": {
+							"event": "fk:north",
+							"target": "self"
+						}
+					},
+					"tag:fk:stair_north": {}
+				}
+			},
+			{
+				"condition": "q.block_property('fk:cardinal') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					],
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.5,
+							0.5
+						],
+						"on_tick": {
+							"event": "fk:south",
+							"target": "self"
+						}
+					},
+					"tag:fk:stair_south": {}
+				}
+			},
+			{
+				"condition": "q.block_property('fk:cardinal') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					],
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.5,
+							0.5
+						],
+						"on_tick": {
+							"event": "fk:west",
+							"target": "self"
+						}
+					},
+					"tag:fk:stair_west": {}
+				}
+			},
+			{
+				"condition": "q.block_property('fk:cardinal') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					],
+					"minecraft:ticking": {
+						"looping": true,
+						"range": [
+							0.5,
+							0.5
+						],
+						"on_tick": {
+							"event": "fk:east",
+							"target": "self"
+						}
+					},
+					"tag:fk:stair_east": {}
+				}
+			},
+			{
+				"condition": "q.block_property('fk:hitbox') == 'upper'",
+				"components": {
+					"minecraft:block_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_property('fk:hitbox') == 'lower'",
+				"components": {
+					"minecraft:block_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							8,
+							16
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "electrified_plank"
+				}
+			},
+			"minecraft:creative_category": {
+				"category": "construction",
+				"group": "itemGroup.name.stairs"
+			},
+			"minecraft:geometry": "geometry.stair",
+			"minecraft:destroy_time": 1,
+			"minecraft:explosion_resistance": 3,
+			"minecraft:map_color": "#39FAFF",
+			"minecraft:block_light_filter": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:part_visibility": {
+				"rules": {
+					"northwest": "q.block_property('fk:corner_state') == 'normal' || 'nw'",
+					"northeast": "q.block_property('fk:corner_state') == 'normal' || 'ne'",
+					"southwest": "q.block_property('fk:corner_state') == 'sw_corner'",
+					"southeast": "q.block_property('fk:corner_state') == 'se_corner'"
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "fk:rotate",
+				"target": "self"
+			},
+			"minecraft:on_step_on": {
+				"event": "fk:hit",
+				"target": "self"
+			},
+			"minecraft:on_step_off": {
+				"event": "fk:lower",
+				"target": "self"
+			}
+		},
+		"events": {
+			"fk:rotate": {
+				"set_block_property": {
+					"fk:cardinal": "(q.cardinal_facing_2d)"
+				}
+			},
+			"fk:hit": {
+				"set_block_property": {
+					"fk:hitbox": "'upper'"
+				}
+			},
+			"fk:lower": {
+				"set_block_property": {
+					"fk:hitbox": "'lower'"
+				}
+			},
+			"fk:north": {
+				"sequence": [
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,0,1,'fk:stair_east')",
+						"set_block_property": {
+							"fk:corner_state": "'se_corner'"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,0,1,'fk:stair_west')",
+						"set_block_property": {
+							"fk:corner_state": "'sw_corner'"
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(0,0,1,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
+						"set_block_property": {
+							"fk:corner_state": "'normal'"
+						}
+					}
+				]
+			},
+			"fk:east": {
+				"sequence": [
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_north')",
+						"set_block_property": {
+							"fk:corner_state": "'sw_corner'"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_south')",
+						"set_block_property": {
+							"fk:corner_state": "'se_corner'"
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(-1,0,0,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
+						"set_block_property": {
+							"fk:corner_state": "'normal'"
+						}
+					}
+				]
+			},
+			"fk:south": {
+				"sequence": [
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_east')",
+						"set_block_property": {
+							"fk:corner_state": "'sw_corner'"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_west')",
+						"set_block_property": {
+							"fk:corner_state": "'se_corner'"
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(0,0,-1,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
+						"set_block_property": {
+							"fk:corner_state": "'normal'"
+						}
+					}
+				]
+			},
+			"fk:west": {
+				"sequence": [
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'fk:stair_north')",
+						"set_block_property": {
+							"fk:corner_state": "'se_corner'"
+						}
+					},
+					{
+						"condition": "q.block_neighbor_has_any_tag(1,0,0,'fk:stair_south')",
+						"set_block_property": {
+							"fk:corner_state": "'sw_corner'"
+						}
+					},
+					{
+						"condition": "!q.block_neighbor_has_any_tag(1,0,0,'fk:stair_north', 'fk:stair_east', 'fk:stair_south', 'fk:stair_west')",
+						"set_block_property": {
+							"fk:corner_state": "'normal'"
+						}
+					}
+				]
+			}
+		}
+	}
 }

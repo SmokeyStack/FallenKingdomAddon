@@ -1,94 +1,94 @@
 {
-    "format_version": "1.17.20",
-    "minecraft:entity": {
-        "description": {
-            "identifier": "fk:fallen_hero_spell",
-            "is_spawnable": false,
-            "is_summonable": true,
-            "is_experimental": false
-        },
-        "component_groups": {
-            "fk:boom": {
-                "minecraft:explode": {
-                    "breaks_blocks": false,
-                    "causes_fire": false,
-                    "fuse_length": 0,
-                    "fuse_lit": true,
-                    "power": 5
-                }
-            },
-            "fk:despawn": {
-                "minecraft:instant_despawn": {}
-            }
-        },
-        "components": {
-            "minecraft:collision_box": {
-                "width": 0.31,
-                "height": 0.31
-            },
-            "minecraft:projectile": {
-                "hit_sound": "bow.hit",
-                "is_dangerous": true,
-                "offset": [
-                    0,
-                    0.5,
-                    0
-                ],
-                "power": 1.3,
-                "shoot_sound": "bow.hit",
-                "should_bounce": true,
-                "uncertainty_base": 0,
-                "uncertainty_multiplier": 0
-            },
-            "minecraft:environment_sensor": {
-                "triggers": [
-                    {
-                        "filters": {
-                            "all_of": [
-                                {
-                                    "test": "on_ground",
-                                    "operator": "==",
-                                    "value": true
-                                }
-                            ]
-                        },
-                        "event": "fk:boom"
-                    }
-                ]
-            },
-            "minecraft:physics": {},
-            "minecraft:pushable": {
-                "is_pushable": true,
-                "is_pushable_by_piston": true
-            },
-            "minecraft:conditional_bandwidth_optimization": {
-                "default_values": {
-                    "max_optimized_distance": 80.0,
-                    "max_dropped_ticks": 7,
-                    "use_motion_prediction_hints": true
-                }
-            }
-        },
-        "events": {
-            "fk:boom": {
-                "add": {
-                    "component_groups": [
-                        "fk:boom"
-                    ]
-                }
-            },
-            "fk:end_boom": {
-                "add": {
-                    "component_groups": [
-                        "fk:despawn"
-                    ]
-                },
-                "remove": {
-                    "component_groups": [
-                        "fk:boom"
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.17.20",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "fk:fallen_hero_spell",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"fk:boom": {
+				"minecraft:explode": {
+					"breaks_blocks": false,
+					"causes_fire": false,
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 5
+				}
+			},
+			"fk:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.31,
+				"height": 0.31
+			},
+			"minecraft:projectile": {
+				"hit_sound": "bow.hit",
+				"is_dangerous": true,
+				"offset": [
+					0,
+					0.5,
+					0
+				],
+				"power": 1.3,
+				"shoot_sound": "bow.hit",
+				"should_bounce": true,
+				"uncertainty_base": 0,
+				"uncertainty_multiplier": 0
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"all_of": [
+								{
+									"test": "on_ground",
+									"operator": "==",
+									"value": true
+								}
+							]
+						},
+						"event": "fk:boom"
+					}
+				]
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80.0,
+					"max_dropped_ticks": 7,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"events": {
+			"fk:boom": {
+				"add": {
+					"component_groups": [
+						"fk:boom"
+					]
+				}
+			},
+			"fk:end_boom": {
+				"add": {
+					"component_groups": [
+						"fk:despawn"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"fk:boom"
+					]
+				}
+			}
+		}
+	}
 }

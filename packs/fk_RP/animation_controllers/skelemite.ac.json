@@ -1,21 +1,21 @@
 {
-    "format_version": "1.10.0",
-    "animation_controllers": {
-        "controller.animation.skelemite.move": {
-            "initial_state": "default",
-            "states": {
-                "default": {
-                    "animations": [
-                        "walk"
-                    ],
-                    "particle_effects": [
-                        {
-                            "effect": "spark",
-                            "locator": "spark"
-                        }
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.skelemite.move": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": [
+						"walk"
+					],
+					"particle_effects": [
+						{
+							"effect": "spark",
+							"locator": "spark"
+						}
+					]
+				}
+			}
+		}
+	}
 }

@@ -1,184 +1,183 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:block": {
-        "description": {
-            "identifier": "fk:electrified_sapling",
-            "register_to_creative_menu": false,
-            "properties": {
-                "fk:growth_stage": [
-                    0,
-                    1,
-                    2,
-                    3
-                ]
-            }
-        },
-        "permutations": [
-            {
-                "condition": "query.block_property('fk:growth_stage') == 1",
-                "components": {
-                    "minecraft:block_light_emission": 0.4,
-                    "minecraft:on_interact": {
-                        "target": "other",
-                        "event": "fk:grow1",
-                        "condition": "query.get_equipped_item_name == 'bone_meal'"
-                    }
-                }
-            },
-            {
-                "condition": "query.block_property('fk:growth_stage') == 2",
-                "components": {
-                    "minecraft:block_light_emission": 0.5,
-                    "minecraft:on_interact": {
-                        "target": "other",
-                        "event": "fk:grow2",
-                        "condition": "query.get_equipped_item_name == 'bone_meal'"
-                    }
-                }
-            },
-            {
-                "condition": "query.block_property('fk:growth_stage') == 3",
-                "components": {
-                    "minecraft:block_light_emission": 0.6,
-                    "minecraft:on_interact": {
-                        "target": "other",
-                        "event": "fk:grow3",
-                        "condition": "query.get_equipped_item_name == 'bone_meal'"
-                    },
-                    "minecraft:random_ticking": {
-                        "on_tick": {
-                            "event": "fk:final_grow"
-                        }
-                    }
-                }
-            }
-        ],
-        "components": {
-            "minecraft:material_instances": {
-                "*": {
-                    "ambient_occlusion": false,
-                    "face_dimming": true,
-                    "texture": "electrified_sapling",
-                    "render_method": "alpha_test"
-                }
-            },
-            "minecraft:map_color": "#35696C",
-            "minecraft:aim_collision": {
-                "origin": [
-                    -3.5,
-                    0,
-                    -3.5
-                ],
-                "size": [
-                    5.5,
-                    11.5,
-                    5.5
-                ]
-            },
-            "minecraft:geometry": "geometry.sapling",
-            "minecraft:destroy_time": 0.01,
-            "minecraft:block_collision": false,
-            "minecraft:friction": 0.1,
-            "minecraft:flammable": {
-                "flame_odds": 1,
-                "burn_odds": 1
-            },
-            "minecraft:block_light_emission": 0.3,
-            "minecraft:block_light_filter": 0,
-            "minecraft:on_interact": {
-                "target": "other",
-                "event": "fk:forced_grow",
-                "condition": "query.get_equipped_item_name == 'bone_meal'"
-            },
-            "minecraft:random_ticking": {
-                "on_tick": {
-                    "event": "fk:grow"
-                }
-            },
-            "minecraft:placement_filter": {
-                "conditions": [
-                    {
-                        "allowed_faces": [
-                            "up"
-                        ],
-                        "block_filter": [
-                            "fk:electrified_grass",
-                            "fk:electrified_dirt"
-                        ]
-                    }
-                ]
-            }
-        },
-        "events": {
-            "fk:forced_grow": {
-                "randomize": [
-                    {
-                        "weight": 3,
-                        "set_block_property": {
-                            "fk:growth_stage": 1
-                        },
-                        "condition": "query.block_property('fk:growth_stage') == 0",
-                        "decrement_stack": {}
-                    },
-                    {
-                        "weight": 2,
-                        "set_block_property": {
-                            "fk:growth_stage": 2
-                        },
-                        "condition": "query.block_property('fk:growth_stage') == 0",
-                        "decrement_stack": {}
-                    },
-                    {
-                        "weight": 1,
-                        "set_block_property": {
-                            "fk:growth_stage": 3
-                        },
-                        "condition": "query.block_property('fk:growth_stage') == 0",
-                        "decrement_stack": {}
-                    }
-                ]
-            },
-            "fk:grow": {
-                "set_block_property": {
-                    "fk:growth_stage": "(q.block_property('fk:growth_stage')<3) ? q.block_property('fk:growth_stage') + 1 : 3"
-                }
-            },
-            "fk:grow1": {
-                "set_block_property": {
-                    "fk:growth_stage": 2
-                },
-                "decrement_stack": {}
-            },
-            "fk:grow2": {
-                "set_block_property": {
-                    "fk:growth_stage": 3
-                },
-                "decrement_stack": {}
-            },
-            "fk:grow3": {
-                "sequence": [
-                    {
-                        "swing": {}
-                    },
-                    {
-                        "run_command": {
-                            "command": [
-                                "structure load electrified_tree ~-2~~-2",
-                                "summon lightning_bolt ~~1~"
-                            ]
-                        }
-                    }
-                ],
-                "decrement_stack": {}
-            },
-            "fk:final_grow": {
-                "run_command": {
-                    "command": [
-                        "structure load electrified_tree ~-2~~-2",
-                        "summon lightning_bolt ~~1~"
-                    ]
-                }
-            }
-        }
-    }
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fk:electrified_sapling",
+			"register_to_creative_menu": false,
+			"properties": {
+				"fk:growth_stage": [
+					0,
+					1,
+					2,
+					3
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('fk:growth_stage') == 1",
+				"components": {
+					"minecraft:block_light_emission": 0.4,
+					"minecraft:on_interact": {
+						"target": "other",
+						"event": "fk:grow1",
+						"condition": "query.get_equipped_item_name == 'bone_meal'"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fk:growth_stage') == 2",
+				"components": {
+					"minecraft:block_light_emission": 0.5,
+					"minecraft:on_interact": {
+						"target": "other",
+						"event": "fk:grow2",
+						"condition": "query.get_equipped_item_name == 'bone_meal'"
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('fk:growth_stage') == 3",
+				"components": {
+					"minecraft:block_light_emission": 0.6,
+					"minecraft:on_interact": {
+						"target": "other",
+						"event": "fk:grow3",
+						"condition": "query.get_equipped_item_name == 'bone_meal'"
+					},
+					"minecraft:random_ticking": {
+						"on_tick": {
+							"event": "fk:final_grow"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:aim_collision": {
+				"origin": [
+					-3.5,
+					0,
+					-3.5
+				],
+				"size": [
+					5.5,
+					11.5,
+					5.5
+				]
+			},
+			"minecraft:block_collision": false,
+			"minecraft:block_light_emission": 0.3,
+			"minecraft:block_light_filter": 0,
+			"minecraft:destroy_time": 0.01,
+			"minecraft:flammable": {
+				"flame_odds": 1,
+				"burn_odds": 1
+			},
+			"minecraft:friction": 0.1,
+			"minecraft:geometry": "geometry.sapling",
+			"minecraft:material_instances": {
+				"*": {
+					"ambient_occlusion": false,
+					"texture": "electrified_sapling",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#35696C",
+			"minecraft:on_interact": {
+				"target": "other",
+				"event": "fk:forced_grow",
+				"condition": "query.get_equipped_item_name == 'bone_meal'"
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"fk:electrified_grass",
+							"fk:electrified_dirt"
+						]
+					}
+				]
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "fk:grow"
+				}
+			}
+		},
+		"events": {
+			"fk:forced_grow": {
+				"randomize": [
+					{
+						"weight": 3,
+						"set_block_property": {
+							"fk:growth_stage": 1
+						},
+						"condition": "query.block_property('fk:growth_stage') == 0",
+						"decrement_stack": {}
+					},
+					{
+						"weight": 2,
+						"set_block_property": {
+							"fk:growth_stage": 2
+						},
+						"condition": "query.block_property('fk:growth_stage') == 0",
+						"decrement_stack": {}
+					},
+					{
+						"weight": 1,
+						"set_block_property": {
+							"fk:growth_stage": 3
+						},
+						"condition": "query.block_property('fk:growth_stage') == 0",
+						"decrement_stack": {}
+					}
+				]
+			},
+			"fk:grow": {
+				"set_block_property": {
+					"fk:growth_stage": "(q.block_property('fk:growth_stage')<3) ? q.block_property('fk:growth_stage') + 1 : 3"
+				}
+			},
+			"fk:grow1": {
+				"set_block_property": {
+					"fk:growth_stage": 2
+				},
+				"decrement_stack": {}
+			},
+			"fk:grow2": {
+				"set_block_property": {
+					"fk:growth_stage": 3
+				},
+				"decrement_stack": {}
+			},
+			"fk:grow3": {
+				"sequence": [
+					{
+						"swing": {}
+					},
+					{
+						"run_command": {
+							"command": [
+								"structure load electrified_tree ~-2~~-2",
+								"summon lightning_bolt ~~1~"
+							]
+						}
+					}
+				],
+				"decrement_stack": {}
+			},
+			"fk:final_grow": {
+				"run_command": {
+					"command": [
+						"structure load electrified_tree ~-2~~-2",
+						"summon lightning_bolt ~~1~"
+					]
+				}
+			}
+		}
+	}
 }

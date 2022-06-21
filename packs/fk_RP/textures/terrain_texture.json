@@ -1,74 +1,56 @@
 {
-    "resource_pack_name": "vanilla",
-    "texture_name": "atlas.terrain",
-    "padding": 8,
-    "num_mip_levels": 4,
-    "texture_data": {
-        "sieve": {
-            "textures": "textures/blocks/sieve"
-        },
-        "sieve_mesh": {
-            "textures": "textures/blocks/sieve_mesh"
-        },
-        "sieve_gravel": {
-            "textures": "textures/blocks/sieve_gravel"
-        },
-        "sieve_gravel1": {
-            "textures": "textures/blocks/sieve_gravel1"
-        },
-        "sieve_gravel2": {
-            "textures": "textures/blocks/sieve_gravel2"
-        },
-        "sieve_gravel3": {
-            "textures": "textures/blocks/sieve_gravel3"
-        },
-        "electrified_log_top": {
-            "textures": "textures/blocks/electrified_log_top"
-        },
-        "electrified_log_sides": {
-            "textures": "textures/blocks/electrified_log_sides"
-        },
-        "electrified_leaves": {
-            "textures": "textures/blocks/electrified_leaves"
-        },
-        "electrified_plank": {
-            "textures": "textures/blocks/electrified_plank"
-        },
-        "electrified_sapling": {
-            "textures": "textures/blocks/electrified_sapling"
-        },
-        "electrified_dirt_side": {
-            "textures": "textures/blocks/electrified_dirt_side"
-        },
-        "electrified_dirt_top": {
-            "textures": "textures/blocks/electrified_dirt_top"
-        },
-        "electrified_grass_bottom": {
-            "textures": "textures/blocks/electrified_dirt"
-        },
-        "electrified_trapdoor": {
-            "textures": "textures/blocks/electrified_trapdoor"
-        },
-        "electrified_stair": {
-            "textures": "textures/blocks/electrified_stair"
-        },
-        "electrified_stair_corner": {
-            "textures": "textures/blocks/electrified_stair_corner"
-        },
-        "electrified_slab": {
-            "textures": "textures/blocks/electrified_slab"
-        },
-        "skelestone": {
-            "textures": "textures/blocks/skelestone"
-        },
-        "hard_skelestone": {
-            "textures": "textures/blocks/skele1"
-        },
-        "deepstone": {
-            "textures": "textures/blocks/deepstone"
-        },
-        "grimslate": {
-            "textures": "textures/blocks/grimslate"
-        }
-    }
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"electrified_log_top": {
+			"textures": "textures/blocks/electrified_log_top"
+		},
+		"electrified_log_sides": {
+			"textures": "textures/blocks/electrified_log_sides"
+		},
+		"electrified_leaves": {
+			"textures": "textures/blocks/electrified_leaves"
+		},
+		"electrified_plank": {
+			"textures": "textures/blocks/electrified_plank"
+		},
+		"electrified_sapling": {
+			"textures": "textures/blocks/electrified_sapling"
+		},
+		"electrified_grass_side": {
+			"textures": "textures/blocks/electrified_grass_side"
+		},
+		"electrified_grass_top": {
+			"textures": "textures/blocks/electrified_grass_top"
+		},
+		"electrified_dirt": {
+			"textures": "textures/blocks/electrified_dirt"
+		},
+		"electrified_trapdoor": {
+			"textures": "textures/blocks/electrified_trapdoor"
+		},
+		"electrified_stair": {
+			"textures": "textures/blocks/electrified_stair"
+		},
+		"electrified_stair_corner": {
+			"textures": "textures/blocks/electrified_stair_corner"
+		},
+		"electrified_slab": {
+			"textures": "textures/blocks/electrified_slab"
+		},
+		"skelestone": {
+			"textures": "textures/blocks/skelestone"
+		},
+		"hard_skelestone": {
+			"textures": "textures/blocks/skele1"
+		},
+		"deepstone": {
+			"textures": "textures/blocks/deepstone"
+		},
+		"grimslate": {
+			"textures": "textures/blocks/grimslate"
+		}
+	}
 }

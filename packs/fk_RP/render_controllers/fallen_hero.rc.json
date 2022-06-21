@@ -1,21 +1,21 @@
 {
-    "format_version": "1.8.0",
-    "render_controllers": {
-        "controller.render.fallen_hero": {
-            "part_visibility": [
-                {
-                    "hat*": "q.mark_variant == 2"
-                }
-            ],
-            "geometry": "Geometry.default",
-            "materials": [
-                {
-                    "*": "Material.default"
-                }
-            ],
-            "textures": [
-                "Texture.default"
-            ]
-        }
-    }
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.fallen_hero": {
+			"part_visibility": [
+				{
+					"hat*": "q.mark_variant == 2"
+				}
+			],
+			"geometry": "Geometry.default",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			]
+		}
+	}
 }

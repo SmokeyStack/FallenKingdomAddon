@@ -1,81 +1,81 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:block": {
-        "description": {
-            "identifier": "fk:electrified_log",
-            "register_to_creative_menu": true,
-            "properties": {
-                "fk:cardinal": [
-                    0,
-                    1,
-                    2
-                ]
-            }
-        },
-        "permutations": [
-            {
-                "condition": "q.block_property('fk:cardinal') == 0",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        0,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "q.block_property('fk:cardinal') == 1",
-                "components": {
-                    "minecraft:rotation": [
-                        90,
-                        0,
-                        0
-                    ]
-                }
-            },
-            {
-                "condition": "q.block_property('fk:cardinal') == 2",
-                "components": {
-                    "minecraft:rotation": [
-                        0,
-                        0,
-                        90
-                    ]
-                }
-            }
-        ],
-        "components": {
-            "minecraft:destroy_time": 3,
-            "minecraft:explosion_resistance": 3,
-            "minecraft:friction": 0.6,
-            "minecraft:map_color": "#2DBAA2",
-            "minecraft:block_light_emission": 0.7,
-            "minecraft:unit_cube": {},
-            "minecraft:creative_category": {
-                "category": "nature",
-                "group": "itemGroup.name.log"
-            },
-            "minecraft:material_instances": {
-                "*": {
-                    "texture": "electrified_log_sides",
-                    "render_method": "opaque"
-                },"ends": {
-                    "texture": "electrified_log_top",
-                    "render_method": "opaque"
-                },
-                "up": "ends",
-                "down": "ends"
-            },
-            "minecraft:on_player_placing": {
-                "event": "fk:dir"
-            }
-        },
-        "events": {
-            "fk:dir": {
-                "set_block_property": {
-                    "fk:cardinal": "math.floor(q.block_face / 2.0)"
-                }
-            }
-        }
-    }
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fk:electrified_log",
+			"register_to_creative_menu": true,
+			"properties": {
+				"fk:cardinal": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_property('fk:cardinal') == 0",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fk:cardinal') == 1",
+				"components": {
+					"minecraft:rotation": [
+						90,
+						0,
+						0
+					]
+				}
+			},
+			{
+				"condition": "q.block_property('fk:cardinal') == 2",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						0,
+						90
+					]
+				}
+			}
+		],
+		"components": {
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.log"
+			},
+			"minecraft:block_light_emission": 0.7,
+			"minecraft:destroy_time": 3,
+			"minecraft:explosion_resistance": 3,
+			"minecraft:map_color": "#2DBAA2",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "electrified_log_sides",
+					"render_method": "opaque"
+				},
+				"ends": {
+					"texture": "electrified_log_top",
+					"render_method": "opaque"
+				},
+				"up": "ends",
+				"down": "ends"
+			},
+			"minecraft:on_player_placing": {
+				"event": "fk:dir"
+			},
+			"minecraft:unit_cube": {}
+		},
+		"events": {
+			"fk:dir": {
+				"set_block_property": {
+					"fk:cardinal": "math.floor(q.block_face/2.0)"
+				}
+			}
+		}
+	}
 }

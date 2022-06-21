@@ -1,19 +1,24 @@
 {
-    "format_version": "1.16.100",
-    "minecraft:block": {
-        "description": {
-            "identifier": "fk:deepstone",
-            "register_to_creative_menu": true
-        },
-        "components": {
-            "minecraft:destroy_time": 1,
-            "minecraft:explosion_resistance": 3,
-            "minecraft:friction": 0.6,
-            "minecraft:map_color": "#0A0A0A",
-            "minecraft:creative_category": {
-                "category": "nature",
-                "group": "itemGroup.name.stone"
-            }
-        }
-    }
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "fk:deepstone",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.name.stone"
+			},
+			"minecraft:destroy_time": 1,
+			"minecraft:explosion_resistance": 3,
+			"minecraft:map_color": "#0A0A0A",
+			"minecraft:material_instances": {
+				"*":{
+					"texture": "deepstone"
+				}
+			},
+			"minecraft:unit_cube": {}
+		}
+	}
 }
