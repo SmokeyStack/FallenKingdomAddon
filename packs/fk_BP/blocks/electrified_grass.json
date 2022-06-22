@@ -25,22 +25,7 @@
 					"texture": "electrified_dirt"
 				}
 			},
-			"minecraft:random_ticking": {
-				"on_tick": {
-					"event": "grow",
-					"target": "self"
-				}
-			},
 			"minecraft:unit_cube": {}
-		},
-		"events": {
-			"grow": {
-				"run_command": {
-					"command": [
-						"summon fk:grass ~~1~"
-					]
-				}
-			}
 		}
 	}
 }

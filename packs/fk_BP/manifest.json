@@ -24,6 +24,16 @@
 				0,
 				0
 			]
+		},
+		{
+			"type": "script",
+			"entry": "scripts/index.js",
+			"uuid": "d5863a35-415e-4ec1-9f04-50fddf528eb9",
+			"version": [
+				1,
+				0,
+				0
+			]
 		}
 	],
 	"dependencies": [
@@ -32,6 +42,14 @@
 			"version": [
 				1,
 				0,
+				0
+			]
+		},
+		{
+			"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+			"version": [
+				0,
+				1,
 				0
 			]
 		}
