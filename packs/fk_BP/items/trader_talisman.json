@@ -1,19 +1,19 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"category": "items",
-			"identifier": "fk:trader_talisman"
-		},
-		"components": {
-			"minecraft:icon": {
-				"texture": "trader_talisman"
-			},
-			"minecraft:display_name": {
-				"value": "Trader's Talisman"
-			},
-			"minecraft:max_stack_size": 64,
-			"minecraft:foil": false
-		}
-	}
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "components": {
+            "minecraft:display_name": {
+                "value": "Trader's Talisman"
+            },
+            "minecraft:foil": false,
+            "minecraft:icon": {
+                "texture": "trader_talisman"
+            },
+            "minecraft:max_stack_size": 64
+        },
+        "description": {
+            "category": "items",
+            "identifier": "fk:trader_talisman"
+        }
+    }
 }

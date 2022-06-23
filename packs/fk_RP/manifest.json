@@ -1,39 +1,39 @@
 {
-	"format_version": 2,
-	"header": {
-		"name": "Fallen Kingdom",
-		"description": "Made By SmokeyStack",
-		"uuid": "f2fc35a1-2d55-4eca-9e11-e7fca37ea579",
-		"version": [
-			1,
-			0,
-			0
-		],
-		"min_engine_version": [
-			1,
-			19,
-			0
-		]
-	},
-	"modules": [
-		{
-			"type": "resources",
-			"uuid": "ea50a5d7-7cce-4406-b309-ad60aec17c35",
-			"version": [
-				1,
-				0,
-				0
-			]
-		}
-	],
-	"dependencies": [
-		{
-			"uuid": "f8e21024-d640-492f-b7f7-c2b4eef9f979",
-			"version": [
-				1,
-				0,
-				0
-			]
-		}
-	]
+    "dependencies": [
+        {
+            "uuid": "f8e21024-d640-492f-b7f7-c2b4eef9f979",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ],
+    "format_version": 2,
+    "header": {
+        "description": "Made By SmokeyStack",
+        "min_engine_version": [
+            1,
+            19,
+            0
+        ],
+        "name": "Fallen Kingdom",
+        "uuid": "f2fc35a1-2d55-4eca-9e11-e7fca37ea579",
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "ea50a5d7-7cce-4406-b309-ad60aec17c35",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
 }

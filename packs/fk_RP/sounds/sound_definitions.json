@@ -1,27 +1,27 @@
 {
-	"format_version": "1.14.0",
-	"sound_definitions": {
-		"record.pigstep_remix": {
-			"category": "record",
-			"max_distance": 64.0,
-			"sounds": [
-				{
-					"name": "sounds/music/game/records/pigstep_remix",
-					"stream": true,
-					"volume": 0.50
-				}
-			]
-		},
-		"dig.electrified_grass": {
-			"category": "block",
-			"sounds": [
-				"sounds/electrified_grass/electrified_grass",
-				"sounds/electrified_grass/electrified_grass2",
-				"sounds/electrified_grass/electrified_grass3",
-				"sounds/electrified_grass/electrified_grass4",
-				"sounds/electrified_grass/electrified_grass5",
-				"sounds/electrified_grass/electrified_grass6"
-			]
-		}
-	}
+    "format_version": "1.14.0",
+    "sound_definitions": {
+        "dig.electrified_grass": {
+            "category": "block",
+            "sounds": [
+                "sounds/electrified_grass/electrified_grass",
+                "sounds/electrified_grass/electrified_grass2",
+                "sounds/electrified_grass/electrified_grass3",
+                "sounds/electrified_grass/electrified_grass4",
+                "sounds/electrified_grass/electrified_grass5",
+                "sounds/electrified_grass/electrified_grass6"
+            ]
+        },
+        "record.pigstep_remix": {
+            "category": "record",
+            "max_distance": 64,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/records/pigstep_remix",
+                    "stream": true,
+                    "volume": 0.5
+                }
+            ]
+        }
+    }
 }

@@ -1,46 +1,46 @@
 {
-	"format_version": [
-		1,
-		0,
-		0
-	],
-	"fk:electrified_log": {
-		"sound": "stem"
-	},
-	"fk:electrified_leaves": {
-		"sound": "leaves2"
-	},
-	"fk:electrified_plank": {
-		"sound": "stem"
-	},
-	"fk:electrified_stair": {
-		"sound": "stem"
-	},
-	"fk:electrified_sapling": {
-		"sound": "grass"
-	},
-	"fk:electrified_grass": {
-		"sound": "electrified_grass"
-	},
-	"fk:electrified_trapdoor": {
-		"sound": "wood"
-	},
-	"fk:electrified_slab": {
-		"sound": "wood"
-	},
-	"fk:electrified_dirt": {
-		"sound": "nether_wart"
-	},
-	"fk:skelestone": {
-		"sound": "stone"
-	},
-	"fk:hard_skelestone": {
-		"sound": "stone"
-	},
-	"fk:deepstone": {
-		"sound": "stone"
-	},
-	"fk:grimslate": {
-		"sound": "stone"
-	}
+    "fk:deepstone": {
+        "sound": "stone"
+    },
+    "fk:electrified_dirt": {
+        "sound": "nether_wart"
+    },
+    "fk:electrified_grass": {
+        "sound": "electrified_grass"
+    },
+    "fk:electrified_leaves": {
+        "sound": "leaves2"
+    },
+    "fk:electrified_log": {
+        "sound": "stem"
+    },
+    "fk:electrified_plank": {
+        "sound": "stem"
+    },
+    "fk:electrified_sapling": {
+        "sound": "grass"
+    },
+    "fk:electrified_slab": {
+        "sound": "wood"
+    },
+    "fk:electrified_stair": {
+        "sound": "stem"
+    },
+    "fk:electrified_trapdoor": {
+        "sound": "wood"
+    },
+    "fk:grimslate": {
+        "sound": "stone"
+    },
+    "fk:hard_skelestone": {
+        "sound": "stone"
+    },
+    "fk:skelestone": {
+        "sound": "stone"
+    },
+    "format_version": [
+        1,
+        0,
+        0
+    ]
 }

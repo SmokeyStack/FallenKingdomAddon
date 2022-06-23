@@ -1,181 +1,181 @@
 {
-	"format_version": "1.12.0",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "fk:rod",
-			"runtime_identifier": "minecraft:arrow",
-			"is_spawnable": false,
-			"is_summonable": false,
-			"is_experimental": false,
-			"animations": {
-				"stop": "controller.animation.rod"
-			},
-			"scripts": {
-				"animate": [
-					{
-						"stop": "query.is_on_ground"
-					}
-				]
-			}
-		},
-		"component_groups": {
-			"entity:despawn": {
-				"minecraft:despawn": {}
-			},
-			"fk:skelegun_arrow": {
-				"minecraft:projectile": {
-					"on_hit": {
-						"impact_damage": {
-							"damage": [
-								9,
-								12
-							],
-							"knockback": true,
-							"semi_random_diff_damage": false,
-							"destroy_on_hit": true
-						},
-						"stick_in_ground": {
-							"shake_time": 0.35
-						},
-						"arrow_effect": {}
-					},
-					"hit_sound": "bow.hit",
-					"power": 2.4,
-					"gravity": 0.05,
-					"uncertainty_base": 12,
-					"uncertainty_multiplier": 3,
-					"anchor": 1,
-					"should_bounce": true,
-					"offset": [
-						0,
-						-0.1,
-						0
-					]
-				}
-			}
-		},
-		"components": {
-			"minecraft:timer": {
-				"time": [
-					1.5,
-					1.5
-				],
-				"looping": false,
-				"time_down_event": {
-					"event": "entity:despawn",
-					"target": "self"
-				}
-			},
-			"minecraft:damage_sensor": {
-				"triggers": {
-					"on_damage": {
-						"filters": {
-							"test": "has_damage",
-							"value": "fire"
-						},
-						"event": "minecraft:stop_drop_roll",
-						"target": "self"
-					}
-				}
-			},
-			"minecraft:break_blocks": {
-				"breakable_blocks": [
-					"glass",
-					"glass_pane",
-					"stained_glass",
-					"stained_glass_pane",
-					"standing_sign",
-					"vine",
-					"wall_banner",
-					"wall_sign",
-					"web",
-					"wheat"
-				]
-			},
-			"minecraft:collision_box": {
-				"width": 0.25,
-				"height": 0.25
-			},
-			"minecraft:hurt_on_condition": {
-				"damage_conditions": [
-					{
-						"filters": {
-							"test": "in_lava",
-							"subject": "self",
-							"operator": "==",
-							"value": true
-						},
-						"cause": "lava",
-						"damage_per_tick": 4
-					}
-				]
-			},
-			"minecraft:projectile": {
-				"on_hit": {
-					"impact_damage": {
-						"damage": [
-							8,
-							12
-						],
-						"knockback": true,
-						"semi_random_diff_damage": false,
-						"destroy_on_hit": true
-					},
-					"stick_in_ground": {
-						"shake_time": 0.35
-					},
-					"arrow_effect": {}
-				},
-				"hit_sound": "bow.hit",
-				"power": 1.6,
-				"gravity": 0.05,
-				"uncertainty_base": 16,
-				"uncertainty_multiplier": 4,
-				"anchor": 1,
-				"should_bounce": true,
-				"offset": [
-					0,
-					-0.1,
-					0
-				]
-			},
-			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": false,
-				"is_pushable_by_piston": true
-			},
-			"minecraft:conditional_bandwidth_optimization": {
-				"default_values": {
-					"max_optimized_distance": 80.0,
-					"max_dropped_ticks": 10,
-					"use_motion_prediction_hints": true
-				}
-			}
-		},
-		"events": {
-			"entity:despawn": {
-				"add": {
-					"component_groups": [
-						"entity:despawn"
-					]
-				}
-			},
-			"minecraft:entity_spawned": {
-				"sequence": [
-					{
-						"filters": {
-							"test": "is_family",
-							"subject": "other",
-							"value": "skeleton"
-						},
-						"add": {
-							"component_groups": [
-								"fk:skelegun_arrow"
-							]
-						}
-					}
-				]
-			}
-		}
-	}
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "component_groups": {
+            "entity:despawn": {
+                "minecraft:despawn": {}
+            },
+            "fk:skelegun_arrow": {
+                "minecraft:projectile": {
+                    "anchor": 1,
+                    "gravity": 0.05,
+                    "hit_sound": "bow.hit",
+                    "offset": [
+                        0,
+                        -0.1,
+                        0
+                    ],
+                    "on_hit": {
+                        "arrow_effect": {},
+                        "impact_damage": {
+                            "damage": [
+                                9,
+                                12
+                            ],
+                            "destroy_on_hit": true,
+                            "knockback": true,
+                            "semi_random_diff_damage": false
+                        },
+                        "stick_in_ground": {
+                            "shake_time": 0.35
+                        }
+                    },
+                    "power": 2.4,
+                    "should_bounce": true,
+                    "uncertainty_base": 12,
+                    "uncertainty_multiplier": 3
+                }
+            }
+        },
+        "components": {
+            "minecraft:break_blocks": {
+                "breakable_blocks": [
+                    "glass",
+                    "glass_pane",
+                    "stained_glass",
+                    "stained_glass_pane",
+                    "standing_sign",
+                    "vine",
+                    "wall_banner",
+                    "wall_sign",
+                    "web",
+                    "wheat"
+                ]
+            },
+            "minecraft:collision_box": {
+                "height": 0.25,
+                "width": 0.25
+            },
+            "minecraft:conditional_bandwidth_optimization": {
+                "default_values": {
+                    "max_dropped_ticks": 10,
+                    "max_optimized_distance": 80,
+                    "use_motion_prediction_hints": true
+                }
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "on_damage": {
+                        "event": "minecraft:stop_drop_roll",
+                        "filters": {
+                            "test": "has_damage",
+                            "value": "fire"
+                        },
+                        "target": "self"
+                    }
+                }
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "cause": "lava",
+                        "damage_per_tick": 4,
+                        "filters": {
+                            "operator": "==",
+                            "subject": "self",
+                            "test": "in_lava",
+                            "value": true
+                        }
+                    }
+                ]
+            },
+            "minecraft:physics": {},
+            "minecraft:projectile": {
+                "anchor": 1,
+                "gravity": 0.05,
+                "hit_sound": "bow.hit",
+                "offset": [
+                    0,
+                    -0.1,
+                    0
+                ],
+                "on_hit": {
+                    "arrow_effect": {},
+                    "impact_damage": {
+                        "damage": [
+                            8,
+                            12
+                        ],
+                        "destroy_on_hit": true,
+                        "knockback": true,
+                        "semi_random_diff_damage": false
+                    },
+                    "stick_in_ground": {
+                        "shake_time": 0.35
+                    }
+                },
+                "power": 1.6,
+                "should_bounce": true,
+                "uncertainty_base": 16,
+                "uncertainty_multiplier": 4
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:timer": {
+                "looping": false,
+                "time": [
+                    1.5,
+                    1.5
+                ],
+                "time_down_event": {
+                    "event": "entity:despawn",
+                    "target": "self"
+                }
+            }
+        },
+        "description": {
+            "animations": {
+                "stop": "controller.animation.rod"
+            },
+            "identifier": "fk:rod",
+            "is_experimental": false,
+            "is_spawnable": false,
+            "is_summonable": false,
+            "runtime_identifier": "minecraft:arrow",
+            "scripts": {
+                "animate": [
+                    {
+                        "stop": "query.is_on_ground"
+                    }
+                ]
+            }
+        },
+        "events": {
+            "entity:despawn": {
+                "add": {
+                    "component_groups": [
+                        "entity:despawn"
+                    ]
+                }
+            },
+            "minecraft:entity_spawned": {
+                "sequence": [
+                    {
+                        "add": {
+                            "component_groups": [
+                                "fk:skelegun_arrow"
+                            ]
+                        },
+                        "filters": {
+                            "subject": "other",
+                            "test": "is_family",
+                            "value": "skeleton"
+                        }
+                    }
+                ]
+            }
+        }
+    }
 }

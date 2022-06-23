@@ -1,24 +1,24 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:block": {
-		"description": {
-			"identifier": "fk:electrified_plank",
-			"register_to_creative_menu": true
-		},
-		"components": {
-			"minecraft:creative_category": {
-				"category": "construction",
-				"group": "itemGroup.name.planks"
-			},
-			"minecraft:destroy_time": 1,
-			"minecraft:explosion_resistance": 3,
-			"minecraft:map_color": "#39FAFF",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "electrified_plank"
-				}
-			},
-			"minecraft:unit_cube": {}
-		}
-	}
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.planks"
+            },
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 3,
+            "minecraft:map_color": "#39FAFF",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "electrified_plank"
+                }
+            },
+            "minecraft:unit_cube": {}
+        },
+        "description": {
+            "identifier": "fk:electrified_plank",
+            "register_to_creative_menu": true
+        }
+    }
 }

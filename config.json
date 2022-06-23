@@ -1,21 +1,26 @@
 {
-	"name": "Fallen Kingdom",
-	"author": "SmokeyStack",
-	"packs": {
-		"behaviorPack": "./packs/fk_BP",
-		"resourcePack": "./packs/fk_RP"
-	},
-	"regolith": {
-		"profiles": {
-			"default": {
-				"filters": [],
-				"export": {
-					"target": "development",
-					"readOnly": false
-				}
-			}
-		},
-		"filterDefinitions": {},
-		"dataPath": "./packs/data"
-	}
+    "author": "SmokeyStack",
+    "name": "FallenKingdom",
+    "packs": {
+        "behaviorPack": "./packs/fk_BP",
+        "resourcePack": "./packs/fk_RP"
+    },
+    "regolith": {
+        "dataPath": "./packs/data",
+        "filterDefinitions": {
+            "texture_list": {
+                "url": "github.com/Bedrock-OSS/regolith-filters",
+                "version": "1.1.1"
+            }
+        },
+        "profiles": {
+            "default": {
+                "export": {
+                    "readOnly": false,
+                    "target": "development"
+                },
+                "filters": []
+            }
+        }
+    }
 }

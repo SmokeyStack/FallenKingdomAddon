@@ -1,46 +1,46 @@
 {
-	"format_version": "1.10.0",
-	"minecraft:attachable": {
-		"description": {
-			"identifier": "fk:trader_talisman",
-			"materials": {
-				"default": "entity_alphatest",
-				"enchanted": "entity_alphatest"
-			},
-			"textures": {
-				"default": "textures/items/trader_talisman",
-				"frame_1": "textures/items/trader_talisman1",
-				"frame_2": "textures/items/trader_talisman2",
-				"frame_3": "textures/items/trader_talisman3",
-				"frame_4": "textures/items/trader_talisman4",
-				"frame_5": "textures/items/trader_talisman5",
-				"frame_6": "textures/items/trader_talisman6",
-				"frame_7": "textures/items/trader_talisman7",
-				"frame_8": "textures/items/trader_talisman8",
-				"frame_9": "textures/items/trader_talisman9",
-				"frame_10": "textures/items/trader_talisman10",
-				"enchanted": "textures/misc/enchanted_item_glint"
-			},
-			"geometry": {
-				"default": "geometry.rod_launcher"
-			},
-			"scripts": {
-				"pre_animation": [
-					"v.main_hand = c.item_slot == 'main_hand';"
-				],
-				"animate": [
-					{
-						"firstperson_main_hand": "v.main_hand && c.is_first_person"
-					}
-				]
-			},
-			"animations": {
-				"firstperson_main_hand": "animation.talisman.firstperson_main_hand",
-				"firstperson_head": "animation.disable"
-			},
-			"render_controllers": [
-				"controller.render.talisman"
-			]
-		}
-	}
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "animations": {
+                "firstperson_head": "animation.disable",
+                "firstperson_main_hand": "animation.talisman.firstperson_main_hand"
+            },
+            "geometry": {
+                "default": "geometry.rod_launcher"
+            },
+            "identifier": "fk:trader_talisman",
+            "materials": {
+                "default": "entity_alphatest",
+                "enchanted": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.talisman"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "firstperson_main_hand": "v.main_hand && c.is_first_person"
+                    }
+                ],
+                "pre_animation": [
+                    "v.main_hand = c.item_slot == 'main_hand';"
+                ]
+            },
+            "textures": {
+                "default": "textures/items/trader_talisman",
+                "enchanted": "textures/misc/enchanted_item_glint",
+                "frame_1": "textures/items/trader_talisman1",
+                "frame_2": "textures/items/trader_talisman2",
+                "frame_3": "textures/items/trader_talisman3",
+                "frame_4": "textures/items/trader_talisman4",
+                "frame_5": "textures/items/trader_talisman5",
+                "frame_6": "textures/items/trader_talisman6",
+                "frame_7": "textures/items/trader_talisman7",
+                "frame_8": "textures/items/trader_talisman8",
+                "frame_9": "textures/items/trader_talisman9",
+                "frame_10": "textures/items/trader_talisman10"
+            }
+        }
+    }
 }

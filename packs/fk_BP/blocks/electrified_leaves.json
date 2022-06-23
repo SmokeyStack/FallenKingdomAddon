@@ -1,28 +1,28 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:block": {
-		"description": {
-			"identifier": "fk:electrified_leaves",
-			"register_to_creative_menu": true
-		},
-		"components": {
-			"minecraft:creative_category": {
-				"category": "nature",
-				"group": "itemGroup.name.leaves"
-			},
-			"minecraft:block_light_emission": 0.5,
-			"minecraft:block_light_filter": 0,
-			"minecraft:material_instances": {
-				"*": {
-					"render_method": "alpha_test",
-					"texture": "electrified_leaves"
-				}
-			},
-			"minecraft:destroy_time": 1,
-			"minecraft:explosion_resistance": 3,
-			"minecraft:loot": "loot_tables/blocks/electrified_leaves.json",
-			"minecraft:map_color": "#5691F5",
-			"minecraft:unit_cube": {}
-		}
-	}
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_emission": 0.5,
+            "minecraft:block_light_filter": 0,
+            "minecraft:creative_category": {
+                "category": "nature",
+                "group": "itemGroup.name.leaves"
+            },
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 3,
+            "minecraft:loot": "loot_tables/blocks/electrified_leaves.json",
+            "minecraft:map_color": "#5691F5",
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "alpha_test",
+                    "texture": "electrified_leaves"
+                }
+            },
+            "minecraft:unit_cube": {}
+        },
+        "description": {
+            "identifier": "fk:electrified_leaves",
+            "register_to_creative_menu": true
+        }
+    }
 }

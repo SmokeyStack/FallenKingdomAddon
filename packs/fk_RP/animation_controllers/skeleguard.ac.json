@@ -1,49 +1,49 @@
 {
-	"format_version": "1.10.0",
-	"animation_controllers": {
-		"controller.animation.skeleguard.move": {
-			"initial_state": "idle",
-			"states": {
-				"idle": {
-					"transitions": [
-						{
-							"moving": "q.modified_move_speed > 0.1"
-						}
-					]
-				},
-				"moving": {
-					"animations": [
-						"walk"
-					],
-					"transitions": [
-						{
-							"idle": "q.modified_move_speed < 0.1"
-						}
-					]
-				}
-			}
-		},
-		"controller.animation.skeleguard.attack": {
-			"initial_state": "idle",
-			"states": {
-				"idle": {
-					"transitions": [
-						{
-							"attack": "variable.attack_time >= 0.5 && q.has_target"
-						}
-					]
-				},
-				"attack": {
-					"animations": [
-						"attack"
-					],
-					"transitions": [
-						{
-							"idle": "!q.has_target"
-						}
-					]
-				}
-			}
-		}
-	}
+    "animation_controllers": {
+        "controller.animation.skeleguard.attack": {
+            "initial_state": "idle",
+            "states": {
+                "attack": {
+                    "animations": [
+                        "attack"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "!q.has_target"
+                        }
+                    ]
+                },
+                "idle": {
+                    "transitions": [
+                        {
+                            "attack": "variable.attack_time >= 0.5 && q.has_target"
+                        }
+                    ]
+                }
+            }
+        },
+        "controller.animation.skeleguard.move": {
+            "initial_state": "idle",
+            "states": {
+                "idle": {
+                    "transitions": [
+                        {
+                            "moving": "q.modified_move_speed > 0.1"
+                        }
+                    ]
+                },
+                "moving": {
+                    "animations": [
+                        "walk"
+                    ],
+                    "transitions": [
+                        {
+                            "idle": "q.modified_move_speed < 0.1"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.10.0"
 }

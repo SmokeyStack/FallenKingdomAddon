@@ -1,25 +1,25 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:block": {
-		"description": {
-			"identifier": "fk:hard_skelestone",
-			"register_to_creative_menu": true
-		},
-		"components": {
-			"minecraft:block_light_emission": 0,
-			"minecraft:destroy_time": 1,
-			"minecraft:creative_category": {
-				"category": "nature",
-				"group": "itemGroup.name.stone"
-			},
-			"minecraft:explosion_resistance": 3,
-			"minecraft:map_color": "#6C6C6C",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "hard_skelestone"
-				}
-			},
-			"minecraft:unit_cube": {}
-		}
-	}
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_emission": 0,
+            "minecraft:creative_category": {
+                "category": "nature",
+                "group": "itemGroup.name.stone"
+            },
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 3,
+            "minecraft:map_color": "#6C6C6C",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "hard_skelestone"
+                }
+            },
+            "minecraft:unit_cube": {}
+        },
+        "description": {
+            "identifier": "fk:hard_skelestone",
+            "register_to_creative_menu": true
+        }
+    }
 }

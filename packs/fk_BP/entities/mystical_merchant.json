@@ -1,117 +1,117 @@
 {
-	"format_version": "1.16.0",
-	"minecraft:entity": {
-		"description": {
-			"identifier": "fk:mystical_merchant",
-			"is_spawnable": true,
-			"is_summonable": true,
-			"is_experimental": false
-		},
-		"component_groups": {},
-		"components": {
-			"minecraft:behavior.look_at_trading_player": {
-				"priority": 15
-			},
-			"minecraft:behavior.open_door": {
-				"priority": 6,
-				"close_door_after": true
-			},
-			"minecraft:collision_box": {
-				"width": 0.6,
-				"height": 1.9
-			},
-			"minecraft:breathable": {
-				"breathes_air": true,
-				"breathes_lava": true,
-				"breathes_solids": true,
-				"breathes_water": true
-			},
-			"minecraft:health": {
-				"value": 50,
-				"max": 50
-			},
-			"minecraft:movement": {
-				"value": 0.25
-			},
-			"minecraft:navigation.walk": {
-				"is_amphibious": true,
-				"avoid_sun": true,
-				"avoid_water": true,
-				"can_pass_doors": true,
-				"can_open_doors": true
-			},
-			"minecraft:movement.basic": {},
-			"minecraft:jump.static": {},
-			"minecraft:can_climb": {},
-			"minecraft:despawn": {
-				"filters": {
-					"all_of": [
-						{
-							"test": "has_trade_supply",
-							"subject": "self",
-							"value": false
-						},
-						{
-							"test": "distance_to_nearest_player",
-							"operator": ">",
-							"value": 24
-						}
-					]
-				}
-			},
-			"minecraft:behavior.avoid_mob_type": {
-				"priority": 4,
-				"entity_types": [
-					{
-						"filters": {
-							"test": "is_family",
-							"subject": "other",
-							"value": "wandering_trader"
-						},
-						"max_dist": 6,
-						"walk_speed_multiplier": 1.2,
-						"sprint_speed_multiplier": 1.2
-					}
-				]
-			},
-			"minecraft:behavior.random_stroll": {
-				"priority": 6,
-				"speed_multiplier": 1
-			},
-			"minecraft:behavior.look_at_player": {
-				"priority": 7,
-				"look_distance": 8
-			},
-			"minecraft:behavior.random_look_around": {
-				"priority": 8
-			},
-			"minecraft:physics": {},
-			"minecraft:pushable": {
-				"is_pushable": true,
-				"is_pushable_by_piston": true
-			},
-			"minecraft:conditional_bandwidth_optimization": {},
-			"minecraft:economy_trade_table": {
-				"display_name": "Mystical Merchant",
-				"table": "trading/economy_trades/mystical_merchant_trades.json",
-				"new_screen": true
-			},
-			"minecraft:annotation.open_door": {},
-			"minecraft:behavior.avoid_block": {
-				"priority": 9,
-				"tick_interval": 5,
-				"search_range": 8,
-				"search_height": 4,
-				"sprint_speed_modifier": 1.1,
-				"target_selection_method": "nearest",
-				"target_blocks": [
-					"minecraft:netherite_block"
-				]
-			},
-			"minecraft:behavior.trade_with_player": {
-				"priority": 1
-			}
-		},
-		"events": {}
-	}
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "component_groups": {},
+        "components": {
+            "minecraft:annotation.open_door": {},
+            "minecraft:behavior.avoid_block": {
+                "priority": 9,
+                "search_height": 4,
+                "search_range": 8,
+                "sprint_speed_modifier": 1.1,
+                "target_blocks": [
+                    "minecraft:netherite_block"
+                ],
+                "target_selection_method": "nearest",
+                "tick_interval": 5
+            },
+            "minecraft:behavior.avoid_mob_type": {
+                "entity_types": [
+                    {
+                        "filters": {
+                            "subject": "other",
+                            "test": "is_family",
+                            "value": "wandering_trader"
+                        },
+                        "max_dist": 6,
+                        "sprint_speed_multiplier": 1.2,
+                        "walk_speed_multiplier": 1.2
+                    }
+                ],
+                "priority": 4
+            },
+            "minecraft:behavior.look_at_player": {
+                "look_distance": 8,
+                "priority": 7
+            },
+            "minecraft:behavior.look_at_trading_player": {
+                "priority": 15
+            },
+            "minecraft:behavior.open_door": {
+                "close_door_after": true,
+                "priority": 6
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 8
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 1
+            },
+            "minecraft:behavior.trade_with_player": {
+                "priority": 1
+            },
+            "minecraft:breathable": {
+                "breathes_air": true,
+                "breathes_lava": true,
+                "breathes_solids": true,
+                "breathes_water": true
+            },
+            "minecraft:can_climb": {},
+            "minecraft:collision_box": {
+                "height": 1.9,
+                "width": 0.6
+            },
+            "minecraft:conditional_bandwidth_optimization": {},
+            "minecraft:despawn": {
+                "filters": {
+                    "all_of": [
+                        {
+                            "subject": "self",
+                            "test": "has_trade_supply",
+                            "value": false
+                        },
+                        {
+                            "operator": ">",
+                            "test": "distance_to_nearest_player",
+                            "value": 24
+                        }
+                    ]
+                }
+            },
+            "minecraft:economy_trade_table": {
+                "display_name": "Mystical Merchant",
+                "new_screen": true,
+                "table": "trading/economy_trades/mystical_merchant_trades.json"
+            },
+            "minecraft:health": {
+                "max": 50,
+                "value": 50
+            },
+            "minecraft:jump.static": {},
+            "minecraft:movement": {
+                "value": 0.25
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:navigation.walk": {
+                "avoid_sun": true,
+                "avoid_water": true,
+                "can_open_doors": true,
+                "can_pass_doors": true,
+                "is_amphibious": true
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            }
+        },
+        "description": {
+            "identifier": "fk:mystical_merchant",
+            "is_experimental": false,
+            "is_spawnable": true,
+            "is_summonable": true
+        },
+        "events": {}
+    }
 }

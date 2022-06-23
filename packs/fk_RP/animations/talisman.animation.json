@@ -1,22 +1,22 @@
 {
-	"format_version": "1.8.0",
-	"animations": {
-		"animation.talisman.firstperson_main_hand": {
-			"loop": true,
-			"bones": {
-				"rightitem": {
-					"position": [
-						3.0,
-						15.0,
-						3.0
-					],
-					"rotation": [
-						"c.is_first_person ? -141.0 : 0.0",
-						"c.is_first_person ? -120.0 : 0.0",
-						"c.is_first_person ? -63.0 : 0.0"
-					]
-				}
-			}
-		}
-	}
+    "animations": {
+        "animation.talisman.firstperson_main_hand": {
+            "bones": {
+                "rightitem": {
+                    "position": [
+                        3,
+                        15,
+                        3
+                    ],
+                    "rotation": [
+                        "c.is_first_person ? -141.0 : 0.0",
+                        "c.is_first_person ? -120.0 : 0.0",
+                        "c.is_first_person ? -63.0 : 0.0"
+                    ]
+                }
+            },
+            "loop": true
+        }
+    },
+    "format_version": "1.8.0"
 }

@@ -1,16 +1,24 @@
 {
-	"format_version": "1.8.0",
-	"animations": {
-		"animation.skelemite.move": {
-			"loop": true,
-			"bones": {
-				"back_leg": {
-					"rotation": ["variable.tcos0 * -1.4", 0, 0]
-				},
-				"front_leg": {
-					"rotation": ["variable.tcos0 * 1.4", 0, 0]
-				}
-			}
-		}
-	}
+    "animations": {
+        "animation.skelemite.move": {
+            "bones": {
+                "back_leg": {
+                    "rotation": [
+                        "variable.tcos0 * -1.4",
+                        0,
+                        0
+                    ]
+                },
+                "front_leg": {
+                    "rotation": [
+                        "variable.tcos0 * 1.4",
+                        0,
+                        0
+                    ]
+                }
+            },
+            "loop": true
+        }
+    },
+    "format_version": "1.8.0"
 }

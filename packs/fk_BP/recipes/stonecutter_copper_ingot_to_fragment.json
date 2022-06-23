@@ -1,21 +1,21 @@
 {
-	"format_version": "1.12",
-	"minecraft:recipe_shapeless": {
-		"description": {
-			"identifier": "fk:stonecutter_copper_ingot_to_fragment"
-		},
-		"tags": [
-			"stonecutter"
-		],
-		"priority": 0,
-		"ingredients": [
-			{
-				"item": "minecraft:copper_ingot"
-			}
-		],
-		"result": {
-			"item": "fk:copper_fragment",
-			"count": 8
-		}
-	}
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "fk:stonecutter_copper_ingot_to_fragment"
+        },
+        "ingredients": [
+            {
+                "item": "minecraft:copper_ingot"
+            }
+        ],
+        "priority": 0,
+        "result": {
+            "count": 8,
+            "item": "fk:copper_fragment"
+        },
+        "tags": [
+            "stonecutter"
+        ]
+    }
 }

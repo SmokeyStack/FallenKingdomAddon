@@ -1,38 +1,38 @@
 {
-	"format_version": "1.8.0",
-	"animations": {
-		"animation.electrified_horse.move": {
-			"loop": true,
-			"bones": {
-				"legFR": {
-					"rotation": [
-						"variable.tcos0 * -1.4",
-						0,
-						0
-					]
-				},
-				"legFL": {
-					"rotation": [
-						"variable.tcos0 * 1.4",
-						0,
-						0
-					]
-				},
-				"legBL": {
-					"rotation": [
-						"variable.tcos0 * -1.4",
-						0,
-						0
-					]
-				},
-				"legBR": {
-					"rotation": [
-						"variable.tcos0 * 1.4",
-						0,
-						0
-					]
-				}
-			}
-		}
-	}
+    "animations": {
+        "animation.electrified_horse.move": {
+            "bones": {
+                "legBL": {
+                    "rotation": [
+                        "variable.tcos0 * -1.4",
+                        0,
+                        0
+                    ]
+                },
+                "legBR": {
+                    "rotation": [
+                        "variable.tcos0 * 1.4",
+                        0,
+                        0
+                    ]
+                },
+                "legFL": {
+                    "rotation": [
+                        "variable.tcos0 * 1.4",
+                        0,
+                        0
+                    ]
+                },
+                "legFR": {
+                    "rotation": [
+                        "variable.tcos0 * -1.4",
+                        0,
+                        0
+                    ]
+                }
+            },
+            "loop": true
+        }
+    },
+    "format_version": "1.8.0"
 }

@@ -1,30 +1,30 @@
 {
-	"format_version": "1.8.0",
-	"render_controllers": {
-		"controller.render.electrified_horse": {
-			"part_visibility": [
-				{
-					"Saddle": "query.is_saddled"
-				},
-				{
-					"Bit*": "query.is_saddled"
-				},
-				{
-					"Bridle": "query.is_saddled"
-				},
-				{
-					"Reins*": "query.is_saddled && query.has_rider"
-				}
-			],
-			"geometry": "Geometry.default",
-			"materials": [
-				{
-					"*": "Material.default"
-				}
-			],
-			"textures": [
-				"Texture.default"
-			]
-		}
-	}
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.electrified_horse": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "part_visibility": [
+                {
+                    "Saddle": "query.is_saddled"
+                },
+                {
+                    "Bit*": "query.is_saddled"
+                },
+                {
+                    "Bridle": "query.is_saddled"
+                },
+                {
+                    "Reins*": "query.is_saddled && query.has_rider"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        }
+    }
 }

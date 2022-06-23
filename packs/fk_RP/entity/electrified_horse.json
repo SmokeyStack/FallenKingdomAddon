@@ -1,40 +1,40 @@
 {
-	"format_version": "1.16.0",
-	"minecraft:client_entity": {
-		"description": {
-			"identifier": "fk:electrified_horse",
-			"materials": {
-				"default": "entity_emissive_alpha"
-			},
-			"textures": {
-				"default": "textures/entity/electrified_horse"
-			},
-			"geometry": {
-				"default": "geometry.electrified_horse"
-			},
-			"animations": {
-				"walk": "animation.electrified_horse.move",
-				"look_at_target": "animation.humanoid.look_at_target.default.v1.0"
-			},
-			"scripts": {
-				"pre_animation": [
-					"variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
-				],
-				"animate": [
-					{
-						"walk": "query.modified_move_speed"
-					},
-					"look_at_target"
-				]
-			},
-			"render_controllers": [
-				"controller.render.electrified_horse"
-			],
-			"enable_attachables": false,
-			"spawn_egg": {
-				"base_color": "#949493",
-				"overlay_color": "#651818"
-			}
-		}
-	}
+    "format_version": "1.16.0",
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "look_at_target": "animation.humanoid.look_at_target.default.v1.0",
+                "walk": "animation.electrified_horse.move"
+            },
+            "enable_attachables": false,
+            "geometry": {
+                "default": "geometry.electrified_horse"
+            },
+            "identifier": "fk:electrified_horse",
+            "materials": {
+                "default": "entity_emissive_alpha"
+            },
+            "render_controllers": [
+                "controller.render.electrified_horse"
+            ],
+            "scripts": {
+                "animate": [
+                    {
+                        "walk": "query.modified_move_speed"
+                    },
+                    "look_at_target"
+                ],
+                "pre_animation": [
+                    "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#949493",
+                "overlay_color": "#651818"
+            },
+            "textures": {
+                "default": "textures/entity/electrified_horse"
+            }
+        }
+    }
 }

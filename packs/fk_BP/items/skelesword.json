@@ -1,38 +1,38 @@
 {
-	"format_version": "1.16.100",
-	"minecraft:item": {
-		"description": {
-			"identifier": "fk:skelesword",
-			"category": "equipment"
-		},
-		"components": {
-			"minecraft:creative_category": {
-				"parent": "itemGroup.name.sword"
-			},
-			"minecraft:max_stack_size": 1,
-			"minecraft:durability": {
-				"max_durability": 600
-			},
-			"minecraft:damage": 10,
-			"minecraft:enchantable": {
-				"value": 10,
-				"slot": "sword"
-			},
-			"minecraft:icon": {
-				"texture": "skelesword"
-			},
-			"minecraft:weapon": {},
-			"minecraft:display_name": {
-				"value": "SkeleSword"
-			},
-			"minecraft:repairable": {
-				"repair_items": [
-					{
-						"items": "minecraft:stick",
-						"repair_amount": 50
-					}
-				]
-			}
-		}
-	}
+    "format_version": "1.16.100",
+    "minecraft:item": {
+        "components": {
+            "minecraft:creative_category": {
+                "parent": "itemGroup.name.sword"
+            },
+            "minecraft:damage": 10,
+            "minecraft:display_name": {
+                "value": "SkeleSword"
+            },
+            "minecraft:durability": {
+                "max_durability": 600
+            },
+            "minecraft:enchantable": {
+                "slot": "sword",
+                "value": 10
+            },
+            "minecraft:icon": {
+                "texture": "skelesword"
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:repairable": {
+                "repair_items": [
+                    {
+                        "items": "minecraft:stick",
+                        "repair_amount": 50
+                    }
+                ]
+            },
+            "minecraft:weapon": {}
+        },
+        "description": {
+            "category": "equipment",
+            "identifier": "fk:skelesword"
+        }
+    }
 }

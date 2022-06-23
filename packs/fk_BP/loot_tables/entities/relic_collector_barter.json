@@ -1,267 +1,267 @@
 {
-	"pools": [
-		{
-			"rolls": 1,
-			"entries": [
-				{
-					"type": "item",
-					"name": "minecraft:appleenchanted",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "minecraft:beacon",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "minecraft:conduit",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "minecraft:creeper_banner_pattern",
-					"weight": 7
-				},
-				{
-					"type": "item",
-					"name": "minecraft:dragon_breath",
-					"weight": 7
-				},
-				{
-					"type": "item",
-					"name": "minecraft:elytra",
-					"weight": 7
-				},
-				{
-					"type": "item",
-					"name": "minecraft:end_crystal",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "minecraft:experience_bottle",
-					"weight": 7
-				},
-				{
-					"type": "item",
-					"name": "minecraft:netherreactor",
-					"weight": 2,
-					"functions": [
-						{
-							"function": "set_data",
-							"data": {
-								"min": 0,
-								"max": 2
-							}
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:filled_map",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "exploration_map",
-							"destination": "buriedtreasure"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:filled_map",
-					"weight": 1,
-					"functions": [
-						{
-							"function": "exploration_map",
-							"destination": "mineshaft"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:filled_map",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "exploration_map",
-							"destination": "pillageroutpost"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:filled_map",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "exploration_map",
-							"destination": "ruins"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:filled_map",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "exploration_map",
-							"destination": "shipwreck"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:filled_map",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "exploration_map",
-							"destination": "stronghold"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:filled_map",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "exploration_map",
-							"destination": "temple"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:filled_map",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "exploration_map",
-							"destination": "village"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:glowingobsidian",
-					"weight": 2
-				},
-				{
-					"type": "item",
-					"name": "minecraft:golden_apple",
-					"weight": 6
-				},
-				{
-					"type": "item",
-					"name": "minecraft:heart_of_the_sea",
-					"weight": 7
-				},
-				{
-					"type": "item",
-					"name": "minecraft:info_update",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "minecraft:info_update2",
-					"weight": 1
-				},
-				{
-					"type": "item",
-					"name": "minecraft:mojang_banner_pattern",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "minecraft:music_disc_pigstep",
-					"weight": 5
-				},
-				{
-					"type": "item",
-					"name": "minecraft:nether_star",
-					"weight": 7
-				},
-				{
-					"type": "item",
-					"name": "minecraft:netherreactor",
-					"weight": 2,
-					"functions": [
-						{
-							"function": "set_data",
-							"data": {
-								"min": 0,
-								"max": 2
-							}
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:purpur_block",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "set_data",
-							"data": {
-								"min": 1,
-								"max": 1
-							}
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:purpur_block",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "set_data",
-							"data": {
-								"min": 3,
-								"max": 3
-							}
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:reserved6",
-					"weight": 4
-				},
-				{
-					"type": "item",
-					"name": "minecraft:skull",
-					"weight": 5,
-					"functions": [
-						{
-							"function": "set_data",
-							"data": {
-								"min": 0,
-								"max": 4
-							}
-						}
-					]
-				},
-				{
-					"type": "item",
-					"name": "minecraft:skull_banner_pattern",
-					"weight": 7
-				},
-				{
-					"type": "item",
-					"name": "minecraft:stonecutter",
-					"weight": 3
-				},
-				{
-					"type": "item",
-					"name": "minecraft:totem",
-					"weight": 7
-				}
-			]
-		}
-	]
+    "pools": [
+        {
+            "entries": [
+                {
+                    "name": "minecraft:appleenchanted",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:beacon",
+                    "type": "item",
+                    "weight": 6
+                },
+                {
+                    "name": "minecraft:conduit",
+                    "type": "item",
+                    "weight": 6
+                },
+                {
+                    "name": "minecraft:creeper_banner_pattern",
+                    "type": "item",
+                    "weight": 7
+                },
+                {
+                    "name": "minecraft:dragon_breath",
+                    "type": "item",
+                    "weight": 7
+                },
+                {
+                    "name": "minecraft:elytra",
+                    "type": "item",
+                    "weight": 7
+                },
+                {
+                    "name": "minecraft:end_crystal",
+                    "type": "item",
+                    "weight": 6
+                },
+                {
+                    "name": "minecraft:experience_bottle",
+                    "type": "item",
+                    "weight": 7
+                },
+                {
+                    "functions": [
+                        {
+                            "data": {
+                                "max": 2,
+                                "min": 0
+                            },
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:netherreactor",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "functions": [
+                        {
+                            "destination": "buriedtreasure",
+                            "function": "exploration_map"
+                        }
+                    ],
+                    "name": "minecraft:filled_map",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "functions": [
+                        {
+                            "destination": "mineshaft",
+                            "function": "exploration_map"
+                        }
+                    ],
+                    "name": "minecraft:filled_map",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "functions": [
+                        {
+                            "destination": "pillageroutpost",
+                            "function": "exploration_map"
+                        }
+                    ],
+                    "name": "minecraft:filled_map",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "functions": [
+                        {
+                            "destination": "ruins",
+                            "function": "exploration_map"
+                        }
+                    ],
+                    "name": "minecraft:filled_map",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "functions": [
+                        {
+                            "destination": "shipwreck",
+                            "function": "exploration_map"
+                        }
+                    ],
+                    "name": "minecraft:filled_map",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "functions": [
+                        {
+                            "destination": "stronghold",
+                            "function": "exploration_map"
+                        }
+                    ],
+                    "name": "minecraft:filled_map",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "functions": [
+                        {
+                            "destination": "temple",
+                            "function": "exploration_map"
+                        }
+                    ],
+                    "name": "minecraft:filled_map",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "functions": [
+                        {
+                            "destination": "village",
+                            "function": "exploration_map"
+                        }
+                    ],
+                    "name": "minecraft:filled_map",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:glowingobsidian",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "name": "minecraft:golden_apple",
+                    "type": "item",
+                    "weight": 6
+                },
+                {
+                    "name": "minecraft:heart_of_the_sea",
+                    "type": "item",
+                    "weight": 7
+                },
+                {
+                    "name": "minecraft:info_update",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "minecraft:info_update2",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "minecraft:mojang_banner_pattern",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:music_disc_pigstep",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:nether_star",
+                    "type": "item",
+                    "weight": 7
+                },
+                {
+                    "functions": [
+                        {
+                            "data": {
+                                "max": 2,
+                                "min": 0
+                            },
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:netherreactor",
+                    "type": "item",
+                    "weight": 2
+                },
+                {
+                    "functions": [
+                        {
+                            "data": {
+                                "max": 1,
+                                "min": 1
+                            },
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:purpur_block",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "functions": [
+                        {
+                            "data": {
+                                "max": 3,
+                                "min": 3
+                            },
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:purpur_block",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:reserved6",
+                    "type": "item",
+                    "weight": 4
+                },
+                {
+                    "functions": [
+                        {
+                            "data": {
+                                "max": 4,
+                                "min": 0
+                            },
+                            "function": "set_data"
+                        }
+                    ],
+                    "name": "minecraft:skull",
+                    "type": "item",
+                    "weight": 5
+                },
+                {
+                    "name": "minecraft:skull_banner_pattern",
+                    "type": "item",
+                    "weight": 7
+                },
+                {
+                    "name": "minecraft:stonecutter",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "minecraft:totem",
+                    "type": "item",
+                    "weight": 7
+                }
+            ],
+            "rolls": 1
+        }
+    ]
 }

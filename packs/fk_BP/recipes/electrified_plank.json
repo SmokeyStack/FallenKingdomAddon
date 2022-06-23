@@ -1,23 +1,23 @@
 {
-	"format_version": "1.12",
-	"minecraft:recipe_shaped": {
-		"description": {
-			"identifier": "fk:electrifiedplankrecipe"
-		},
-		"tags": [
-			"crafting_table"
-		],
-		"pattern": [
-			"#"
-		],
-		"key": {
-			"#": {
-				"item": "fk:electrified_log"
-			}
-		},
-		"result": {
-			"item": "fk:electrified_plank",
-			"count": 4
-		}
-	}
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "fk:electrifiedplankrecipe"
+        },
+        "key": {
+            "#": {
+                "item": "fk:electrified_log"
+            }
+        },
+        "pattern": [
+            "#"
+        ],
+        "result": {
+            "count": 4,
+            "item": "fk:electrified_plank"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
 }

@@ -1,21 +1,21 @@
 {
-	"format_version": "1.10.0",
-	"animation_controllers": {
-		"controller.animation.rod": {
-			"states": {
-				"default": {
-					"transitions": [
-						{
-							"stop": "query.is_on_ground"
-						}
-					]
-				},
-				"stop": {
-					"on_entry": [
-						"/summon lightning_bolt"
-					]
-				}
-			}
-		}
-	}
+    "animation_controllers": {
+        "controller.animation.rod": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "stop": "query.is_on_ground"
+                        }
+                    ]
+                },
+                "stop": {
+                    "on_entry": [
+                        "/summon lightning_bolt"
+                    ]
+                }
+            }
+        }
+    },
+    "format_version": "1.10.0"
 }

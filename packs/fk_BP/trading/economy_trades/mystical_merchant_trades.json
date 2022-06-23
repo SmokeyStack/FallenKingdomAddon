@@ -1,1649 +1,1649 @@
 {
-	"tiers": [
-		{
-			"groups": [
-				{
-					"num_to_select": 9,
-					"trades": [
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 16
-								}
-							],
-							"gives": [
-								{
-									"item": "fk:pigstep_remix"
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:bread",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:pumpkin_pie",
-									"quantity": 4
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:apple",
-									"quantity": 4
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 3
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:cookie",
-									"quantity": 18
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:suspicious_stew:0",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_aux_value",
-											"values": {
-												"min": 0,
-												"max": 5
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:cake",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 3
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:golden_carrot",
-									"quantity": 3
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 4
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:speckled_melon",
-									"quantity": 3
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:rabbit_stew",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:cooked_porkchop",
-									"quantity": 5
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:cooked_chicken",
-									"quantity": 8
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:cooked_fish",
-									"quantity": 6
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 2
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:campfire",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:fishing_rod",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 6
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:bookshelf",
-									"quantity": 3
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:enchanted_book",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:lantern",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:enchanted_book",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:glass",
-									"quantity": 4
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:enchanted_book",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 5
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:clock",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 4
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:compass",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:enchanted_book",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 20
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:name_tag",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 4
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_boots",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 7
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_leggings",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 5
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_helmet",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 9
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_chestplate",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 36
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:bell",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 4
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_chestplate",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_helmet",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 5
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:shield",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:diamond_leggings",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:diamond_boots",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:diamond_chestplate",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:diamond_helmet",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:stone_axe",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:stone_shovel",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:stone_pickaxe",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:stone_hoe",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 36
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:bell",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_axe",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_shovel",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_pickaxe",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:iron_hoe",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:diamond_axe",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:diamond_shovel",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 64
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:diamond_pickaxe",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "enchant_with_levels",
-											"treasure": true,
-											"levels": {
-												"min": 30,
-												"max": 59
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 2
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:shears",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:wool",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "set_data",
-											"data": {
-												"min": 0,
-												"max": 16
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:carpet",
-									"quantity": 4,
-									"functions": [
-										{
-											"function": "set_data",
-											"data": {
-												"min": 0,
-												"max": 16
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 3
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:bed",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "set_data",
-											"data": {
-												"min": 0,
-												"max": 16
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 3
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:banner",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "set_data",
-											"data": {
-												"min": 0,
-												"max": 16
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 2
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:painting",
-									"quantity": 3
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 7
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:leather_chestplate",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_dye"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 3
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:leather_leggings",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_dye"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 5
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:leather_helmet",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_dye"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 4
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:leather_boots",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_dye"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 7
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:leather_chestplate",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_dye"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 6
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:horsearmorleather",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_dye"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 6
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:saddle",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 5
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:leather_helmet",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_dye"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:redstone",
-									"quantity": 2
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:dye",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "set_data",
-											"data": 4
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 4
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:glowstone",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 5
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:ender_pearl",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 3
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:experience_bottle",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 7
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:emptymap",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 13
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:map",
-									"functions": [
-										{
-											"function": "exploration_map",
-											"destination": "monument"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 10,
-							"max_uses": 1,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 14
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:map",
-									"functions": [
-										{
-											"function": "exploration_map",
-											"destination": "mansion"
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 7
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:frame",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 3
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:banner",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "random_aux_value",
-											"values": {
-												"min": 0,
-												"max": 15
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 8
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:flower_banner_pattern",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 8
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:field_masoned_banner_pattern",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 8
-								}
-							],
-							"gives": [
-								{
-									"item": "bordure_indented_banner_pattern",
-									"quantity": 8
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:brick",
-									"quantity": 10
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:stonebrick",
-									"quantity": 4,
-									"functions": [
-										{
-											"function": "set_data",
-											"data": 3
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:hardened_clay",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:stained_hardened_clay",
-									"quantity": 1,
-									"functions": [
-										{
-											"function": "set_data",
-											"data": {
-												"min": 0,
-												"max": 15
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:quartz_block",
-									"quantity": 1
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:arrow",
-									"quantity": 16,
-									"functions": [
-										{
-											"function": "random_aux_value",
-											"data": {
-												"min": 0,
-												"max": 42
-											}
-										}
-									]
-								}
-							]
-						},
-						{
-							"trader_exp": 1,
-							"max_uses": 10,
-							"wants": [
-								{
-									"item": "fk:copper_fragment",
-									"quantity": 1
-								}
-							],
-							"gives": [
-								{
-									"item": "minecraft:flint",
-									"quantity": 10
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"total_exp_required": 90,
-			"trades": [
-				{
-					"max_uses": 1,
-					"wants": [
-						{
-							"item": "minecraft:gold_block",
-							"quantity": 1
-						}
-					],
-					"gives": [
-						{
-							"item": "fk:trader_talisman",
-							"quantity": 1
-						}
-					]
-				}
-			]
-		}
-	]
+    "tiers": [
+        {
+            "groups": [
+                {
+                    "num_to_select": 9,
+                    "trades": [
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 16
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "fk:pigstep_remix"
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:bread",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:pumpkin_pie",
+                                    "quantity": 4
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:apple",
+                                    "quantity": 4
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 3
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:cookie",
+                                    "quantity": 18
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:suspicious_stew:0",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_aux_value",
+                                            "values": {
+                                                "min": 0,
+                                                "max": 5
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:cake",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 3
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:golden_carrot",
+                                    "quantity": 3
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 4
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:speckled_melon",
+                                    "quantity": 3
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:rabbit_stew",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:cooked_porkchop",
+                                    "quantity": 5
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:cooked_chicken",
+                                    "quantity": 8
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:cooked_fish",
+                                    "quantity": 6
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:campfire",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:fishing_rod",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 6
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:bookshelf",
+                                    "quantity": 3
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:enchanted_book",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:lantern",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:enchanted_book",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:glass",
+                                    "quantity": 4
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:enchanted_book",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 5
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:clock",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 4
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:compass",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:enchanted_book",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 20
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:name_tag",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 4
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_boots",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 7
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_leggings",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 5
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_helmet",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 9
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_chestplate",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 36
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:bell",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 4
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_chestplate",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_helmet",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 5
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:shield",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:diamond_leggings",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:diamond_boots",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:diamond_chestplate",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:diamond_helmet",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:stone_axe",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:stone_shovel",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:stone_pickaxe",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:stone_hoe",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 36
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:bell",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_axe",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_shovel",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_pickaxe",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:iron_hoe",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:diamond_axe",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:diamond_shovel",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 64
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:diamond_pickaxe",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "enchant_with_levels",
+                                            "treasure": true,
+                                            "levels": {
+                                                "min": 30,
+                                                "max": 59
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:shears",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:wool",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "set_data",
+                                            "data": {
+                                                "min": 0,
+                                                "max": 16
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:carpet",
+                                    "quantity": 4,
+                                    "functions": [
+                                        {
+                                            "function": "set_data",
+                                            "data": {
+                                                "min": 0,
+                                                "max": 16
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 3
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:bed",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "set_data",
+                                            "data": {
+                                                "min": 0,
+                                                "max": 16
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 3
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:banner",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "set_data",
+                                            "data": {
+                                                "min": 0,
+                                                "max": 16
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:painting",
+                                    "quantity": 3
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 7
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:leather_chestplate",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_dye"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 3
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:leather_leggings",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_dye"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 5
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:leather_helmet",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_dye"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 4
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:leather_boots",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_dye"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 7
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:leather_chestplate",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_dye"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 6
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:horsearmorleather",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_dye"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 6
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:saddle",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 5
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:leather_helmet",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_dye"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:redstone",
+                                    "quantity": 2
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:dye",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "set_data",
+                                            "data": 4
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 4
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:glowstone",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 5
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:ender_pearl",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 3
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:experience_bottle",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 7
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:emptymap",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 13
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:map",
+                                    "functions": [
+                                        {
+                                            "function": "exploration_map",
+                                            "destination": "monument"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 10,
+                            "max_uses": 1,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 14
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:map",
+                                    "functions": [
+                                        {
+                                            "function": "exploration_map",
+                                            "destination": "mansion"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 7
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:frame",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 3
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:banner",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "random_aux_value",
+                                            "values": {
+                                                "min": 0,
+                                                "max": 15
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 8
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:flower_banner_pattern",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 8
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:field_masoned_banner_pattern",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 8
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "bordure_indented_banner_pattern",
+                                    "quantity": 8
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:brick",
+                                    "quantity": 10
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:stonebrick",
+                                    "quantity": 4,
+                                    "functions": [
+                                        {
+                                            "function": "set_data",
+                                            "data": 3
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:hardened_clay",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:stained_hardened_clay",
+                                    "quantity": 1,
+                                    "functions": [
+                                        {
+                                            "function": "set_data",
+                                            "data": {
+                                                "min": 0,
+                                                "max": 15
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:quartz_block",
+                                    "quantity": 1
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:arrow",
+                                    "quantity": 16,
+                                    "functions": [
+                                        {
+                                            "function": "random_aux_value",
+                                            "data": {
+                                                "min": 0,
+                                                "max": 42
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "trader_exp": 1,
+                            "max_uses": 10,
+                            "wants": [
+                                {
+                                    "item": "fk:copper_fragment",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "minecraft:flint",
+                                    "quantity": 10
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "total_exp_required": 90,
+            "trades": [
+                {
+                    "max_uses": 1,
+                    "wants": [
+                        {
+                            "item": "minecraft:gold_block",
+                            "quantity": 1
+                        }
+                    ],
+                    "gives": [
+                        {
+                            "item": "fk:trader_talisman",
+                            "quantity": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
