@@ -29,6 +29,18 @@
     "fk:electrified_trapdoor": {
         "sound": "wood"
     },
+    "fk:flaming_dirt": {
+        "sound": "nether_wart"
+    },
+    "fk:flaming_grass": {
+        "sound": "electrified_grass"
+    },
+    "fk:flaming_log": {
+        "sound": "stem"
+    },
+    "fk:flaming_plank": {
+        "sound": "stem"
+    },
     "fk:grimslate": {
         "sound": "stone"
     },

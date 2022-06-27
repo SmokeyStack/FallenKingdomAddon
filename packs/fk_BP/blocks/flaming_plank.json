@@ -1,0 +1,24 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "components": {
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.planks"
+            },
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 3,
+            "minecraft:map_color": "#BC2626",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "flaming_plank"
+                }
+            },
+            "minecraft:unit_cube": {}
+        },
+        "description": {
+            "identifier": "fk:flaming_plank",
+            "register_to_creative_menu": true
+        }
+    }
+}

@@ -9,22 +9,22 @@
             "minecraft:destroy_time": 1,
             "minecraft:explosion_resistance": 3,
             "minecraft:loot": "loot_tables/blocks/electrified_grass.json",
-            "minecraft:map_color": "#16F6FF",
+            "minecraft:map_color": "#D62525",
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "electrified_grass_side"
+                    "texture": "flaming_grass_side"
                 },
                 "down": {
-                    "texture": "electrified_dirt"
+                    "texture": "flaming_dirt"
                 },
                 "up": {
-                    "texture": "electrified_grass_top"
+                    "texture": "flaming_grass_top"
                 }
             },
             "minecraft:unit_cube": {}
         },
         "description": {
-            "identifier": "fk:electrified_grass",
+            "identifier": "fk:flaming_grass",
             "register_to_creative_menu": true
         }
     }

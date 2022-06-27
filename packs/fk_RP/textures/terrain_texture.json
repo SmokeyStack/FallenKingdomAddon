@@ -42,6 +42,24 @@
         "electrified_trapdoor": {
             "textures": "textures/blocks/electrified_trapdoor"
         },
+        "flaming_dirt": {
+            "textures": "textures/blocks/flaming_dirt"
+        },
+        "flaming_grass_side": {
+            "textures": "textures/blocks/flaming_grass_side"
+        },
+        "flaming_grass_top": {
+            "textures": "textures/blocks/flaming_grass_top"
+        },
+        "flaming_log_sides": {
+            "textures": "textures/blocks/flaming_log_sides"
+        },
+        "flaming_log_top": {
+            "textures": "textures/blocks/flaming_log_top"
+        },
+        "flaming_plank": {
+            "textures": "textures/blocks/flaming_plank"
+        },
         "grimslate": {
             "textures": "textures/blocks/grimslate"
         },
