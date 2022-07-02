@@ -2,11 +2,9 @@ import { BlockLocation, EntityQueryOptions, MinecraftBlockTypes, world } from "m
 
 let currentTick = 0;
 
-// && Math.floor(Math.random() * 255) === 0
-
 function updateBlock(block, type, turnInto) {
     if (block.id == type) {
-        if ((world.getDimension("overworld").getBlock(block.location.offset(0, 1, 0)).type != MinecraftBlockTypes.air)) {
+        if ((world.getDimension("overworld").getBlock(block.location.offset(0, 1, 0)).type != MinecraftBlockTypes.air) && Math.floor(Math.random() * 255) === 0) {
             block.setType(MinecraftBlockTypes.get(turnInto));
         } else {
             let direction = Math.round(Math.random() * 3);
@@ -46,6 +44,7 @@ function checkForblocks() {
                     for (const player of checkPlayer) {
                         var checkBlock = world.getDimension("overworld").getBlock(new BlockLocation(Math.trunc(player.location.x) + a, Math.trunc(player.location.y) + b, Math.trunc(player.location.z) + c));
                         updateBlock(checkBlock, "fk:electrified_grass", "fk:electrified_dirt");
+                        updateBlock(checkBlock, "fk:flaming_grass", "fk:flaming_dirt");
                     }
                 }
             }

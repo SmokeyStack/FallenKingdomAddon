@@ -19,7 +19,7 @@
                 "minecraft:biome_filter": {
                     "test": "has_biome_tag",
                     "operator": "==",
-                    "value": "electric"
+                    "value": "plains"
                 }
             }
         ]
