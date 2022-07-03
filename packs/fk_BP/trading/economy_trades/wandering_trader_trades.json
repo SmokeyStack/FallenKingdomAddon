@@ -413,6 +413,9 @@
                                         },
                                         {
                                             "item": "fk:electrified_sapling"
+                                        },
+                                        {
+                                            "item": "fk:flaming_sapling"
                                         }
                                     ]
                                 }
@@ -601,6 +604,14 @@
                                         },
                                         {
                                             "item": "fk:electrified_grass",
+                                            "quantity": 2
+                                        },
+                                        {
+                                            "item": "fk:flaming_dirt",
+                                            "quantity": 2
+                                        },
+                                        {
+                                            "item": "fk:flaming_grass",
                                             "quantity": 2
                                         }
                                     ]
