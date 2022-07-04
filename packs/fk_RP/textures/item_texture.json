@@ -10,6 +10,9 @@
         "electrified_sapling": {
             "textures": "textures/items/electrified_sapling"
         },
+        "flaming_sapling": {
+            "textures": "textures/items/electrified_sapling"
+        },
         "pigstep_remix": {
             "textures": "textures/items/pigstep_remix"
         },

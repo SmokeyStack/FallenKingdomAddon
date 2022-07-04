@@ -33,12 +33,6 @@
         "electrified_slab": {
             "textures": "textures/blocks/electrified_slab"
         },
-        "electrified_stair": {
-            "textures": "textures/blocks/electrified_stair"
-        },
-        "electrified_stair_corner": {
-            "textures": "textures/blocks/electrified_stair_corner"
-        },
         "electrified_trapdoor": {
             "textures": "textures/blocks/electrified_trapdoor"
         },
@@ -59,6 +53,15 @@
         },
         "flaming_plank": {
             "textures": "textures/blocks/flaming_plank"
+        },
+        "flaming_sapling": {
+            "textures": "textures/blocks/electrified_sapling"
+        },
+        "flaming_slab": {
+            "textures": "textures/blocks/electrified_slab"
+        },
+        "flaming_trapdoor": {
+            "textures": "textures/blocks/electrified_trapdoor"
         },
         "grimslate": {
             "textures": "textures/blocks/grimslate"

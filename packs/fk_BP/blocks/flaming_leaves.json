@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_emission": 0.5,
+            "minecraft:block_light_filter": 0,
+            "minecraft:creative_category": {
+                "category": "nature",
+                "group": "itemGroup.name.leaves"
+            },
+            "minecraft:destroy_time": 1,
+            "minecraft:explosion_resistance": 3,
+            "minecraft:loot": "loot_tables/blocks/flaming_leaves.json",
+            "minecraft:map_color": "#5691F5",
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "alpha_test",
+                    "texture": "electrified_leaves"
+                }
+            },
+            "minecraft:unit_cube": {}
+        },
+        "description": {
+            "identifier": "fk:flaming_leaves",
+            "register_to_creative_menu": true
+        }
+    }
+}

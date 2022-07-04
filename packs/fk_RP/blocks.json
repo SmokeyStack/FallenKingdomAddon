@@ -35,11 +35,23 @@
     "fk:flaming_grass": {
         "sound": "electrified_grass"
     },
+    "fk:flaming_leaves": {
+        "sound": "leaves2"
+    },
     "fk:flaming_log": {
         "sound": "stem"
     },
     "fk:flaming_plank": {
         "sound": "stem"
+    },
+    "fk:flaming_sapling": {
+        "sound": "grass"
+    },
+    "fk:flaming_slab": {
+        "sound": "wood"
+    },
+    "fk:flaming_trapdoor": {
+        "sound": "wood"
     },
     "fk:grimslate": {
         "sound": "stone"

@@ -1,0 +1,72 @@
+{
+    "pools": [
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "item": "minecraft:shears"
+                }
+            ],
+            "entries": [
+                {
+                    "name": "fk:flaming_leaves",
+                    "type": "item",
+                    "weight": 1
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "conditions": [
+                {
+                    "condition": "match_tool",
+                    "enchantments": [
+                        {
+                            "enchantment": "fortune",
+                            "levels": {
+                                "range_max": 3
+                            }
+                        }
+                    ]
+                }
+            ],
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "count": {
+                                "max": 6,
+                                "min": 1
+                            },
+                            "function": "set_count"
+                        }
+                    ],
+                    "name": "fk:flaming_sapling",
+                    "type": "item",
+                    "weight": 3
+                },
+                {
+                    "name": "loot_tables/empty.json",
+                    "type": "loot_table",
+                    "weight": 8
+                }
+            ],
+            "rolls": 1
+        },
+        {
+            "entries": [
+                {
+                    "name": "fk:flaming_sapling",
+                    "type": "item",
+                    "weight": 1
+                },
+                {
+                    "name": "loot_tables/empty.json",
+                    "type": "loot_table",
+                    "weight": 10
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

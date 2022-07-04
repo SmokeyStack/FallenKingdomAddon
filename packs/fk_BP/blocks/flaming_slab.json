@@ -1,0 +1,124 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_filter": 0,
+            "minecraft:creative_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
+            },
+            "minecraft:destroy_time": 1,
+            "minecraft:map_color": "#39FAFF",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "flaming_slab"
+                }
+            },
+            "minecraft:on_player_placing": {
+                "event": "placement_state"
+            }
+        },
+        "description": {
+            "identifier": "fk:flaming_slab",
+            "properties": {
+                "fk:state": [
+                    "lower",
+                    "upper"
+                ]
+            }
+        },
+        "events": {
+            "lower": {
+                "set_block_property": {
+                    "fk:state": "'lower'"
+                }
+            },
+            "placement_state": {
+                "sequence": [
+                    {
+                        "condition": "q.target_x_rotation <=0",
+                        "trigger": {
+                            "event": "upper"
+                        }
+                    },
+                    {
+                        "condition": "q.target_x_rotation >0",
+                        "trigger": {
+                            "event": "lower"
+                        }
+                    }
+                ]
+            },
+            "upper": {
+                "set_block_property": {
+                    "fk:state": "'upper'"
+                }
+            }
+        },
+        "permutations": [
+            {
+                "components": {
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:geometry": "geometry.slab"
+                },
+                "condition": "q.block_property('fk:state') == 'lower'"
+            },
+            {
+                "components": {
+                    "minecraft:aim_collision": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:block_collision": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:geometry": "geometry.slab_upper",
+                    "minecraft:on_interact": {
+                        "event": "upper_open"
+                    }
+                },
+                "condition": "q.block_property('fk:state') == 'upper'"
+            }
+        ]
+    }
+}
