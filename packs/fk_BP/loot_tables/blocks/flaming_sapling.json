@@ -3,7 +3,7 @@
         {
             "entries": [
                 {
-                    "name": "fk:electrified_dirt",
+                    "name": "fk:flaming_sapling_item",
                     "type": "item"
                 }
             ],
