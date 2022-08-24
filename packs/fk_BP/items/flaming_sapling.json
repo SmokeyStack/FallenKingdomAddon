@@ -3,14 +3,13 @@
     "minecraft:item": {
         "components": {
             "minecraft:block_placer": {
-                "block": "fk:flaming_sapling",
-                "use_block_description": true
+                "block": "fk:flaming_sapling"
             },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sapling"
             },
             "minecraft:display_name": {
-                "value": "flaming Sapling"
+                "value": "Flaming Sapling"
             },
             "minecraft:foil": false,
             "minecraft:icon": {
@@ -20,7 +19,7 @@
         },
         "description": {
             "category": "nature",
-            "identifier": "fk:flaming_sapling"
+            "identifier": "fk:flaming_sapling_item"
         }
     }
 }

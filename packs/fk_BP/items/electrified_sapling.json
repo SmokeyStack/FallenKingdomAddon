@@ -3,8 +3,7 @@
     "minecraft:item": {
         "components": {
             "minecraft:block_placer": {
-                "block": "fk:electrified_sapling",
-                "use_block_description": true
+                "block": "fk:electrified_sapling"
             },
             "minecraft:creative_category": {
                 "parent": "itemGroup.name.sapling"
@@ -20,7 +19,7 @@
         },
         "description": {
             "category": "nature",
-            "identifier": "fk:electrified_sapling"
+            "identifier": "fk:electrified_sapling_item"
         }
     }
 }
