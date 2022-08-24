@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "fk:deepstone_sword_recipe"
+        },
+        "key": {
+            "#": {
+                "item": "fk:electrified_plank"
+            },
+            "/": {
+                "item": "minecraft:stick"
+            }
+        },
+        "pattern": [
+            "#",
+            "#",
+            "/"
+        ],
+        "result": {
+            "count": 6,
+            "item": "fk:deepstone_sword"
+        },
+        "tags": [
+            "crafting_table"
+        ]
+    }
+}
