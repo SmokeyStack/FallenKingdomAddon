@@ -22,10 +22,7 @@
             "minecraft:max_stack_size": 1,
             "minecraft:repairable": {
                 "repair_items": [
-                    {
-                        "items": "minecraft:stick",
-                        "repair_amount": 50
-                    }
+                    "minecraft:stick"
                 ]
             },
             "minecraft:weapon": {}
