@@ -2,7 +2,7 @@
     "format_version": "1.16",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "fk:electrified_trapdoor"
+            "identifier": "fk:electrified_trapdoor_recipe"
         },
         "group": "wooden_trap_door",
         "key": {

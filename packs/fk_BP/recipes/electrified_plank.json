@@ -2,7 +2,7 @@
     "format_version": "1.12",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "fk:electrifiedplankrecipe"
+            "identifier": "fk:electrified_plank_recipe"
         },
         "key": {
             "#": {

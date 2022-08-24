@@ -2,20 +2,19 @@
     "format_version": "1.12",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "fk:electrified_slab_recipe"
+            "identifier": "fk:flamingplankrecipe"
         },
-        "group": "wooden_slab",
         "key": {
             "#": {
-                "item": "fk:electrified_plank"
+                "item": "fk:flaming_log"
             }
         },
         "pattern": [
-            "###"
+            "#"
         ],
         "result": {
-            "count": 6,
-            "item": "fk:electrified_slab"
+            "count": 4,
+            "item": "fk:flaming_plank"
         },
         "tags": [
             "crafting_table"

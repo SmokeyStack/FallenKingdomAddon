@@ -1,21 +1,22 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.16",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "fk:electrified_slab_recipe"
+            "identifier": "fk:flaming_trapdoor_recipe"
         },
-        "group": "wooden_slab",
+        "group": "wooden_trap_door",
         "key": {
             "#": {
-                "item": "fk:electrified_plank"
+                "item": "fk:flaming_plank"
             }
         },
         "pattern": [
+            "###",
             "###"
         ],
         "result": {
-            "count": 6,
-            "item": "fk:electrified_slab"
+            "count": 2,
+            "item": "fk:flaming_trapdoor"
         },
         "tags": [
             "crafting_table"
