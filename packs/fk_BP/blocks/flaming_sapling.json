@@ -1,29 +1,20 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.19.20",
     "minecraft:block": {
         "components": {
-            "minecraft:aim_collision": {
-                "origin": [
-                    -3.5,
-                    0,
-                    -3.5
-                ],
-                "size": [
-                    5.5,
-                    11.5,
-                    5.5
-                ]
-            },
-            "minecraft:block_collision": false,
-            "minecraft:block_light_emission": 0.3,
             "minecraft:block_light_filter": 0,
-            "minecraft:destroy_time": 0.01,
+            "minecraft:collision_box": false,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.01
+            },
             "minecraft:flammable": {
                 "burn_odds": 1,
                 "flame_odds": 1
             },
             "minecraft:friction": 0.1,
             "minecraft:geometry": "geometry.sapling",
+            "minecraft:light_emission": 0.3,
+            "minecraft:loot": "loot_tables/blocks/flaming_sapling.json",
             "minecraft:map_color": "#35696C",
             "minecraft:material_instances": {
                 "*": {
@@ -54,6 +45,18 @@
                 "on_tick": {
                     "event": "fk:grow"
                 }
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -3.5,
+                    0,
+                    -3.5
+                ],
+                "size": [
+                    5.5,
+                    11.5,
+                    5.5
+                ]
             }
         },
         "description": {
@@ -142,7 +145,7 @@
         "permutations": [
             {
                 "components": {
-                    "minecraft:block_light_emission": 0.4,
+                    "minecraft:light_emission": 0.4,
                     "minecraft:on_interact": {
                         "condition": "query.get_equipped_item_name == 'bone_meal'",
                         "event": "fk:grow1",
@@ -153,7 +156,7 @@
             },
             {
                 "components": {
-                    "minecraft:block_light_emission": 0.5,
+                    "minecraft:light_emission": 0.5,
                     "minecraft:on_interact": {
                         "condition": "query.get_equipped_item_name == 'bone_meal'",
                         "event": "fk:grow2",
@@ -164,7 +167,7 @@
             },
             {
                 "components": {
-                    "minecraft:block_light_emission": 0.6,
+                    "minecraft:light_emission": 0.6,
                     "minecraft:on_interact": {
                         "condition": "query.get_equipped_item_name == 'bone_meal'",
                         "event": "fk:grow3",

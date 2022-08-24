@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.19.20",
     "minecraft:block": {
         "components": {
             "minecraft:block_light_filter": 0,
@@ -7,7 +7,9 @@
                 "category": "construction",
                 "group": "itemGroup.name.trapdoor"
             },
-            "minecraft:destroy_time": 1,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
             "minecraft:map_color": "#39FAFF",
             "minecraft:material_instances": {
                 "*": {
@@ -161,7 +163,7 @@
             },
             {
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -173,7 +175,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -194,7 +196,7 @@
             },
             {
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             14,
@@ -206,7 +208,7 @@
                             16
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             14,
@@ -227,7 +229,7 @@
             },
             {
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -239,7 +241,7 @@
                             2
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,
@@ -261,7 +263,7 @@
             },
             {
                 "components": {
-                    "minecraft:aim_collision": {
+                    "minecraft:selection_box": {
                         "origin": [
                             -8,
                             0,
@@ -273,7 +275,7 @@
                             2
                         ]
                     },
-                    "minecraft:block_collision": {
+                    "minecraft:collision_box": {
                         "origin": [
                             -8,
                             0,

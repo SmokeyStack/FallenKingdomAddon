@@ -1,14 +1,18 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.19.20",
     "minecraft:block": {
         "components": {
-            "minecraft:block_light_emission": 0.7,
+            "minecraft:light_emission": 0.7,
             "minecraft:creative_category": {
                 "category": "nature",
                 "group": "itemGroup.name.log"
             },
-            "minecraft:destroy_time": 3,
-            "minecraft:explosion_resistance": 3,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 3
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            },
             "minecraft:map_color": "#CD3737",
             "minecraft:material_instances": {
                 "*": {
