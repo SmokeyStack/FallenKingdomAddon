@@ -29,8 +29,8 @@
                 ]
             },
             "spawn_egg": {
-                "base_color": "#949493",
-                "overlay_color": "#651818"
+                "base_color": "#E9E9E9",
+                "overlay_color": "#323232"
             },
             "textures": {
                 "default": "textures/entity/skelemite"

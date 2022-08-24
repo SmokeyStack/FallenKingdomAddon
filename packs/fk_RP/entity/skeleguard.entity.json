@@ -31,8 +31,8 @@
                 ]
             },
             "spawn_egg": {
-                "base_color": "#949493",
-                "overlay_color": "#651818"
+                "base_color": "#E6E5E5",
+                "overlay_color": "#646464"
             },
             "textures": {
                 "default": "textures/entity/skeleguard"

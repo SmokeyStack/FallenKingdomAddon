@@ -26,8 +26,8 @@
                 ]
             },
             "spawn_egg": {
-                "base_color": "#949493",
-                "overlay_color": "#651818"
+                "base_color": "#75A36D",
+                "overlay_color": "#EAD190"
             },
             "textures": {
                 "default": "textures/entity/relic_collector"

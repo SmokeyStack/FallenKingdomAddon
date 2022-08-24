@@ -83,8 +83,8 @@
                 ]
             },
             "spawn_egg": {
-                "texture": "spawn_egg",
-                "texture_index": 9
+                "base_color": "#E9E9E9",
+                "overlay_color": "#494949"
             },
             "textures": {
                 "default": "textures/entity/skelegun"

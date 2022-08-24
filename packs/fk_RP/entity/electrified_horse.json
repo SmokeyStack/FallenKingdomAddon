@@ -29,8 +29,8 @@
                 ]
             },
             "spawn_egg": {
-                "base_color": "#949493",
-                "overlay_color": "#651818"
+                "base_color": "#3883AD",
+                "overlay_color": "#CD2658"
             },
             "textures": {
                 "default": "textures/entity/electrified_horse"

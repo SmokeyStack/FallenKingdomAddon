@@ -19,7 +19,7 @@
             "minecraft:material_instances": {
                 "*": {
                     "render_method": "alpha_test",
-                    "texture": "electrified_leaves"
+                    "texture": "flaming_leaves"
                 }
             },
             "minecraft:unit_cube": {}

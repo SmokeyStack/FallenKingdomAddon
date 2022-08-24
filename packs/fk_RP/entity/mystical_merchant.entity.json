@@ -26,8 +26,8 @@
                 ]
             },
             "spawn_egg": {
-                "base_color": "#949493",
-                "overlay_color": "#651818"
+                "base_color": "#362246",
+                "overlay_color": "#A5964D"
             },
             "textures": {
                 "default": "textures/entity/mystical_merchant"

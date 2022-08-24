@@ -12,7 +12,7 @@
             },
             "identifier": "fk:flaming_deer",
             "materials": {
-                "default": "goat"
+                "default": "entity_emissive_alpha"
             },
             "render_controllers": [
                 "controller.render.goat"
@@ -32,8 +32,8 @@
                 ]
             },
             "spawn_egg": {
-                "base_color": "#c0ac90",
-                "overlay_color": "#857261"
+                "base_color": "#BF8543",
+                "overlay_color": "#E35604"
             },
             "textures": {
                 "default": "textures/entity/flaming_deer"

@@ -45,6 +45,9 @@
         "flaming_grass_top": {
             "textures": "textures/blocks/flaming_grass_top"
         },
+        "flaming_leaves": {
+            "textures": "textures/blocks/flaming_leaves"
+        },
         "flaming_log_sides": {
             "textures": "textures/blocks/flaming_log_sides"
         },
@@ -55,13 +58,13 @@
             "textures": "textures/blocks/flaming_plank"
         },
         "flaming_sapling": {
-            "textures": "textures/blocks/electrified_sapling"
+            "textures": "textures/blocks/flaming_sapling"
         },
         "flaming_slab": {
-            "textures": "textures/blocks/electrified_slab"
+            "textures": "textures/blocks/flaming_slab"
         },
         "flaming_trapdoor": {
-            "textures": "textures/blocks/electrified_trapdoor"
+            "textures": "textures/blocks/flaming_trapdoor"
         },
         "grimslate": {
             "textures": "textures/blocks/grimslate"
