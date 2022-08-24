@@ -412,10 +412,10 @@
                                             "item": "minecraft:mangrove_propagule"
                                         },
                                         {
-                                            "item": "fk:electrified_sapling"
+                                            "item": "fk:electrified_sapling_item"
                                         },
                                         {
-                                            "item": "fk:flaming_sapling"
+                                            "item": "fk:flaming_sapling_item"
                                         }
                                     ]
                                 }
@@ -578,8 +578,20 @@
                             ],
                             "gives": [
                                 {
-                                    "item": "minecraft:pointed_dripstone",
-                                    "quantity": 2
+                                    "choice": [
+                                        {
+                                            "item": "minecraft:pointed_dripstone",
+                                            "quantity": 2
+                                        },
+                                        {
+                                            "item": "fk:hard_skelestone",
+                                            "quantity": 2
+                                        },
+                                        {
+                                            "item": "fk:skelestone",
+                                            "quantity": 2
+                                        }
+                                    ]
                                 }
                             ]
                         },
