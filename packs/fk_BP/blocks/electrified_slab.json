@@ -1,15 +1,11 @@
 {
-    "format_version": "1.19.20",
+    "format_version": "1.19.50",
     "minecraft:block": {
         "components": {
-            "minecraft:block_light_filter": 0,
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.name.slab"
-            },
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 1
             },
+            "minecraft:light_dampening": 0,
             "minecraft:map_color": "#39FAFF",
             "minecraft:material_instances": {
                 "*": {
@@ -22,6 +18,10 @@
         },
         "description": {
             "identifier": "fk:electrified_slab",
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
+            },
             "properties": {
                 "fk:state": [
                     "lower",
@@ -60,18 +60,6 @@
         "permutations": [
             {
                 "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            8,
-                            16
-                        ]
-                    },
                     "minecraft:collision_box": {
                         "origin": [
                             -8,
@@ -84,16 +72,11 @@
                             16
                         ]
                     },
-                    "minecraft:geometry": "geometry.slab"
-                },
-                "condition": "q.block_property('fk:state') == 'lower'"
-            },
-            {
-                "components": {
+                    "minecraft:geometry": "geometry.slab",
                     "minecraft:selection_box": {
                         "origin": [
                             -8,
-                            8,
+                            0,
                             -8
                         ],
                         "size": [
@@ -101,7 +84,12 @@
                             8,
                             16
                         ]
-                    },
+                    }
+                },
+                "condition": "q.block_property('fk:state') == 'lower'"
+            },
+            {
+                "components": {
                     "minecraft:collision_box": {
                         "origin": [
                             -8,
@@ -117,6 +105,18 @@
                     "minecraft:geometry": "geometry.slab_upper",
                     "minecraft:on_interact": {
                         "event": "upper_open"
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
                     }
                 },
                 "condition": "q.block_property('fk:state') == 'upper'"

@@ -1,16 +1,12 @@
 {
-    "format_version": "1.19.20",
+    "format_version": "1.19.50",
     "minecraft:block": {
         "components": {
-            "minecraft:creative_category": {
-                "category": "nature",
-                "group": "itemGroup.name.nature"
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
             },
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 1
-            },
-            "minecraft:destructible_by_explosion": {
-                "explosion_resistance": 3
             },
             "minecraft:loot": "loot_tables/blocks/electrified_grass.json",
             "minecraft:map_color": "#16F6FF",
@@ -29,7 +25,10 @@
         },
         "description": {
             "identifier": "fk:electrified_grass",
-            "register_to_creative_menu": true
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.name.nature"
+            }
         }
     }
 }

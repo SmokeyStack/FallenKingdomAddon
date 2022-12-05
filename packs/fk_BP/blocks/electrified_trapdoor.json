@@ -1,15 +1,11 @@
 {
-    "format_version": "1.19.20",
+    "format_version": "1.19.50",
     "minecraft:block": {
         "components": {
-            "minecraft:block_light_filter": 0,
-            "minecraft:creative_category": {
-                "category": "construction",
-                "group": "itemGroup.name.trapdoor"
-            },
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 1
             },
+            "minecraft:light_dampening": 0,
             "minecraft:map_color": "#39FAFF",
             "minecraft:material_instances": {
                 "*": {
@@ -24,6 +20,10 @@
         },
         "description": {
             "identifier": "fk:electrified_trapdoor",
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.trapdoor"
+            },
             "properties": {
                 "fk:direction": [
                     2,
@@ -163,18 +163,6 @@
             },
             {
                 "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            3,
-                            16
-                        ]
-                    },
                     "minecraft:collision_box": {
                         "origin": [
                             -8,
@@ -190,24 +178,24 @@
                     "minecraft:geometry": "geometry.trapdoor_lower",
                     "minecraft:on_interact": {
                         "event": "lower_open"
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            3,
+                            16
+                        ]
                     }
                 },
                 "condition": "q.block_property('fk:state') == 'lower'"
             },
             {
                 "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            14,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            2,
-                            16
-                        ]
-                    },
                     "minecraft:collision_box": {
                         "origin": [
                             -8,
@@ -223,24 +211,24 @@
                     "minecraft:geometry": "geometry.trapdoor",
                     "minecraft:on_interact": {
                         "event": "upper_open"
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            14,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            2,
+                            16
+                        ]
                     }
                 },
                 "condition": "q.block_property('fk:state') == 'upper'"
             },
             {
                 "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            16,
-                            2
-                        ]
-                    },
                     "minecraft:collision_box": {
                         "origin": [
                             -8,
@@ -253,28 +241,28 @@
                             2
                         ]
                     },
-                    "minecraft:block_light_filter": 0,
                     "minecraft:geometry": "geometry.trapdoor_lower_open",
+                    "minecraft:light_dampening": 0,
                     "minecraft:on_interact": {
                         "event": "lower"
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            2
+                        ]
                     }
                 },
                 "condition": "q.block_property('fk:state') == 'lower_open'"
             },
             {
                 "components": {
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            16,
-                            16,
-                            2
-                        ]
-                    },
                     "minecraft:collision_box": {
                         "origin": [
                             -8,
@@ -287,10 +275,22 @@
                             2
                         ]
                     },
-                    "minecraft:block_light_filter": 0,
                     "minecraft:geometry": "geometry.trapdoor_open",
+                    "minecraft:light_dampening": 0,
                     "minecraft:on_interact": {
                         "event": "upper"
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            2
+                        ]
                     }
                 },
                 "condition": "q.block_property('fk:state') == 'upper_open'"

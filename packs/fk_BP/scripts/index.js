@@ -1,4 +1,4 @@
-import { BlockLocation, EntityQueryOptions, MinecraftBlockTypes, world } from "mojang-minecraft";
+import { BlockLocation, MinecraftBlockTypes, world } from "@minecraft/server";
 
 let currentTick = 0;
 
@@ -40,7 +40,7 @@ function checkForblocks() {
         for (var a = -3; a < 3; a++) {
             for (var b = -3; b < 3; b++) {
                 for (var c = -3; c < 3; c++) {
-                    var checkPlayer = world.getDimension("overworld").getPlayers(new EntityQueryOptions());
+                    var checkPlayer = world.getDimension("overworld").getPlayers({});
                     for (const player of checkPlayer) {
                         var checkBlock = world.getDimension("overworld").getBlock(new BlockLocation(Math.trunc(player.location.x) + a, Math.trunc(player.location.y) + b, Math.trunc(player.location.z) + c));
                         updateBlock(checkBlock, "fk:electrified_grass", "fk:electrified_dirt");

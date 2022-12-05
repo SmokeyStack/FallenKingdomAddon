@@ -1,18 +1,14 @@
 {
-    "format_version": "1.19.20",
+    "format_version": "1.19.50",
     "minecraft:block": {
         "components": {
-            "minecraft:light_emission": 0.7,
-            "minecraft:creative_category": {
-                "category": "nature",
-                "group": "itemGroup.name.log"
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
             },
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 3
             },
-            "minecraft:destructible_by_explosion": {
-                "explosion_resistance": 3
-            },
+            "minecraft:light_emission": 0.7,
             "minecraft:map_color": "#CD3737",
             "minecraft:material_instances": {
                 "*": {
@@ -33,14 +29,17 @@
         },
         "description": {
             "identifier": "fk:flaming_log",
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.name.log"
+            },
             "properties": {
                 "fk:cardinal": [
                     0,
                     1,
                     2
                 ]
-            },
-            "register_to_creative_menu": true
+            }
         },
         "events": {
             "fk:dir": {

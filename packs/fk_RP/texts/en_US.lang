@@ -1,11 +1,11 @@
-entity.fk:electrified_horse=Electrified Horse
-entity.fk:flaming_deer=Flaming Deer
-entity.fk:mystical_merchant=Mystical Merchant
-entity.fk:relic_collector=Relic Collector
-entity.fk:rod=Rod
-entity.fk:skeleguard=Skeleguard
-entity.fk:skelegun=Skelegun
-entity.fk:skelemite=Skelemite
+entity.fk:electrified_horse.name=Electrified Horse
+entity.fk:flaming_deer.name=Flaming Deer
+entity.fk:mystical_merchant.name=Mystical Merchant
+entity.fk:relic_collector.name=Relic Collector
+entity.fk:rod.name=Rod
+entity.fk:skeleguard.name=Skeleguard
+entity.fk:skelegun.name=Skelegun
+entity.fk:skelemite.name=Skelemite
 
 item.spawn_egg.entity.fk:electrified_horse.name=Spawn Electrified Horse
 item.spawn_egg.entity.fk:flaming_deer.name=Spawn Flaming Deer

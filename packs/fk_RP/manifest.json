@@ -5,7 +5,7 @@
             "version": [
                 1,
                 0,
-                0
+                1
             ]
         }
     ],
@@ -15,14 +15,14 @@
         "min_engine_version": [
             1,
             19,
-            0
+            50
         ],
         "name": "Fallen Kingdom",
         "uuid": "f2fc35a1-2d55-4eca-9e11-e7fca37ea579",
         "version": [
             1,
             0,
-            0
+            1
         ]
     },
     "modules": [
@@ -32,7 +32,7 @@
             "version": [
                 1,
                 0,
-                0
+                1
             ]
         }
     ]
