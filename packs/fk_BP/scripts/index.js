@@ -1,9 +1,7 @@
-import { BlockLocation, MinecraftBlockTypes, world } from "@minecraft/server";
-
-let currentTick = 0;
+import { BlockLocation, MinecraftBlockTypes, system, world } from "@minecraft/server";
 
 function updateBlock(block, type, turnInto) {
-    if (block.id == type) {
+    if (block.typeId == type) {
         if ((world.getDimension("overworld").getBlock(block.location.offset(0, 1, 0)).type != MinecraftBlockTypes.air) && Math.floor(Math.random() * 255) === 0) {
             block.setType(MinecraftBlockTypes.get(turnInto));
         } else {
@@ -34,22 +32,17 @@ function updateBlock(block, type, turnInto) {
     }
 }
 
-function checkForblocks() {
-    currentTick++;
-    if (currentTick % 20 == 0) {
-        for (var a = -3; a < 3; a++) {
-            for (var b = -3; b < 3; b++) {
-                for (var c = -3; c < 3; c++) {
-                    var checkPlayer = world.getDimension("overworld").getPlayers({});
-                    for (const player of checkPlayer) {
-                        var checkBlock = world.getDimension("overworld").getBlock(new BlockLocation(Math.trunc(player.location.x) + a, Math.trunc(player.location.y) + b, Math.trunc(player.location.z) + c));
-                        updateBlock(checkBlock, "fk:electrified_grass", "fk:electrified_dirt");
-                        updateBlock(checkBlock, "fk:flaming_grass", "fk:flaming_dirt");
-                    }
+system.runSchedule(() => {
+    for (var a = -3; a < 3; a++) {
+        for (var b = -3; b < 3; b++) {
+            for (var c = -3; c < 3; c++) {
+                var checkPlayer = world.getDimension("overworld").getPlayers();
+                for (const player of checkPlayer) {
+                    var checkBlock = world.getDimension("overworld").getBlock(new BlockLocation(Math.trunc(player.location.x) + a, Math.trunc(player.location.y) + b, Math.trunc(player.location.z) + c));
+                    updateBlock(checkBlock, "fk:electrified_grass", "fk:electrified_dirt");
+                    updateBlock(checkBlock, "fk:flaming_grass", "fk:flaming_dirt");
                 }
             }
         }
     }
-}
-
-world.events.tick.subscribe(checkForblocks);
+}, 20);
